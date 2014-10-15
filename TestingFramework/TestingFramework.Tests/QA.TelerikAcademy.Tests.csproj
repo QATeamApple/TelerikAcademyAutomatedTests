@@ -51,7 +51,6 @@
     <Compile Include="Exam\ExamUITests.cs" />
     <Compile Include="Homework\HomeworkAdminTests.cs" />
     <Compile Include="Homework\HomeworkUITests.cs" />
-    <Compile Include="PopulateSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teamwork\TeamworkAdminTests.cs" />
     <Compile Include="Teamwork\TeamworkUITests.cs" />

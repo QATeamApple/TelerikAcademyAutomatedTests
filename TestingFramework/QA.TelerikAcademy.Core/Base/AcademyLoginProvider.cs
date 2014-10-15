@@ -18,8 +18,14 @@ namespace QA.TelerikAcademy.Core.Base
         {
             get
             {
-                return @"https://telerikacademy.com/Users/Auth/Login";
+                return @"http://test.telerikacademy.com/Users/Auth/Login";
             }
+        }
+
+        public static void Logout()
+        {
+            LoginPage page = new LoginPage();
+            page.Logout();
         }
     }
 }

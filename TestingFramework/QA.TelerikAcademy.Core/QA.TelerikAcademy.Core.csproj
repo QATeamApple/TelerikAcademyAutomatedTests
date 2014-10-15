@@ -53,9 +53,9 @@
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
     <Compile Include="Base\UpperNavigationSectionMap.cs" />
-    <Compile Include="Pages\SettingsPage\SettingsPage.cs" />
-    <Compile Include="Pages\SettingsPage\SettingsPageMap.cs" />
-    <Compile Include="Pages\SettingsPage\SettingsPageValidator.cs" />
+    <Compile Include="Pages\AdminPage\Homework\HomeworkPage.cs" />
+    <Compile Include="Pages\AdminPage\Homework\HomeworkPageMap.cs" />
+    <Compile Include="Pages\AdminPage\Homework\HomeworkPageValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +63,13 @@
       <Project>{d3683c33-851d-4c3f-8883-d90a24e68d2b}</Project>
       <Name>QA.UI.TestingFramework.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\AdminPage\Exams\" />
+    <Folder Include="Pages\AdminPage\Teamworks\" />
+    <Folder Include="Pages\UI\Exams\" />
+    <Folder Include="Pages\UI\Homeworks\" />
+    <Folder Include="Pages\UI\Teamworks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

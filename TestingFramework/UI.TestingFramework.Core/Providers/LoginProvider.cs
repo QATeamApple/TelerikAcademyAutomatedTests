@@ -27,7 +27,7 @@ namespace QA.UI.TestingFramework.Core.Providers
         public void LoginUser(User user)
         {
             Manager.Current.ActiveBrowser.NavigateTo(Url);
-            this.Login.TypeEmail(user.Email);
+            this.Login.TypeUsername(user.Username);
             this.Login.TypePassword(user.Password);
             this.Login.Submit();
         }

@@ -14,7 +14,7 @@ namespace QA.TelerikAcademy.Core.Pages.LoginPage
 {
     public class LoginPage : ILogin
     {
-        public const string LoginUrl = @"https://telerikacademy.com/Users/Auth/Login";     
+        public const string LoginUrl = @"http://test.telerikacademy.com/Users/Auth/Login";     
 
         public LoginPageMap Map
         {
@@ -45,9 +45,9 @@ namespace QA.TelerikAcademy.Core.Pages.LoginPage
             Manager.Current.ActiveBrowser.WaitForExists(this.NavigationMap.UserNameExpression);
         }
 
-        public void TypeEmail(string email)
+        public void TypeUsername(string username)
         {
-            this.Map.UserName.Text = email;
+            this.Map.UserName.Text = username;
         }
 
         public void TypePassword(string password)

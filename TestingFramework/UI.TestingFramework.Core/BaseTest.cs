@@ -27,6 +27,7 @@ namespace QA.UI.TestingFramework.Core
         public void CoreTestInit()
         {
             this.InitializeBrowser();
+            
             this.TestInit();
         }
 
