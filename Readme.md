@@ -1,4 +1,4 @@
-# Quality Assurance<\br>Team Project – October, 2014 
+# Quality Assurance<br/>Team Project – October, 2014 
 
 ##Contributors:
 * Kiril Todorov ([@ kirilt7](https://github.com/kirilt7))
