@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace QA.TelerikAcademy.Core.Pages.UI.Exams
 {
-    public class ExamSignUpPage
+    public class TestSignUpPage
     {
-        public readonly string Url = @"http://test.telerikacademy.com/Courses/PracticalExams/Select/22";
+        public readonly string Url = @"http://test.telerikacademy.com/Courses/PracticalExams/Select/4"; //test link
 
         public ExamPageMap Map
         {
@@ -32,9 +32,9 @@ namespace QA.TelerikAcademy.Core.Pages.UI.Exams
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void SignUpForAnExam()
+        public void SignUpForTest()
         {
-            this.Map.SignUp.Click();
+            this.Map.SignUpForTest.Click();
         }
     }
 }

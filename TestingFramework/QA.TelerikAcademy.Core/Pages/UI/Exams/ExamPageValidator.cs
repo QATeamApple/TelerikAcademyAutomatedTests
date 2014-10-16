@@ -18,6 +18,11 @@
             this.Map.SignUpResult.AssertTextContains("Вашият практически изпит ще се проведе на");
         }
 
+        public void SignUpForTest()
+        {
+            this.Map.SignUpResult.AssertTextContains("Вашият тест ще се проведе на");
+        }
+
         public void UploadExam()
         {
             this.Map.UploadSuccessConfirmationMessage.AssertTextEquals("Файлът ви е изпратен успешно!");
