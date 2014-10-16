@@ -18,12 +18,14 @@
 
         public ExamPage ExamPage { get; set; }
         public ExamSignUpPage ExamSignUpPage { get; set; }
+        public TestSignUpPage TestSignUpPage { get; set; }
         public ExamPageValidator ExamPageValidator { get; set; }
 
         public override void TestInit()
         {
             this.ExamPage = new ExamPage();
             this.ExamSignUpPage = new ExamSignUpPage();
+            this.TestSignUpPage = new TestSignUpPage();
             this.ExamPageValidator = new ExamPageValidator();
 
             this.currentUser = new User()
@@ -49,6 +51,14 @@
             this.ExamSignUpPage.Navigate();
             this.ExamSignUpPage.SignUpForAnExam();
             this.ExamPageValidator.SignUpForAnExam();
+        }
+
+        [TestMethod]
+        public void SignUpForTest()
+        {
+            this.TestSignUpPage.Navigate();
+            this.TestSignUpPage.SignUpForTest();
+            this.ExamPageValidator.SignUpForTest();
         }
 
         [TestMethod]
