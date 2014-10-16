@@ -44,7 +44,7 @@
             AcademyLoginProvider.Logout();
         }
 
-       // [TestMethod]
+       [TestMethod]
         public void UploadStudentHomework()
         {
             this.HomeworkPage.Navigate();

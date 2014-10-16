@@ -34,7 +34,7 @@
             this.Map.SelectCourse("TeamAppleCourse");
             this.Map.SelectLecture("Lecture 1");
             this.Map.Username.Text = user.Username;
-            this.Map.SelectFile.Upload(@"C:\TestFiles", 1000);
+            this.Map.SelectFile.Upload(@"C:\TestFiles\Homework.zip", 1000);
             this.Map.Upload.Click();
         }
 
