@@ -59,6 +59,9 @@
     <Compile Include="Pages\AdminPage\Homework\HomeworkPage.cs" />
     <Compile Include="Pages\AdminPage\Homework\HomeworkPageMap.cs" />
     <Compile Include="Pages\AdminPage\Homework\HomeworkPageValidator.cs" />
+    <Compile Include="Pages\UI\Exams\ExamPage.cs" />
+    <Compile Include="Pages\UI\Exams\ExamPageMap.cs" />
+    <Compile Include="Pages\UI\Exams\ExamPageValidator.cs" />
     <Compile Include="Pages\UI\Homeworks\HomeworkPage.cs" />
     <Compile Include="Pages\UI\Homeworks\HomeworkPageMap.cs" />
     <Compile Include="Pages\UI\Homeworks\HomeworkPageValidator.cs" />
@@ -72,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\AdminPage\Teamworks\" />
-    <Folder Include="Pages\UI\Exams\" />
     <Folder Include="Pages\UI\Teamworks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
