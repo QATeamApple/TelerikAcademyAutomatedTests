@@ -20,11 +20,12 @@
         private User currentUser;
 
         public HomeworkPage HomeworkPage { get; set; }
+        public HomeworkPageValidator HomeworkPageValidator { get; set; }
 
         public override void TestInit()
         {
-
             this.HomeworkPage = new HomeworkPage();
+            this.HomeworkPageValidator = new HomeworkPageValidator();
 
             this.currentUser = new User()
             {
@@ -41,7 +42,6 @@
         public override void TestCleanUp()
         {
             AcademyLoginProvider.Logout();
-
         }
 
         [TestMethod]
@@ -49,8 +49,8 @@
         {
             this.HomeworkPage.Navigate();
             this.HomeworkPage.UploadHomework(this.currentUser);
-
-            Console.WriteLine();
+            this.HomeworkPageValidator.UploadHomework(this.currentUser);
+            this.HomeworkPage.DeleteHomework(this.currentUser);
         }
     }
 }

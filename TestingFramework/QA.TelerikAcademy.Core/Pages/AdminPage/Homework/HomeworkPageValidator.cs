@@ -1,6 +1,7 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Homework
 {
     using QA.UI.TestingFramework.Core;
+    using QA.UI.TestingFramework.Core.Data;
 
     public class HomeworkPageValidator
     {
@@ -12,14 +13,9 @@
             }
         }
 
-        public void EmailLabel(string email)
+        public void UploadHomework(User user)
         {
-            //this.Map.EmailLabel.AssertTextContains(email);
-        }
-
-        public void SettingsUpdated()
-        {
-            //this.Map.SuccessMessage.AssertIsPresent();
+            this.Map.Result.AssertTextEquals("Домашното на потребител \"" + user.Username + "\" е качено успешно!");
         }
     }
 }

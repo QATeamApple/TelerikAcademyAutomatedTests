@@ -1,6 +1,7 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Homework
 {
     using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.Win32.Dialogs;
     using QA.UI.TestingFramework.Core.Data;
 
     public class HomeworkPage
@@ -35,6 +36,13 @@
             this.Map.Username.Text = user.Username;
             this.Map.SelectFile.Upload(@"C:\Users\Administrator\Desktop\Homework.zip", 1000);
             this.Map.Upload.Click();
+        }
+
+        public void DeleteHomework(User user)
+        {
+            //this.Map.Delete.Click();
+
+            //ConfirmDialog dialog = new ConfirmDialog(Manager.Current.Browsers[0], DialogButton.OK);
         }
     }
 }

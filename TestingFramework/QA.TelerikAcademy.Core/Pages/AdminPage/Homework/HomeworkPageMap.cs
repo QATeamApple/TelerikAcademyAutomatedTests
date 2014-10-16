@@ -1,6 +1,8 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Homework
 {
+    using ArtOfTest.Common;
     using ArtOfTest.WebAii.Controls.HtmlControls;
+    using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.ObjectModel;
     using QA.UI.TestingFramework.Core;
     using System.Collections.ObjectModel;
@@ -40,20 +42,27 @@
             }
         }
 
+        public HtmlDiv Result
+        {
+            get
+            {
+                return this.Find.ById<HtmlDiv>("Custom-button-result");
+            }
+        }
+
+        public HtmlControl Delete
+        {
+            get
+            {
+                return this.Find.ByExpression<HtmlControl>("//html/body/div[1]/div/section/div[2]/div/table/tbody/tr[1]/td[15]/a/span".Xpath());
+            }
+        }
+
         public void SelectCourse(string course)
         {
-            var buttonCourse = this.Find.ByContent<HtmlSpan>("select");
-            buttonCourse.Click();
-
-            //var typeCourse = this.Find.ByName<HtmlInputText>("CourseInstanceId_input");
-            //typeCourse.Text = course;
-
-            //buttonCourse.Click();
-
-            var selectedCourse = this.Find.ByExpression<HtmlListItem>("InnerText=" + course);
-            Element anchor = selectedCourse.ChildNodes[0];
-            
-            selectedCourse.Click();
+            var typeCourse = this.Find.ByName<HtmlInputText>("CourseInstanceId_input");
+            typeCourse.Text = course;
+            typeCourse.MouseClick();
         }
 
         public void SelectLecture(string lecture)
