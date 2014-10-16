@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
     <Compile Include="Base\SettingsService.cs" />
+    <Compile Include="Pages\AdminPage\Exams\ExamsPage.cs" />
+    <Compile Include="Pages\AdminPage\Exams\ExamsPageMap.cs" />
+    <Compile Include="Pages\AdminPage\Exams\ExamsPageValidator.cs" />
     <Compile Include="Pages\LoginPage\LoginPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
@@ -68,7 +71,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AdminPage\Exams\" />
     <Folder Include="Pages\AdminPage\Teamworks\" />
     <Folder Include="Pages\UI\Exams\" />
     <Folder Include="Pages\UI\Teamworks\" />
