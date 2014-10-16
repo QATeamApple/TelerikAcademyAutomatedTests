@@ -9,7 +9,8 @@ namespace QA.TelerikAcademy.Core.Pages.UI.Exams
 {
     public class TestSignUpPage
     {
-        public readonly string Url = @"http://test.telerikacademy.com/Courses/PracticalExams/Select/4"; //test link
+        //Test link should be added when available - currently not working
+        public readonly string Url = @"http://test.telerikacademy.com/Courses/PracticalExams/Select/4"; 
 
         public ExamPageMap Map
         {
