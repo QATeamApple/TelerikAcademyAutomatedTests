@@ -3,13 +3,13 @@
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
 
-    public class HomeworkPageValidator
+    public class UploadHomeworkPageValidator
     {
-        public HomeworkPageMap Map
+        public UploadHomeworkPageMap Map
         {
             get
             {
-                return new HomeworkPageMap();
+                return new UploadHomeworkPageMap();
             }
         }
 
