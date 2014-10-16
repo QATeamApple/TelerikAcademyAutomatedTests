@@ -59,10 +59,14 @@
     <Compile Include="Pages\AdminPage\Homework\HomeworkPage.cs" />
     <Compile Include="Pages\AdminPage\Homework\HomeworkPageMap.cs" />
     <Compile Include="Pages\AdminPage\Homework\HomeworkPageValidator.cs" />
+    <Compile Include="Pages\MainPage\MainPage.cs" />
+    <Compile Include="Pages\MainPage\MainPageMap.cs" />
+    <Compile Include="Pages\MainPage\MainPageValidator.cs" />
     <Compile Include="Pages\UI\Exams\ExamPage.cs" />
     <Compile Include="Pages\UI\Exams\ExamPageMap.cs" />
     <Compile Include="Pages\UI\Exams\ExamPageValidator.cs" />
     <Compile Include="Pages\UI\Exams\ExamSignUpPage.cs" />
+    <Compile Include="Pages\UI\Exams\TestSignUpPage.cs" />
     <Compile Include="Pages\UI\Homeworks\ReUploadHomeworkPage.cs" />
     <Compile Include="Pages\UI\Homeworks\ReUploadHomeworkPageMap.cs" />
     <Compile Include="Pages\UI\Homeworks\ReUploadHomeworkPageValidator.cs" />

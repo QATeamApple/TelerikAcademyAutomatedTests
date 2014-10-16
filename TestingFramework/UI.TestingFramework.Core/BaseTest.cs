@@ -21,13 +21,13 @@ namespace QA.UI.TestingFramework.Core
 
         public virtual void TestCleanUp()
         {
-        }  
+        }
 
         [TestInitialize]
         public void CoreTestInit()
         {
             this.InitializeBrowser();
-            
+
             this.TestInit();
         }
 

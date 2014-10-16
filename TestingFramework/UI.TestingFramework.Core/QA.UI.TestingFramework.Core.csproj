@@ -53,6 +53,7 @@
     <Compile Include="BaseTest.cs" />
     <Compile Include="BrowserExtensions.cs" />
     <Compile Include="Contracts\ILogin.cs" />
+    <Compile Include="Contracts\IMain.cs" />
     <Compile Include="Data\User.cs" />
     <Compile Include="EventWaiter.cs" />
     <Compile Include="HtmlElementExpressionExtensions.cs" />
