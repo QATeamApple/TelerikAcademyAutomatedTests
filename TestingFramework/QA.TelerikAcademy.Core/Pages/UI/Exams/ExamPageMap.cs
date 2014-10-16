@@ -11,6 +11,14 @@ namespace QA.TelerikAcademy.Core.Pages.UI.Exams
 {
     public class ExamPageMap : BaseElementMap
     {
+        public HtmlInputSubmit SignUp
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlInputSubmit>("value=Запиши се за изпит");
+            }
+        }
+
         public HtmlInputFile SelectFile
         {
             get
@@ -43,5 +51,13 @@ namespace QA.TelerikAcademy.Core.Pages.UI.Exams
             }
         }
 
+        public HtmlDiv SignUpResult
+        {
+            get
+            {
+                var mainContent = this.Find.ById<HtmlControl>("MainContent");
+                return mainContent.Find.ByAttributes<HtmlDiv>("class=importantMessageInfo");
+            }
+        }
     }
 }
