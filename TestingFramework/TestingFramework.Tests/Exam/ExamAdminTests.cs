@@ -167,7 +167,6 @@
         }
 
         [TestMethod]
-
         public void UploadStudentExamWithInvalidUserName()
         {
             this.ExamsPage.Navigate();
@@ -176,6 +175,17 @@
             this.ExamsPage.SelectGrade("8");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateUserErrorMessage();
+        }
+
+        [TestMethod]
+        public void UploadStudentExamWithOneLessThanHighBoundaryGradeValue()
+        {
+            this.ExamsPage.Navigate();
+            this.ExamsPage.SelectCourse("TeamAppleCourse");
+            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectGrade("254");
+            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.ValidateUploadConfirmationMessage();
         }
     }
 }
