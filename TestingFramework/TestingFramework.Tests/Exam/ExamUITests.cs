@@ -17,11 +17,13 @@
         private User currentUser;
 
         public ExamPage ExamPage { get; set; }
+        public ExamSignUpPage ExamSignUpPage { get; set; }
         public ExamPageValidator ExamPageValidator { get; set; }
 
         public override void TestInit()
         {
             this.ExamPage = new ExamPage();
+            this.ExamSignUpPage = new ExamSignUpPage();
             this.ExamPageValidator = new ExamPageValidator();
 
             this.currentUser = new User()
@@ -39,6 +41,14 @@
         public override void TestCleanUp()
         {
             AcademyLoginProvider.Logout();
+        }
+
+        [TestMethod]
+        public void SignUpForAnExam()
+        {
+            this.ExamSignUpPage.Navigate();
+            this.ExamSignUpPage.SignUpForAnExam();
+            this.ExamPageValidator.SignUpForAnExam();
         }
 
         [TestMethod]
