@@ -20,7 +20,7 @@
 
         public void SignUpForTest()
         {
-            this.Map.SignUpResult.AssertTextContains("Вашият тест ще се проведе на");
+            this.Map.SignUpForTestResult.AssertTextContains("Вашият тест ще се проведе на");
         }
 
         public void UploadExam()
