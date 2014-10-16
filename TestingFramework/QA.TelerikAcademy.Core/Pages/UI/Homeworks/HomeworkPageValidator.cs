@@ -27,13 +27,11 @@
         {
             this.Map.ValidationError.AssertTextContains("Невалиден формат на файла!");
         }
-<<<<<<< HEAD
 
         public void UploadHomeworkWithBigSize()
         {
             this.Map.ValidationError.AssertTextContains("Размерът на файла ви е по-голям от разрешения лимит от 16 MB");
         }
-=======
->>>>>>> origin/master
+
     }
 }

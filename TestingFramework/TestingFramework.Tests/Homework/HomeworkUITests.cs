@@ -68,7 +68,6 @@
             this.HomeworkPageValidator.UploadHomeworkWithUnsupportedFormat();
             this.HomeworkPage.DeleteHomework(this.currentUser);
         }
-<<<<<<< HEAD
 
         [TestMethod]
         public void UploadHomeworkWithBigFile()
@@ -78,7 +77,5 @@
             this.HomeworkPageValidator.UploadHomeworkWithBigSize();
             this.HomeworkPage.DeleteHomework(this.currentUser);
         }
-=======
->>>>>>> origin/master
     }
 }

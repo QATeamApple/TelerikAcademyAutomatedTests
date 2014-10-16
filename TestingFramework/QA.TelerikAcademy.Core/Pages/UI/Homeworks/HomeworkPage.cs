@@ -46,14 +46,11 @@
             this.Map.Upload.Click();
         }
 
-<<<<<<< HEAD
         public void UploadHomeworkWithBigSize()
         {
             this.Map.SelectFile.Upload(@"C:\TestFiles\HomeworkBig.zip", 1000);
             this.Map.Upload.Click();
         }
-=======
->>>>>>> origin/master
         public void DeleteHomework(User user)
         {
             //this.Map.Delete.Click();
