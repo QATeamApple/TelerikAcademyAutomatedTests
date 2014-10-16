@@ -26,6 +26,24 @@
             }
         }
 
+        public HtmlInputText Grade
+        {
+            get
+            {
+                var grade = this.Find.ById<HtmlInputText>("Mark");
+                return grade;
+            }
+        }
+
+        public HtmlSpan GradeErrorMessage
+        {
+            get
+            {
+                var message = this.Find.ByExpression<HtmlSpan>("//*[@id='MainContent']/form/fieldset/div[8]/span[2]/span".Xpath());
+                return message;
+            }
+        }
+
         public HtmlInputFile SelectFile
         {
             get

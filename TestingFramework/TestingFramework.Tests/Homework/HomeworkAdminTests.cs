@@ -52,5 +52,14 @@
             this.HomeworkPageValidator.UploadHomework(this.currentUser);
             this.HomeworkPage.DeleteHomework(this.currentUser);
         }
+
+       [TestMethod]
+       public void GradeSudentHomeworkWithValuationAboveTheAllowed()
+       {
+           this.HomeworkPage.Navigate();
+           this.HomeworkPage.GradeHomework("20");
+           this.HomeworkPage.UploadHomework(this.currentUser);
+           this.HomeworkPageValidator.GradeIsGreaterThanAllowed(this.currentUser);
+       }
     }
 }

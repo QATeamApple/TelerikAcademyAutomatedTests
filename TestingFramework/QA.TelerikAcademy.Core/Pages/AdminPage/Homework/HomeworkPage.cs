@@ -38,6 +38,12 @@
             this.Map.Upload.Click();
         }
 
+        public void GradeHomework(string grade)
+        {
+            this.Map.Grade.Click();
+            this.Map.Grade.Text = grade;
+        }
+
         public void DeleteHomework(User user)
         {
             //this.Map.Delete.Click();
