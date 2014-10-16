@@ -36,5 +36,10 @@ namespace QA.TelerikAcademy.Core.Pages.UI.Exams
         {
             this.Map.SignUp.Click();
         }
+
+        public void SignUpForTest()
+        {
+            //this.Map.SignUpTest.Click();
+        }
     }
 }
