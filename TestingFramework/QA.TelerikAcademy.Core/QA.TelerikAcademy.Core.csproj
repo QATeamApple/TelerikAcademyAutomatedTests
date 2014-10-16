@@ -52,6 +52,9 @@
     <Compile Include="Pages\AdminPage\Exams\ExamsPage.cs" />
     <Compile Include="Pages\AdminPage\Exams\ExamsPageMap.cs" />
     <Compile Include="Pages\AdminPage\Exams\ExamsPageValidator.cs" />
+    <Compile Include="Pages\AdminPage\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
+    <Compile Include="Pages\AdminPage\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
+    <Compile Include="Pages\AdminPage\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageValidator.cs" />
     <Compile Include="Pages\LoginPage\LoginPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
@@ -82,7 +85,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AdminPage\Teamworks\" />
     <Folder Include="Pages\UI\Teamworks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
