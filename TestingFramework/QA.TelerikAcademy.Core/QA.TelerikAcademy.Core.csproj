@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
-    <Compile Include="Base\SettingsService.cs" />
     <Compile Include="Pages\AdminPage\Exams\ExamsPage.cs" />
     <Compile Include="Pages\AdminPage\Exams\ExamsPageMap.cs" />
     <Compile Include="Pages\AdminPage\Exams\ExamsPageValidator.cs" />

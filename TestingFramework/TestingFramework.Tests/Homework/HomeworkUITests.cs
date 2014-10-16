@@ -34,8 +34,8 @@
                 Email = "ninja@ninja.com",
                 Username = "Ninja",
                 Password = "123456",
-                FirstName = "FirstName",
-                LastName = "LastName"
+                FirstNameEn = "FirstName",
+                LastNameEn = "LastName"
             };
 
             AcademyLoginProvider.Instance.LoginUser(currentUser);
