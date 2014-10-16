@@ -50,7 +50,7 @@ namespace QA.TelerikAcademy.Core.Pages.UI.Exams
             this.Map.Upload.Click();
         }
 
-        public void UploadHomeworkWithBigSize()
+        public void UploadExamkWithBigSize()
         {
             this.Map.SelectFile.Upload(@"C:\TestFiles\ExamBig.zip", 1000);
             this.Map.Upload.Click();
