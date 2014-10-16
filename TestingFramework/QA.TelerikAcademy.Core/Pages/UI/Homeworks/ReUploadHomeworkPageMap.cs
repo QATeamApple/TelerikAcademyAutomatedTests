@@ -8,7 +8,7 @@
     using System.Collections.ObjectModel;
     using System.Threading;
 
-    public class HomeworkPageMap : BaseElementMap
+    public class ReUploadHomeworkPageMap : BaseElementMap
     {
         public HtmlInputFile SelectFile
         {

@@ -4,23 +4,23 @@
     using ArtOfTest.WebAii.Win32.Dialogs;
     using QA.UI.TestingFramework.Core.Data;
 
-    public class HomeworkPage
+    public class UploadHomeworkPage
     {
         public readonly string Url = @"http://test.telerikacademy.com/Courses/Homework/Submit/48";
 
-        public HomeworkPageMap Map
+        public UploadHomeworkPageMap Map
         {
             get
             {
-                return new HomeworkPageMap();
+                return new UploadHomeworkPageMap();
             }
         }
 
-        public HomeworkPageValidator Validator
+        public UploadHomeworkPageValidator Validator
         {
             get
             {
-                return new HomeworkPageValidator();
+                return new UploadHomeworkPageValidator();
             }
         }
 
