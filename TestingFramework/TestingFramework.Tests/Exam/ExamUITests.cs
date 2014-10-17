@@ -12,6 +12,7 @@
     using QA.UI.TestingFramework.Core.Data;
     using QA.TelerikAcademy.Core.Pages.UI.Exams;
 
+    [TestClass]
     public class ExamUITests : BaseTest
     {
         private User currentUser;
