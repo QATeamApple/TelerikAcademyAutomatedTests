@@ -1,8 +1,8 @@
-﻿using ArtOfTest.WebAii.Controls.HtmlControls;
-using QA.UI.TestingFramework.Core;
-
-namespace QA.TelerikAcademy.Core.Base
+﻿namespace QA.TelerikAcademy.Core.Base
 {
+    using ArtOfTest.WebAii.Controls.HtmlControls;
+    using QA.UI.TestingFramework.Core;
+
     public class UpperNavigationSectionMap : BaseElementMap
     {
         public readonly string UserNameExpression = "username".Class();
@@ -11,7 +11,7 @@ namespace QA.TelerikAcademy.Core.Base
         {
             get
             {
-                return this.Find.ByExpression<HtmlSpan>(UserNameExpression);
+                return this.Find.ByExpression<HtmlSpan>(this.UserNameExpression);
             }
         }
 

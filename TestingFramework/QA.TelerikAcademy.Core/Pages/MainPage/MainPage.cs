@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QA.TelerikAcademy.Core.Pages;
-using ArtOfTest.WebAii.Core;
-using QA.UI.TestingFramework.Core;
-using QA.TelerikAcademy.Core.Base;
-using QA.UI.TestingFramework.Core.Contracts;
-using QA.UI.TestingFramework.Core.Data;
-
-namespace QA.TelerikAcademy.Core.Pages.MainPage
+﻿namespace QA.TelerikAcademy.Core.Pages.MainPage
 {
+    using ArtOfTest.WebAii.Core;
+    using QA.UI.TestingFramework.Core.Contracts;
+    
     public class MainPage : IMain
     {
         public readonly string MainUrl = @"http://test.telerikacademy.com";
@@ -55,7 +46,7 @@ namespace QA.TelerikAcademy.Core.Pages.MainPage
 
         public void DeleteTeamworkDecision()
         {
-            //TODO
+            // TODO
         }
         #endregion
     }

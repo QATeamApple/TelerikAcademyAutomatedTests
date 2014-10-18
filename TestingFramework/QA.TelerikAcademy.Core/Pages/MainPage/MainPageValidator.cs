@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QA.TelerikAcademy.Core.Base;
-using QA.UI.TestingFramework.Core;
-using QA.UI.TestingFramework.Core.Data;
-using QA.TelerikAcademy.Core.Pages.MainPage;
-
-namespace QA.TelerikAcademy.Core.Pages.LoginPage
+﻿namespace QA.TelerikAcademy.Core.Pages.LoginPage
 {
+    using QA.TelerikAcademy.Core.Pages.MainPage;
+    using QA.UI.TestingFramework.Core;
+
     public class MainPageValidator
     {
         public MainPageMap Map

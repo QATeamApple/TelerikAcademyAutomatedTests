@@ -1,10 +1,8 @@
-﻿using System;
-using ArtOfTest.WebAii.Controls.HtmlControls;
-using QA.UI.TestingFramework.Core;
-using QA.UI.TestingFramework.Core.Contracts;
-
-namespace QA.TelerikAcademy.Core.Pages.MainPage
+﻿namespace QA.TelerikAcademy.Core.Pages.MainPage
 {
+    using ArtOfTest.WebAii.Controls.HtmlControls;
+    using QA.UI.TestingFramework.Core;
+
     public class MainPageMap : BaseElementMap
     {
         #region Teamwork

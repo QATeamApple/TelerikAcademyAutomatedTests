@@ -48,43 +48,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
-    <Compile Include="Pages\AdminPage\Exams\ExamsPage.cs" />
-    <Compile Include="Pages\AdminPage\Exams\ExamsPageMap.cs" />
-    <Compile Include="Pages\AdminPage\Exams\ExamsPageValidator.cs" />
-    <Compile Include="Pages\AdminPage\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
-    <Compile Include="Pages\AdminPage\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
-    <Compile Include="Pages\AdminPage\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\Exams\ExamsPage.cs" />
+    <Compile Include="Pages\AdminPages\Exams\ExamsPageMap.cs" />
+    <Compile Include="Pages\AdminPages\Exams\ExamsPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageValidator.cs" />
     <Compile Include="Pages\LoginPage\LoginPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
     <Compile Include="Base\UpperNavigationSectionMap.cs" />
-    <Compile Include="Pages\AdminPage\Homework\HomeworkPage.cs" />
-    <Compile Include="Pages\AdminPage\Homework\HomeworkPageMap.cs" />
-    <Compile Include="Pages\AdminPage\Homework\HomeworkPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\Homework\HomeworkPage.cs" />
+    <Compile Include="Pages\AdminPages\Homework\HomeworkPageMap.cs" />
+    <Compile Include="Pages\AdminPages\Homework\HomeworkPageValidator.cs" />
     <Compile Include="Pages\MainPage\MainPage.cs" />
     <Compile Include="Pages\MainPage\MainPageMap.cs" />
     <Compile Include="Pages\MainPage\MainPageValidator.cs" />
-    <Compile Include="Pages\UI\Exams\ExamPage.cs" />
-    <Compile Include="Pages\UI\Exams\ExamPageMap.cs" />
-    <Compile Include="Pages\UI\Exams\ExamPageValidator.cs" />
-    <Compile Include="Pages\UI\Exams\ExamSignUpPage.cs" />
-    <Compile Include="Pages\UI\Exams\TestSignUpPage.cs" />
-    <Compile Include="Pages\UI\Homeworks\ReUploadHomeworkPage.cs" />
-    <Compile Include="Pages\UI\Homeworks\ReUploadHomeworkPageMap.cs" />
-    <Compile Include="Pages\UI\Homeworks\ReUploadHomeworkPageValidator.cs" />
-    <Compile Include="Pages\UI\Homeworks\UploadHomeworkPage.cs" />
-    <Compile Include="Pages\UI\Homeworks\UploadHomeworkPageMap.cs" />
-    <Compile Include="Pages\UI\Homeworks\UploadHomeworkPageValidator.cs" />
+    <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPage.cs" />
+    <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPageMap.cs" />
+    <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPageValidator.cs" />
+    <Compile Include="Pages\UIPages\Exams\ExamSignUpPage.cs" />
+    <Compile Include="Pages\UIPages\Exams\TestSignUpPage.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\ReUploadHomeworkPage.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\ReUploadHomeworkPageMap.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\ReUploadHomeworkPageValidator.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\UploadHomeworkPage.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\UploadHomeworkPageMap.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\UploadHomeworkPageValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UI.TestingFramework.Core\QA.UI.TestingFramework.Core.csproj">
+    <ProjectReference Include="..\QA.UI.TestingFramework.Core\QA.UI.TestingFramework.Core.csproj">
       <Project>{d3683c33-851d-4c3f-8883-d90a24e68d2b}</Project>
       <Name>QA.UI.TestingFramework.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\UI\Teamworks\" />
+    <Folder Include="Pages\UIPages\Teamworks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

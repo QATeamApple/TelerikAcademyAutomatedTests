@@ -1,9 +1,9 @@
-﻿using QA.TelerikAcademy.Core.Pages.LoginPage;
-using QA.UI.TestingFramework.Core.Contracts;
-using QA.UI.TestingFramework.Core.Providers;
-
-namespace QA.TelerikAcademy.Core.Base
+﻿namespace QA.TelerikAcademy.Core.Base
 {
+    using QA.TelerikAcademy.Core.Pages.LoginPage;
+    using QA.UI.TestingFramework.Core.Contracts;
+    using QA.UI.TestingFramework.Core.Providers;
+
     public class AcademyLoginProvider : LoginProvider<AcademyLoginProvider>
     {
         public override ILogin Login

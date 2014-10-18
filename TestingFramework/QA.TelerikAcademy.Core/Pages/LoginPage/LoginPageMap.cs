@@ -1,10 +1,11 @@
-﻿using System;
-using ArtOfTest.WebAii.Controls.HtmlControls;
-using QA.UI.TestingFramework.Core;
-using QA.UI.TestingFramework.Core.Contracts;
-
-namespace QA.TelerikAcademy.Core.Pages.LoginPage
+﻿namespace QA.TelerikAcademy.Core.Pages.LoginPage
 {
+    using System;
+    
+    using ArtOfTest.WebAii.Controls.HtmlControls;
+    using QA.UI.TestingFramework.Core;
+    using QA.UI.TestingFramework.Core.Contracts;
+    
     public class LoginPageMap : BaseElementMap
     {      
         public HtmlInputText UserName
