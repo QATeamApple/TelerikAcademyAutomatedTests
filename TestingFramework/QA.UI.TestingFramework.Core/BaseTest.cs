@@ -3,10 +3,14 @@
     using System;
     using ArtOfTest.WebAii.Core;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using QA.TelerikAcademy.Core.Base;
+    using QA.UI.TestingFramework.Core.Data;
 
     [TestClass]
     public class BaseTest
     {
+        public User CurrentUser { get; set; }
+
         public Browser Browser
         {
             get
@@ -17,6 +21,16 @@
 
         public virtual void TestInit()
         {
+            this.CurrentUser = new User()
+            {
+                Email = "ninja@ninja.com",
+                Username = "Ninja",
+                Password = "123456",
+                FirstNameEn = "FirstName",
+                LastNameEn = "LastName"
+            };
+
+            AcademyLoginProvider.Instance.LoginUser(this.CurrentUser);
         }
 
         public virtual void TestCleanUp()

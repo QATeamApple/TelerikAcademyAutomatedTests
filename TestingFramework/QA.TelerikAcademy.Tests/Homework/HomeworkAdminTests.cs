@@ -9,7 +9,7 @@
     [TestClass]
     public class HomeworkAdminTests : BaseTest
     {
-        private User currentUser;
+        //private User currentUser;
 
         public HomeworkPage HomeworkPage { get; set; }
 
@@ -20,16 +20,18 @@
             this.HomeworkPage = new HomeworkPage();
             this.HomeworkPageValidator = new HomeworkPageValidator();
 
-            this.currentUser = new User()
-            {
-                Email = "ninja@ninja.com",
-                Username = "Ninja",
-                Password = "123456",
-                FirstNameEn = "FirstName",
-                LastNameEn = "LastName"
-            };
+            base.TestInit();
 
-            AcademyLoginProvider.Instance.LoginUser(this.currentUser);
+            //this.currentUser = new User()
+            //{
+            //    Email = "ninja@ninja.com",
+            //    Username = "Ninja",
+            //    Password = "123456",
+            //    FirstNameEn = "FirstName",
+            //    LastNameEn = "LastName"
+            //};
+
+            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()
@@ -41,9 +43,9 @@
         public void UploadStudentHomework()
         {
             this.HomeworkPage.Navigate();
-            this.HomeworkPage.UploadHomework(this.currentUser);
-            this.HomeworkPageValidator.UploadHomework(this.currentUser);
-            this.HomeworkPage.DeleteHomework(this.currentUser);
+            this.HomeworkPage.UploadHomework(this.CurrentUser);
+            this.HomeworkPageValidator.UploadHomework(this.CurrentUser);
+            this.HomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
        [TestMethod]
@@ -51,8 +53,8 @@
        {
            this.HomeworkPage.Navigate();
            this.HomeworkPage.GradeHomework("20");
-           this.HomeworkPage.UploadHomework(this.currentUser);
-           this.HomeworkPageValidator.GradeIsGreaterThanAllowed(this.currentUser);
+           this.HomeworkPage.UploadHomework(this.CurrentUser);
+           this.HomeworkPageValidator.GradeIsGreaterThanAllowed(this.CurrentUser);
        }
     }
 }

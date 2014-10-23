@@ -10,7 +10,7 @@
     [TestClass]
     public class TeamworkUITests : BaseTest
     {
-        private User currentUser;
+        //private User currentUser;
 
         public MainPage MainPage { get; set; }
 
@@ -21,16 +21,18 @@
             this.MainPage = new MainPage();
             this.MainPageValidator = new MainPageValidator();
 
-            this.currentUser = new User()
-            {
-                Email = "ninja@ninja.com",
-                Username = "Ninja",
-                Password = "123456",
-                FirstNameEn = "FirstName",
-                LastNameEn = "LastName"
-            };
+            base.TestInit();
 
-            AcademyLoginProvider.Instance.LoginUser(this.currentUser);
+            //this.currentUser = new User()
+            //{
+            //    Email = "ninja@ninja.com",
+            //    Username = "Ninja",
+            //    Password = "123456",
+            //    FirstNameEn = "FirstName",
+            //    LastNameEn = "LastName"
+            //};
+
+            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()

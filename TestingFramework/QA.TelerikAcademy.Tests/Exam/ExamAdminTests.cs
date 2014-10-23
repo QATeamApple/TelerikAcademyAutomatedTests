@@ -9,7 +9,7 @@
     [TestClass]
     public class ExamAdminTests : BaseTest
     {
-        private User currentUser;
+        //private User currentUser;
 
         public ExamsPage ExamsPage { get; set; }
 
@@ -17,13 +17,18 @@
         {
             this.ExamsPage = new ExamsPage();
 
-            this.currentUser = new User()
-            {
-                Username = "Ninja",
-                Password = "123456"
-            };
+            base.TestInit();
 
-            AcademyLoginProvider.Instance.LoginUser(this.currentUser);
+            //this.currentUser = new User()
+            //{
+            //    Email = "ninja@ninja.com",
+            //    Username = "Ninja",
+            //    Password = "123456",
+            //    FirstNameEn = "FirstName",
+            //    LastNameEn = "LastName"
+            //};
+
+            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()
@@ -36,7 +41,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
@@ -47,7 +52,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("Front Test Geri");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateCourseErrorMessage();
         }
@@ -58,7 +63,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("asdafasdasgasdadgasdaghasdagas");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateInvalidCourseErrorMessage();
         }
@@ -69,7 +74,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("1");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
@@ -81,7 +86,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("255");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
@@ -93,7 +98,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("256");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
@@ -105,7 +110,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("-1");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
@@ -117,7 +122,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("0");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
@@ -129,7 +134,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("23123125123125123125123123");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
@@ -142,7 +147,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("asdasd");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
@@ -153,7 +158,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("!@#!@#%*&^#!@^^&$#^!*@#");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
@@ -175,7 +180,7 @@
         {
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.currentUser);
+            this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("254");
             this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();

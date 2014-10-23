@@ -10,7 +10,7 @@
     [TestClass]
     public class ExamUITests : BaseTest
     {
-        private User currentUser;
+        //private User currentUser;
 
         public ExamPage ExamPage { get; set; }
 
@@ -30,16 +30,18 @@
             this.DownloadLatestExamPage = new DownloadLatestExamVersion();
             this.ExamPageValidator = new ExamPageValidator();
 
-            this.currentUser = new User()
-            {
-                Email = "ninja@ninja.com",
-                Username = "Ninja",
-                Password = "123456",
-                FirstNameEn = "FirstName",
-                LastNameEn = "LastName"
-            };
+            base.TestInit();
 
-            AcademyLoginProvider.Instance.LoginUser(this.currentUser);
+            //this.currentUser = new User()
+            //{
+            //    Email = "ninja@ninja.com",
+            //    Username = "Ninja",
+            //    Password = "123456",
+            //    FirstNameEn = "FirstName",
+            //    LastNameEn = "LastName"
+            //};
+
+            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()
