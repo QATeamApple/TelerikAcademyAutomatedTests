@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,7 @@
     <Compile Include="Pages\MainPage\MainPage.cs" />
     <Compile Include="Pages\MainPage\MainPageMap.cs" />
     <Compile Include="Pages\MainPage\MainPageValidator.cs" />
+    <Compile Include="Pages\UIPages\Exams\DownloadLatestExamVersion.cs" />
     <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPage.cs" />
     <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPageMap.cs" />
     <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPageValidator.cs" />

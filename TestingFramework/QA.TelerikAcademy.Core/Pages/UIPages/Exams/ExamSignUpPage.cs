@@ -1,11 +1,6 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.UI.Exams
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
+    using System.Windows.Forms;
     using ArtOfTest.WebAii.Core;
 
     public class ExamSignUpPage
@@ -36,6 +31,7 @@
         public void SignUpForAnExam()
         {
             this.Map.SignUp.Click();
+            Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Enter);
         }
     }
 }

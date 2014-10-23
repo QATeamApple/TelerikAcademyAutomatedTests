@@ -1,8 +1,10 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UI.Exams
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages
 {
     using ArtOfTest.WebAii.Core;
+    using QA.TelerikAcademy.Core.Pages.UI.Exams;
+    using System.Windows.Forms;
 
-    public class ExamPage
+    public class DownloadLatestExamVersion
     {
         public readonly string Url = @"http://test.telerikacademy.com/Courses/PracticalExams/UploadForm/22";
 
@@ -33,21 +35,11 @@
             this.Map.Upload.Click();
         }
 
-        public void UploadExamWithNoFile()
+        public void DownloadLatestExam()
         {
-            this.Map.Upload.Click();
-        }
-
-        public void UploadExamWithUnsupportedFormat()
-        {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Exam.pdf", 1000);
-            this.Map.Upload.Click();
-        }
-
-        public void UploadExamkWithBigSize()
-        {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\ExamBig.zip", 1000);
-            this.Map.Upload.Click();
+            this.Map.DownloadLatestExamClick.Click();
+            Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Enter);
+            Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Enter);
         }
     }
 }

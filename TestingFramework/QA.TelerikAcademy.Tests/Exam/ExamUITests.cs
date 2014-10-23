@@ -3,6 +3,7 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.UI.Exams;
+    using QA.TelerikAcademy.Core.Pages.UIPages;
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
 
@@ -16,6 +17,8 @@
         public ExamSignUpPage ExamSignUpPage { get; set; }
         
         public TestSignUpPage TestSignUpPage { get; set; }
+
+        public DownloadLatestExamVersion DownloadLatestExamPage { get; set; }
         
         public ExamPageValidator ExamPageValidator { get; set; }
 
@@ -24,6 +27,7 @@
             this.ExamPage = new ExamPage();
             this.ExamSignUpPage = new ExamSignUpPage();
             this.TestSignUpPage = new TestSignUpPage();
+            this.DownloadLatestExamPage = new DownloadLatestExamVersion();
             this.ExamPageValidator = new ExamPageValidator();
 
             this.currentUser = new User()
@@ -89,6 +93,14 @@
             this.ExamPage.Navigate();
             this.ExamPage.UploadExamkWithBigSize();
             this.ExamPageValidator.UploadExamWithBigSize();
+        }
+
+        [TestMethod]
+        public void DownloadLatestExamVersion()
+        {
+            this.DownloadLatestExamPage.Navigate();
+            this.DownloadLatestExamPage.UploadExam();
+            this.ExamPageValidator.UploadExam();
         }
     }
 }

@@ -33,7 +33,7 @@
         {
             get
             {
-                return this.Find.ByAttributes<HtmlInputSubmit>("value=Качете файл");
+                return this.Find.ById<HtmlInputSubmit>("SendButton");
             }
         }
 
@@ -68,6 +68,14 @@
             {
                 var mainContent = this.Find.ById<HtmlControl>("MainContent");
                 return mainContent.Find.ByAttributes<HtmlDiv>("class=importantMessageInfo");
+            }
+        }
+
+        public HtmlControl DownloadLatestExamClick
+        {
+            get
+            {
+                return this.Find.ByContent<HtmlAnchor>("Свали");
             }
         }
     }
