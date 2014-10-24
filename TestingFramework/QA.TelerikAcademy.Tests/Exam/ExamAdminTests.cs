@@ -9,8 +9,6 @@
     [TestClass]
     public class ExamAdminTests : BaseTest
     {
-        //private User currentUser;
-
         public ExamsPage ExamsPage { get; set; }
 
         public override void TestInit()
@@ -18,17 +16,6 @@
             this.ExamsPage = new ExamsPage();
 
             base.TestInit();
-
-            //this.currentUser = new User()
-            //{
-            //    Email = "ninja@ninja.com",
-            //    Username = "Ninja",
-            //    Password = "123456",
-            //    FirstNameEn = "FirstName",
-            //    LastNameEn = "LastName"
-            //};
-
-            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()
@@ -42,7 +29,7 @@
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
@@ -53,7 +40,7 @@
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("Front Test Geri");
             this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateCourseErrorMessage();
         }
 
@@ -64,7 +51,7 @@
             this.ExamsPage.Navigate();
             this.ExamsPage.SelectCourse("asdafasdasgasdadgasdaghasdagas");
             this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateInvalidCourseErrorMessage();
         }
 
@@ -76,7 +63,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("1");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
@@ -88,7 +75,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("255");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
@@ -100,7 +87,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("256");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
@@ -112,7 +99,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("-1");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
@@ -124,7 +111,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("0");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
@@ -136,7 +123,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("23123125123125123125123123");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
 
             // add asserttextequal for input box
@@ -149,7 +136,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("asdasd");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
@@ -160,7 +147,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("!@#!@#%*&^#!@^^&$#^!*@#");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
@@ -171,7 +158,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName("shalalallalashd2312");
             this.ExamsPage.SelectGrade("8");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateUserErrorMessage();
         }
 
@@ -182,7 +169,7 @@
             this.ExamsPage.SelectCourse("TeamAppleCourse");
             this.ExamsPage.SelectUserName(this.CurrentUser);
             this.ExamsPage.SelectGrade("254");
-            this.ExamsPage.UploadExam("C:\\TestFiles\\EmptyExam.zip");
+            this.ExamsPage.UploadExam(this.FullPath + "EmptyExam.zip");
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
     }

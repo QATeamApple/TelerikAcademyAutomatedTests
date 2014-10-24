@@ -1,6 +1,7 @@
 ﻿namespace QA.UI.TestingFramework.Core
 {
     using System;
+    using System.IO;
     using ArtOfTest.WebAii.Core;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
@@ -10,6 +11,8 @@
     public class BaseTest
     {
         public User CurrentUser { get; set; }
+
+        public string FullPath { get; set; }
 
         public Browser Browser
         {
@@ -21,6 +24,8 @@
 
         public virtual void TestInit()
         {
+            this.FullPath = Path.GetFullPath("../../../Resoures/TestFiles/");
+
             this.CurrentUser = new User()
             {
                 Email = "ninja@ninja.com",
