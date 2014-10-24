@@ -2,6 +2,7 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
+    using QA.TelerikAcademy.Core.Pages;
     using QA.TelerikAcademy.Core.Pages.AdminPage.Homework;
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
