@@ -27,9 +27,9 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void UploadExam()
+        public void UploadExam(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Exam.zip", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
@@ -38,15 +38,15 @@
             this.Map.Upload.Click();
         }
 
-        public void UploadExamWithUnsupportedFormat()
+        public void UploadExamWithUnsupportedFormat(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Exam.pdf", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
-        public void UploadExamkWithBigSize()
+        public void UploadExamkWithBigSize(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\ExamBig.zip", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
     }

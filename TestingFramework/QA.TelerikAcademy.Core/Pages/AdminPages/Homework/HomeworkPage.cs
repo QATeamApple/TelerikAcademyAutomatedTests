@@ -29,12 +29,12 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void UploadHomework(User user)
+        public void UploadHomework(User user, string filePath)
         {
             this.Map.SelectCourse("TeamAppleCourse");
             this.Map.SelectLecture("Lecture 1");
             this.Map.Username.Text = user.Username;
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Homework.zip", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 

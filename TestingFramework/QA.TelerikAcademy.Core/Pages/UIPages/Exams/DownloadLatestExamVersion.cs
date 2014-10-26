@@ -29,9 +29,9 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void UploadExam()
+        public void UploadExam(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Exam.zip", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 

@@ -28,9 +28,9 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void ReUploadHomework()
+        public void ReUploadHomework(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Homework.zip", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
@@ -39,15 +39,15 @@
             this.Map.Upload.Click();
         }
 
-        public void ReUploadHomeworkWithUnsupportedFormat()
+        public void ReUploadHomeworkWithUnsupportedFormat(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\Homework.pdf", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
-        public void ReUploadHomeworkWithBigSize()
+        public void ReUploadHomeworkWithBigSize(string filePath)
         {
-            this.Map.SelectFile.Upload(@"C:\TestFiles\HomeworkBig.zip", 1000);
+            this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 

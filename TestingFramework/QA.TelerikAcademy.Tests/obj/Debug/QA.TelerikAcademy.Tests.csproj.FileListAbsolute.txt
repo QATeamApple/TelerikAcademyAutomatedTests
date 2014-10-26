@@ -7,3 +7,12 @@ C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.Teler
 C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.csprojResolveAssemblyReference.cache
 C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.dll
 C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.pdb
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Tests.dll
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Tests.pdb
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.UI.TestingFramework.Core.dll
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Core.pdb
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.UI.TestingFramework.Core.pdb
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.dll
+C:\Users\kirilt\Documents\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.pdb

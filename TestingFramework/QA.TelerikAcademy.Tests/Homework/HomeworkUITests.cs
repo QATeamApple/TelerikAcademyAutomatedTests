@@ -48,7 +48,7 @@
         public void UploadHomework()
         {
             this.UploadHomeworkPage.Navigate();
-            this.UploadHomeworkPage.UploadHomework();
+            this.UploadHomeworkPage.UploadHomework(this.FullPath + "Homework.zip");
             this.UploadHomeworkPage.Validator.UploadHomework();
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -66,7 +66,7 @@
         public void UploadHomeworkWithUnsupportedFormat()
         {
             this.UploadHomeworkPage.Navigate();
-            this.UploadHomeworkPage.UploadHomeworkWithUnsupportedFormat();
+            this.UploadHomeworkPage.UploadHomeworkWithUnsupportedFormat(this.FullPath + "Homework.pdf");
             this.UploadHomeworkPage.Validator.UploadHomeworkWithUnsupportedFormat();
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -75,7 +75,7 @@
         public void UploadHomeworkWithBigFile()
         {
             this.UploadHomeworkPage.Navigate();
-            this.UploadHomeworkPage.UploadHomeworkWithBigSize();
+            this.UploadHomeworkPage.UploadHomeworkWithBigSize(this.FullPath + "HomeworkBig.zip");
             this.UploadHomeworkPage.Validator.UploadHomeworkWithBigSize();
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -84,7 +84,7 @@
         public void ReUploadHomework()
         {
             this.ReUploadHomeworkPage.Navigate();
-            this.ReUploadHomeworkPage.ReUploadHomework();
+            this.ReUploadHomeworkPage.ReUploadHomework(this.FullPath + "Homework.zip");
             this.ReUploadHomeworkPage.Validator.ReUploadHomework();
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -102,7 +102,7 @@
         public void ReUploadHomeworkWithUnsupportedFormat()
         {
             this.ReUploadHomeworkPage.Navigate();
-            this.ReUploadHomeworkPage.ReUploadHomeworkWithUnsupportedFormat();
+            this.ReUploadHomeworkPage.ReUploadHomeworkWithUnsupportedFormat(this.FullPath + "Homework.pdf");
             this.ReUploadHomeworkPage.Validator.ReUploadHomeworkWithUnsupportedFormat();
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -111,7 +111,7 @@
         public void ReUploadHomeworkWithBigFile()
         {
             this.ReUploadHomeworkPage.Navigate();
-            this.ReUploadHomeworkPage.ReUploadHomeworkWithBigSize();
+            this.ReUploadHomeworkPage.ReUploadHomeworkWithBigSize(this.FullPath + "HomeworkBig.zip");
             this.ReUploadHomeworkPage.Validator.ReUploadHomeworkWithBigSize();
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
