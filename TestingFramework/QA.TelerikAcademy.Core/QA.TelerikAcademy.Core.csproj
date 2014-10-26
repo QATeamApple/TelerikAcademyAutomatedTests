@@ -55,6 +55,9 @@
     <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
     <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
     <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamNameSuggestions\TeamNameSuggestionsPage.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamNameSuggestions\TeamNameSuggestionsPageMap.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamNameSuggestions\TeamNameSuggestionsPageValidator.cs" />
     <Compile Include="Pages\LoginPage\LoginPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
