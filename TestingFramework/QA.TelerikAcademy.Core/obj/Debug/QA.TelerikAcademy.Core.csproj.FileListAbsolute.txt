@@ -1,0 +1,7 @@
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.UI.TestingFramework.Core.dll
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.UI.TestingFramework.Core.pdb
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb

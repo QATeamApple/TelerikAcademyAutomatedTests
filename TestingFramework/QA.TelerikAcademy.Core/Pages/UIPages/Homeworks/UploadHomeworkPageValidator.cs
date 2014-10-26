@@ -15,7 +15,7 @@
 
         public void UploadHomework()
         {
-            this.Map.Result.AssertTextEquals("Домашното ви е изпратено успешно!");
+            this.Map.Success.AssertTextEquals("Домашното ви е изпратено успешно!");
         }
 
         public void UploadHomeworkWithNoFile()

@@ -1,0 +1,5 @@
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.UI.TestingFramework.Core.dll
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.UI.TestingFramework.Core.pdb
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.dll
+C:\Users\kirilt\Documents\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.pdb

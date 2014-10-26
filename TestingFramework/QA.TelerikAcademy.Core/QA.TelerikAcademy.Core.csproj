@@ -74,6 +74,9 @@
     <Compile Include="Pages\UIPages\Exams\ExamPage\ExamPageValidator.cs" />
     <Compile Include="Pages\UIPages\Exams\ExamSignUpPage.cs" />
     <Compile Include="Pages\UIPages\Exams\TestSignUpPage.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\EvaluateHomeworkPage.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\EvaluateHomeworkPageMap.cs" />
+    <Compile Include="Pages\UIPages\Homeworks\EvaluateHomeworkPageValidator.cs" />
     <Compile Include="Pages\UIPages\Homeworks\ReUploadHomeworkPage.cs" />
     <Compile Include="Pages\UIPages\Homeworks\ReUploadHomeworkPageMap.cs" />
     <Compile Include="Pages\UIPages\Homeworks\ReUploadHomeworkPageValidator.cs" />

@@ -21,7 +21,7 @@
             }
         }
 
-        public HtmlDiv Result
+        public HtmlDiv Success
         {
             get
             {
