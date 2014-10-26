@@ -44,7 +44,7 @@
         public void UploadStudentHomework()
         {
             this.HomeworkPage.Navigate();
-            this.HomeworkPage.UploadHomework(this.CurrentUser, this.FullPath + "Homework.zip");
+            this.HomeworkPage.UploadHomework(this.CurrentUser, this.TestFilePath);
             this.HomeworkPageValidator.UploadHomework(this.CurrentUser);
             this.HomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -54,7 +54,7 @@
        {
            this.HomeworkPage.Navigate();
            this.HomeworkPage.GradeHomework("20");
-           this.HomeworkPage.UploadHomework(this.CurrentUser, this.FullPath + "Homework.zip");
+           this.HomeworkPage.UploadHomework(this.CurrentUser, this.TestFilePath);
            this.HomeworkPageValidator.GradeIsGreaterThanAllowed(this.CurrentUser);
        }
     }

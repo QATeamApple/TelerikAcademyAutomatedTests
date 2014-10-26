@@ -12,7 +12,11 @@
     {
         public User CurrentUser { get; set; }
 
-        public string FullPath { get; set; }
+        public string TestFilePath { get; set; }
+
+        public string TestFileUnsupportedPath { get; set; }
+
+        public string TestFileBigPath { get; set; }
 
         public Browser Browser
         {
@@ -24,7 +28,9 @@
 
         public virtual void TestInit()
         {
-            this.FullPath = Path.GetFullPath("../../../Resoures/TestFiles/");
+            this.TestFilePath = Path.GetFullPath("../../../Resoures/TestFiles/TestFile.zip");
+            this.TestFileUnsupportedPath = Path.GetFullPath("../../../Resoures/TestFiles/TestFileUnsupported.pdf");
+            this.TestFileBigPath = Path.GetFullPath("../../../Resoures/TestFiles/TestFileBig.zip");
 
             this.CurrentUser = new User()
             {

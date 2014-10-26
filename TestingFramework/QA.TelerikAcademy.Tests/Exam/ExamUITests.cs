@@ -69,7 +69,7 @@
         public void UploadExam()
         {
             this.ExamPage.Navigate();
-            this.ExamPage.UploadExam(this.FullPath + "Exam.zip");
+            this.ExamPage.UploadExam(this.TestFilePath);
             this.ExamPageValidator.UploadExam();
         }
 
@@ -85,7 +85,7 @@
         public void UploadExamWithUnsupportedFormat()
         {
             this.ExamPage.Navigate();
-            this.ExamPage.UploadExamWithUnsupportedFormat(this.FullPath + "Exam.pdf");
+            this.ExamPage.UploadExamWithUnsupportedFormat(this.TestFileUnsupportedPath);
             this.ExamPageValidator.UploadExamWithUnsupportedFormat();
         }
 
@@ -93,7 +93,7 @@
         public void UploadExamWithBigFile()
         {
             this.ExamPage.Navigate();
-            this.ExamPage.UploadExamkWithBigSize(this.FullPath + "ExamBig.zip");
+            this.ExamPage.UploadExamkWithBigSize(this.TestFileBigPath);
             this.ExamPageValidator.UploadExamWithBigSize();
         }
 
@@ -101,7 +101,7 @@
         public void DownloadLatestExamVersion()
         {
             this.DownloadLatestExamPage.Navigate();
-            this.DownloadLatestExamPage.UploadExam(this.FullPath + "Exam.zip");
+            this.DownloadLatestExamPage.UploadExam(this.TestFilePath);
             this.ExamPageValidator.UploadExam();
         }
     }
