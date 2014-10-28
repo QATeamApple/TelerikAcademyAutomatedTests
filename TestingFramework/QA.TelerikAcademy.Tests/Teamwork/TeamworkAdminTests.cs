@@ -35,7 +35,7 @@
             this.TeamNameSuggestionsPage.Navigate();
             this.TeamNameSuggestionsPage.ValidateAddedType("typeExample");
 
-            //TODO Delete
+            this.TeamNameSuggestionsPage.Delete();
         }
 
         [TestMethod]

@@ -51,6 +51,12 @@
             InsertText("Apples");
         }
 
+        public void Delete()
+        {
+            this.Map.Delete.Click();
+            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+        }
+
         private void InsertText(string teamworkType)
         {
             this.Map.TypeText.MouseClick();

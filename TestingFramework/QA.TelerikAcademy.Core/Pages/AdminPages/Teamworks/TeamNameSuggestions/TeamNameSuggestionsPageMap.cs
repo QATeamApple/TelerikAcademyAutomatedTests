@@ -28,6 +28,16 @@
             }
         }
 
+        public HtmlAnchor Delete
+        {
+            get
+            {
+                var row = this.NewType.Parent<HtmlTableRow>();
+
+                return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-delete");
+            }
+        }
+
         public HtmlAnchor UndoEdit
         {
             get
