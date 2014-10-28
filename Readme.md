@@ -28,7 +28,7 @@ Telerik Academy Automated Tests
    
     <tr><th rowspan=9 colspan=2>User</th><td>Homework (Teamwork) Upload</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Homework Evaluation</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Homework Comments and Grading</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>Homework Comments & Grading</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Sign-up</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Upload</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Evaluation</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>

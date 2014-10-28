@@ -1,5 +1,7 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamNameSuggestions
 {
+    using System.Windows.Forms;
+
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.Win32.Dialogs;
     using QA.UI.TestingFramework.Core.Data;
@@ -53,8 +55,14 @@
 
         public void Delete()
         {
+            AlertDialog dialog = AlertDialog.CreateAlertDialog(Manager.Current.ActiveBrowser, DialogButton.OK);
+            Manager.Current.DialogMonitor.AddDialog(dialog);
+            Manager.Current.DialogMonitor.Start();
+
             this.Map.Delete.Click();
-            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+
+            Manager.Current.DialogMonitor.RemoveDialog(dialog);
+            Manager.Current.DialogMonitor.Stop();
         }
 
         private void InsertText(string teamworkType)
