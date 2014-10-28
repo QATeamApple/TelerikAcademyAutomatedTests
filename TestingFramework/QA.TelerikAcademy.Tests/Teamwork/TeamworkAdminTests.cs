@@ -32,6 +32,7 @@
         {
             this.TeamNameSuggestionsPage.Navigate();
             this.TeamNameSuggestionsPage.AddTeamworkType("typeExample");
+            this.TeamNameSuggestionsPage.Navigate();
             this.TeamNameSuggestionsPage.ValidateAddedType("typeExample");
 
             //TODO Delete
