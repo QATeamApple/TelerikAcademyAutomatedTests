@@ -30,9 +30,37 @@
         }
 
         // add some properties from the map
-        public void EditTeamworkType(User user)
+        public void AddTeamworkType(string teamworkType)
+        {
+            this.Map.Add.Click();
+            InsertText(teamworkType);
+
+        }
+
+        public void EditTeamworkType(string newteamworkType)
         {
             this.Map.Edit.Click();
+            this.Map.TypeText.Text = "";
+            InsertText(newteamworkType);
+        }
+
+        public void UndoEdit()
+        {
+            this.Map.UndoEdit.Click();
+            this.Map.TypeText.Text = "";
+            InsertText("Apples");
+        }
+
+        private void InsertText(string teamworkType)
+        {
+            this.Map.TypeText.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(teamworkType);
+            this.Map.Update.MouseClick();
+        }
+
+        public void ValidateAddedType(string type)
+        {
+            this.Validator.ConfirmType(type);
         }
     }
 }

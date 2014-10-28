@@ -28,10 +28,24 @@
         }
 
         [TestMethod]
+        public void AddTeamworkType()
+        {
+            this.TeamNameSuggestionsPage.Navigate();
+            this.TeamNameSuggestionsPage.AddTeamworkType("typeExample");
+            this.TeamNameSuggestionsPage.ValidateAddedType("typeExample");
+
+            //TODO Delete
+        }
+
+        [TestMethod]
         public void EditTeamworkType()
         {
             this.TeamNameSuggestionsPage.Navigate();
-            this.TeamNameSuggestionsPage.EditTeamworkType(this.CurrentUser);
+            this.TeamNameSuggestionsPage.EditTeamworkType("typeExample");
+            this.TeamNameSuggestionsPage.Navigate();
+            this.TeamNameSuggestionsPage.ValidateAddedType("typeExample");
+
+            this.TeamNameSuggestionsPage.UndoEdit();
         }
     }
 }

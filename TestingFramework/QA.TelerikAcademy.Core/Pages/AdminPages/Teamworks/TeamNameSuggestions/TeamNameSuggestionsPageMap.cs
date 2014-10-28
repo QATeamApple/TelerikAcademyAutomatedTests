@@ -10,11 +10,63 @@
 
     public class TeamNameSuggestionsPageMap : BaseElementMap
     {
-        public HtmlInputSubmit Edit
+        public HtmlAnchor Add
         {
             get
             {
-                return this.Find.ByExpression<HtmlInputSubmit>("//*[@id='DataGrid']/table/tbody/tr[1]/td[4]/a/span".Xpath());
+                return this.Find.ByContent<HtmlAnchor>("Добавяне на тип");
+            }
+        }
+
+        public HtmlAnchor Edit
+        {
+            get
+            {
+                var row = this.Type.Parent<HtmlTableRow>();
+
+                return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-edit");
+            }
+        }
+
+        public HtmlAnchor UndoEdit
+        {
+            get
+            {
+                var row = this.NewType.Parent<HtmlTableRow>();
+
+                return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-edit");
+            }
+        }
+
+        public HtmlTableCell Type
+        {
+            get
+            {
+                return this.Find.ByContent<HtmlTableCell>("Apples");
+            }
+        }
+
+        public HtmlTableCell NewType
+        {
+            get
+            {
+                return this.Find.ByContent<HtmlTableCell>("typeExample");
+            }
+        }
+
+        public HtmlInputText TypeText
+        {
+            get
+            {
+                return this.Find.ById<HtmlInputText>("TeamNameSuggestionTypeName");
+            }
+        }
+
+        public HtmlAnchor Update
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-update");
             }
         }
     }
