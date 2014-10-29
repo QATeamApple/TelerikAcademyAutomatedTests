@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UI.Homework
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homework
 {
     using ArtOfTest.WebAii.Core;
     using QA.UI.TestingFramework.Core.Data;

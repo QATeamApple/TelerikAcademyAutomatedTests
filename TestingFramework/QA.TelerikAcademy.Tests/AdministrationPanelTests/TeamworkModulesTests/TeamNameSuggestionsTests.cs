@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Tests.Teamwork
+﻿namespace QA.TelerikAcademy.Tests.AdministrationPanelTests.TeamworkModulesTests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;

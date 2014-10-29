@@ -2,24 +2,23 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
-    using QA.TelerikAcademy.Core.Pages.UI.Exams;
     using QA.TelerikAcademy.Core.Pages.UIPages;
+    using QA.TelerikAcademy.Core.Pages.UIPages.Exams;
+    using QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamPage;
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
 
     [TestClass]
     public class ExamUITests : BaseTest
     {
-        //private User currentUser;
-
         public ExamPage ExamPage { get; set; }
 
         public ExamSignUpPage ExamSignUpPage { get; set; }
-        
+
         public TestSignUpPage TestSignUpPage { get; set; }
 
         public DownloadLatestExamVersion DownloadLatestExamPage { get; set; }
-        
+
         public ExamPageValidator ExamPageValidator { get; set; }
 
         public override void TestInit()
@@ -31,17 +30,6 @@
             this.ExamPageValidator = new ExamPageValidator();
 
             base.TestInit();
-
-            //this.currentUser = new User()
-            //{
-            //    Email = "ninja@ninja.com",
-            //    Username = "Ninja",
-            //    Password = "123456",
-            //    FirstNameEn = "FirstName",
-            //    LastNameEn = "LastName"
-            //};
-
-            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()

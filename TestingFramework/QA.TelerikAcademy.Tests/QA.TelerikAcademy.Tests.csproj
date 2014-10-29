@@ -69,7 +69,7 @@
     <Compile Include="AdministrationPanelTests\TeamworkModulesTests\TeamworksTests.cs" />
     <Compile Include="TEMP %28Old tests%29\Exam\ExamAdminTests.cs" />
     <Compile Include="TEMP %28Old tests%29\Exam\ExamUITests.cs" />
-    <Compile Include="TEMP %28Old tests%29\Homework\HomeworkAdminTests.cs" />
+    <Compile Include="AdministrationPanelTests\HomeworkModuleTests\HomeworkAdminTests.cs" />
     <Compile Include="TEMP %28Old tests%29\Homework\HomeworkUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TEMP %28Old tests%29\Teamwork\TeamworkAdminTests.cs" />
@@ -80,7 +80,7 @@
     <Compile Include="UserInterfaceTests\ExamUploadTests.cs" />
     <Compile Include="UserInterfaceTests\HomeworkCommentsAndGradingTests.cs" />
     <Compile Include="UserInterfaceTests\HomeworkEvaluationTests.cs" />
-    <Compile Include="UserInterfaceTests\HomeworkUploadTests.cs" />
+    <Compile Include="UserInterfaceTests\HomeworkAndTeamworkUploadTests.cs" />
     <Compile Include="UserInterfaceTests\TeammateGradingTests.cs" />
     <Compile Include="UserInterfaceTests\TeamworkSignupTests.cs" />
   </ItemGroup>

@@ -1,7 +1,8 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UI.Exams
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamPage
 {
     using System.Windows.Forms;
     using ArtOfTest.WebAii.Core;
+    using QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamPage;
 
     public class ExamSignUpPage
     {

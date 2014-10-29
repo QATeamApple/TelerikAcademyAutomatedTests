@@ -1,0 +1,9 @@
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Tests.dll
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Tests.pdb
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Core.dll
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.UI.TestingFramework.Core.dll
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Core.pdb
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.UI.TestingFramework.Core.pdb
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.csprojResolveAssemblyReference.cache
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.dll
+D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.pdb

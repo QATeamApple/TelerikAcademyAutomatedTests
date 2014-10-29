@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QA.UI.TestingFramework.Core;
-
-namespace QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamNameSuggestions
+﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamNameSuggestions
 {
+    using QA.UI.TestingFramework.Core;
+
     public class TeamNameSuggestionsPageValidator
     {
         public TeamNameSuggestionsPageMap Map

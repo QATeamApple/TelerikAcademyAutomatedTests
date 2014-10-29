@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UI.Exams
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamPage
 {
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
