@@ -1,0 +1,9 @@
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.csprojResolveAssemblyReference.cache
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Tests.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Tests.pdb
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Core.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.UI.TestingFramework.Core.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.TelerikAcademy.Core.pdb
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\bin\Debug\QA.UI.TestingFramework.Core.pdb
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Tests\obj\Debug\QA.TelerikAcademy.Tests.pdb

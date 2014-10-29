@@ -1,0 +1,6 @@
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.UI.TestingFramework.Core.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.UI.TestingFramework.Core.pdb
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.TelerikAcademy.Core.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.csprojResolveAssemblyReference.cache
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.dll
+D:\Vanina\GitHub\PersonalProjects\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.pdb
