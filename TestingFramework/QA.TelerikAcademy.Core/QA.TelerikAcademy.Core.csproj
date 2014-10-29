@@ -52,6 +52,7 @@
     <Compile Include="Pages\AdminPages\Exams\ExamsPage.cs" />
     <Compile Include="Pages\AdminPages\Exams\ExamsPageMap.cs" />
     <Compile Include="Pages\AdminPages\Exams\ExamsPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamworkAnswer.cs" />
     <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
     <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
     <Compile Include="Pages\AdminPages\Teamworks\TeamMemberSuggestions\TeamMemberSuggestionsPageValidator.cs" />

@@ -1,10 +1,8 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Teamwork.TeamMemberSuggestions
 {
-    using System.Windows.Forms;
-
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.Win32.Dialogs;
-    using QA.UI.TestingFramework.Core.Data;
+    using QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamMemberSuggestions;
 
     public class TeamMemberSuggestionsPage
     {
@@ -31,49 +29,58 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        //public void AddTeamworkType(string teamworkType)
-        //{
-        //    this.Map.Add.Click();
-        //    InsertText(teamworkType);
+        public void AddTeamworkSuggestion(string user)
+        {
+            this.Map.Add.Click();
 
-        //}
+            this.Map.TeamworkLabel.MouseClick();
+            this.Map.SelectTeamwork.MouseClick();
 
-        //public void EditTeamworkType(string newteamworkType)
-        //{
-        //    this.Map.Edit.Click();
-        //    this.Map.TypeText.Text = "";
-        //    InsertText(newteamworkType);
-        //}
+            this.Map.Username.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(user);
 
-        //public void UndoEdit()
-        //{
-        //    this.Map.UndoEdit.Click();
-        //    this.Map.TypeText.Text = "";
-        //    InsertText("Apples");
-        //}
+            this.Map.Update.MouseClick();
+        }
 
-        //public void Delete()
-        //{
-        //    AlertDialog dialog = AlertDialog.CreateAlertDialog(Manager.Current.ActiveBrowser, DialogButton.OK);
-        //    Manager.Current.DialogMonitor.AddDialog(dialog);
-        //    Manager.Current.DialogMonitor.Start();
+        public void EditTeamworkSuggestion(TeamworkAnswer answer)
+        {
+            this.Map.Edit.Click();
 
-        //    this.Map.Delete.Click();
+            this.Map.AcceptedLabel.MouseClick();
 
-        //    Manager.Current.DialogMonitor.RemoveDialog(dialog);
-        //    Manager.Current.DialogMonitor.Stop();
-        //}
+            switch (answer)
+            {
+                case TeamworkAnswer.NotAnswered:
+                    this.Map.SelectNotAnswered.MouseClick();
+                    break;
+                case TeamworkAnswer.Accepted:
+                    this.Map.SelectAccepted.MouseClick();
+                    break;
+                case TeamworkAnswer.Rejected:
+                    this.Map.SelectRejected.MouseClick();
+                    break;
+                default:
+                    break;
+            }
 
-        //private void InsertText(string teamworkType)
-        //{
-        //    this.Map.TypeText.MouseClick();
-        //    Manager.Current.Desktop.KeyBoard.TypeText(teamworkType);
-        //    this.Map.Update.MouseClick();
-        //}
+            this.Map.Update.MouseClick();
+        }
 
-        //public void ValidateAddedType(string type)
-        //{
-        //    this.Validator.ConfirmType(type);
-        //}
+        public void Delete()
+        {
+            AlertDialog dialog = AlertDialog.CreateAlertDialog(Manager.Current.ActiveBrowser, DialogButton.OK);
+            Manager.Current.DialogMonitor.AddDialog(dialog);
+            Manager.Current.DialogMonitor.Start();
+
+            this.Map.Delete.Click();
+
+            Manager.Current.DialogMonitor.RemoveDialog(dialog);
+            Manager.Current.DialogMonitor.Stop();
+        }
+
+        public void ValidateAddedTeamwork(string teamwork)
+        {
+            this.Validator.ConfirmTeamwork(teamwork);
+        }
     }
 }

@@ -36,7 +36,6 @@
         {
             this.Map.Add.Click();
             InsertText(teamworkType);
-
         }
 
         public void EditTeamworkType(string newteamworkType)
