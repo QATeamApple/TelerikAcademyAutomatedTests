@@ -1,6 +1,5 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.LoginPage
+﻿namespace QA.TelerikAcademy.Core.Pages.MainPage
 {
-    using QA.TelerikAcademy.Core.Pages.MainPage;
     using QA.UI.TestingFramework.Core;
 
     public class MainPageValidator
@@ -13,7 +12,6 @@
             }
         }
 
-        #region Teamwork
         public void TeamworkAccepted()
         {
             this.Map.TeamworkAccepted.AssertTextEquals("да  участвате");
@@ -23,6 +21,5 @@
         {
             this.Map.TeamworkRejected.AssertTextEquals("да не участвате");
         }
-        #endregion
     }
 }

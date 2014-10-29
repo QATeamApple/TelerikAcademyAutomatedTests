@@ -72,8 +72,6 @@
     <Compile Include="TEMP %28Old tests%29\Homework\HomeworkAdminTests.cs" />
     <Compile Include="TEMP %28Old tests%29\Homework\HomeworkUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TEMP %28Old tests%29\Teamwork\TeamworkAdminTests.cs" />
-    <Compile Include="TEMP %28Old tests%29\Teamwork\TeamworkUITests.cs" />
     <Compile Include="UserInterfaceTests\ExamEvaluationTests.cs" />
     <Compile Include="UserInterfaceTests\ExamResultsTests.cs" />
     <Compile Include="UserInterfaceTests\ExamSignupTests.cs" />

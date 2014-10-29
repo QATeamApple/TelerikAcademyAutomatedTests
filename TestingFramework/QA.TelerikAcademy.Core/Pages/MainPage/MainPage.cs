@@ -2,8 +2,8 @@
 {
     using ArtOfTest.WebAii.Core;
     using QA.UI.TestingFramework.Core.Contracts;
-    
-    public class MainPage : IMain
+
+    public class MainPage
     {
         public readonly string MainUrl = @"http://test.telerikacademy.com";
 
@@ -15,7 +15,19 @@
             }
         }
 
-        #region Teamwork
+        public MainPageValidator Validator
+        {
+            get
+            {
+                return new MainPageValidator();
+            }
+        }
+
+        public void Navigate()
+        {
+            Manager.Current.ActiveBrowser.NavigateTo(this.MainUrl);
+        }
+
         public void SelectTeamwork(bool accept)
         {
             this.Map.SelectTeamwork.Click();
@@ -48,6 +60,17 @@
         {
             // TODO
         }
-        #endregion
+
+        public void ValidateAcceptedTeamwork(bool isAccepted)
+        {
+            if (isAccepted)
+            {
+                this.Validator.TeamworkAccepted();
+            }
+            else
+            {
+                this.Validator.TeamworkRejected();
+            }
+        }
     }
 }
