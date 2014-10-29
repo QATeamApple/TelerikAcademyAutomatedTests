@@ -5,7 +5,6 @@
 
     public class MainPageMap : BaseElementMap
     {
-        #region Teamwork
         public HtmlAnchor SelectTeamwork
         {
             get
@@ -45,6 +44,5 @@
                 return this.Find.ByContent<HtmlControl>("да не участвате");
             }
         }
-        #endregion
     }
 }
