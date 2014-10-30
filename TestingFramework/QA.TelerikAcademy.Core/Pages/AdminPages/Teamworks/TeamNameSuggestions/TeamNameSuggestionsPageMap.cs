@@ -67,6 +67,14 @@
             }
         }
 
+        public HtmlAnchor Cancel
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-cancel");
+            }
+        }
+
         public HtmlAnchor Update
         {
             get
