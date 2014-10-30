@@ -52,34 +52,11 @@
             }
         }
 
-        public HtmlListItem SelectNotAnswered
+        public HtmlListItem Answer(int number)
         {
-            get
-            {
-                var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[0];
+            var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[number];
 
-                return ul.As<HtmlListItem>();
-            }
-        }
-
-        public HtmlListItem SelectAccepted
-        {
-            get
-            {
-                var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[1];
-
-                return ul.As<HtmlListItem>();
-            }
-        }
-
-        public HtmlListItem SelectRejected
-        {
-            get
-            {
-                var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[2];
-
-                return ul.As<HtmlListItem>();
-            }
+            return ul.As<HtmlListItem>();
         }
 
         public HtmlInputText Username

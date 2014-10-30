@@ -49,6 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\Course.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\ExportResultsPage.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\ExportResultsPageMap.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\ExportResultsPageValidator.cs" />
     <Compile Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\ExamPage\ExamsPage.cs" />
     <Compile Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\ExamPage\ExamsPageMap.cs" />
     <Compile Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\ExamPage\ExamsPageValidator.cs" />
@@ -102,7 +106,6 @@
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForPracticalExam\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForTestExam\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\Bonuses\" />
-    <Folder Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\Helpers\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\HomeworkEvaluationReactions\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\HomeworkEvaluation\" />

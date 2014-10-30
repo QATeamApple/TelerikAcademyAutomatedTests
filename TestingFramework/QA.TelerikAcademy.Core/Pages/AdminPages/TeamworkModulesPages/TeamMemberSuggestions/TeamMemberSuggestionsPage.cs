@@ -54,13 +54,13 @@
             switch (answer)
             {
                 case TeamworkAnswer.NotAnswered:
-                    this.Map.SelectNotAnswered.MouseClick();
+                    this.Map.Answer(0).MouseClick();
                     break;
                 case TeamworkAnswer.Accepted:
-                    this.Map.SelectAccepted.MouseClick();
+                    this.Map.Answer(1).MouseClick();
                     break;
                 case TeamworkAnswer.Rejected:
-                    this.Map.SelectRejected.MouseClick();
+                    this.Map.Answer(2).MouseClick();
                     break;
                 default:
                     break;
