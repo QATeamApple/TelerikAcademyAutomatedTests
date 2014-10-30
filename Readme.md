@@ -6,7 +6,7 @@ Telerik Academy Automated Tests
     
     <tr><th rowspan=20>Admin</th><th rowspan=13>Evaluation</th><td>Practical Exams</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Practical Exam Files</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Practical Exam Evaluations</td><td>13</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>Practical Exam Evaluations</td><td>13</td><td>10</td><td>3</td><td>3</td></tr>
     <tr><td>Test Exams</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Students Records</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Export Results</td><td>21</td><td>0</td><td>0</td><td>0</td></tr>
@@ -15,8 +15,8 @@ Telerik Academy Automated Tests
     <tr><td>Helpers</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Homework Statistics</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Homework Evaluation Reactions</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Add Students for Practical Exam</td><td>13</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Add Students for Test Exam</td><td>13</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>Add Students for Practical Exam</td><td>13</td><td>10</td><td>3</td><td>0</td></tr>
+    <tr><td>Add Students for Test Exam</td><td>13</td><td>9</td><td>4</td><td>0</td></tr>
     
     <tr><th rowspan=7>Teamwork</th><td>Teamworks</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Team Member Suggestions</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
