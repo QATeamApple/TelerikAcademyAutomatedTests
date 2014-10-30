@@ -36,7 +36,7 @@ Telerik Academy Automated Tests
     <tr><td>Teamwork Sign-up</td><td>3</td><td>3</td><td>0</td><td>0</td></tr>
     <tr><td>Teammate Grading</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 
-    <tr><th colspan=3>Total</th><th>95</th><th>5</th><th>0</th><th>20</th></tr>
+    <tr><th colspan=3>Total</th><th>95</th><th>34</th><th>10</th><th>20</th></tr>
 </table>
 
 <br/>
