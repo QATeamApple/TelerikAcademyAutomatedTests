@@ -35,7 +35,7 @@
             this.CurrentUser = new User()
             {
                 Email = "ninja@ninja.com",
-                Username = "Ninja",
+                Username = "kireto91",
                 Password = "123456",
                 FirstNameEn = "FirstName",
                 LastNameEn = "LastName"
