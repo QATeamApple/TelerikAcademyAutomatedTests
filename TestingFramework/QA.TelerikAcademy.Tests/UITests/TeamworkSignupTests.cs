@@ -40,6 +40,8 @@
         {
             this.MainPage.SelectTeamwork(false);
             this.MainPage.ValidateAcceptedTeamwork(false);
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
         }
 
         [TestMethod]
@@ -48,6 +50,8 @@
             this.MainPage.SelectTeamwork(true);
             this.MainPage.SwitchTeamworkDecision();
             this.MainPage.ValidateAcceptedTeamwork(false);
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
         }
     }
 }

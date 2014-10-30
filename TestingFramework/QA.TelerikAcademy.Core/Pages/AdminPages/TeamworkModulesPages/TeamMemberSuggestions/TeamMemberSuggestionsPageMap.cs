@@ -56,7 +56,9 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlListItem>("//html/body/div[5]/div/ul/li[1]".Xpath());
+                var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[0];
+
+                return ul.As<HtmlListItem>();
             }
         }
 
@@ -64,7 +66,9 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlListItem>("//html/body/div[5]/div/ul/li[2]".Xpath());
+                var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[1];
+
+                return ul.As<HtmlListItem>();
             }
         }
 
@@ -72,7 +76,9 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlListItem>("//html/body/div[5]/div/ul/li[3]".Xpath());
+                var ul = this.Find.ById<HtmlUnorderedList>("Accepted_listbox").ChildNodes[2];
+
+                return ul.As<HtmlListItem>();
             }
         }
 

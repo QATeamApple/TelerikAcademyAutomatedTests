@@ -49,7 +49,7 @@
             this.Map.Edit.Click();
 
             this.Map.AcceptedLabel.MouseClick();
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
             switch (answer)
             {
@@ -66,7 +66,7 @@
                     break;
             }
 
-            this.Map.Update.MouseClick();
+            this.Map.Update.Click();
         }
 
         public void Delete()
