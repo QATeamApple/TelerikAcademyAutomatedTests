@@ -5,6 +5,7 @@
     using QA.TelerikAcademy.Core.Pages.UIPages.Exams.UserProfilePage;
     using QA.UI.TestingFramework.Core;
 
+    [TestClass]
     public class ExamResultsTests : BaseTest
     {
         public UserProfilePage UserProfilePage { get; set; }

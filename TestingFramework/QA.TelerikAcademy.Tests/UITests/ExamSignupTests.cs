@@ -5,6 +5,7 @@
     using QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamSignUpPage;
     using QA.UI.TestingFramework.Core;
 
+    [TestClass]
     public class ExamSignupTests : BaseTest
     {
         public ExamSignUpPage ExamSignUpPage { get; set; }
@@ -24,6 +25,7 @@
             AcademyLoginProvider.Logout();
         }
 
+        [Owner("Vanina Nenova")]
         [TestMethod]
         public void SignUpForAnExam()
         {
