@@ -2,7 +2,7 @@ Telerik Academy Automated Tests
 ===============================
 
 <table>
-    <tr><th colspan=3>Module</th><th>Tests</th><th>...</th><th>...</th><th>...</th></tr>
+    <tr><th colspan=3>Module</th><th>Tests</th><th>Passed</th><th>Failed</th><th>Logged Bugs</th></tr>
     
     <tr><th rowspan=20>Admin</th><th rowspan=13>Evaluation</th><td>Practical Exams</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Practical Exam Files</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
@@ -21,20 +21,20 @@ Telerik Academy Automated Tests
     <tr><th rowspan=7>Teamwork</th><td>Teamworks</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Team Member Suggestions</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Import Teams</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Team Name Suggestions</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>Team Name Suggestions</td><td>2</td><td>2</td><td>0</td><td>0</td></tr>
     <tr><td>Import Team Names</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Team Member Evaluations</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Team Member All Evaluations</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
    
-    <tr><th rowspan=9 colspan=2>User</th><td>Homework (Teamwork) Upload</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Homework Evaluation</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th rowspan=9 colspan=2>User</th><td>Homework (Teamwork) Upload</td><td>8</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>Homework Evaluation</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Homework Comments & Grading</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Sign-up</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Upload</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Evaluation</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
     <tr><td>Exam Results</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>Teamwork Sign-up</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>Teamwork Sign-up</td><td>3</td><td>3</td><td>0</td><td>0</td></tr>
     <tr><td>Teammate Grading</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 
-    <tr><th colspan=3>Total</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+    <tr><th colspan=3>Total</th><th>20</th><th>5</th><th>0</th><th>0</th></tr>
 </table>
