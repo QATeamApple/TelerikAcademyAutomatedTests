@@ -24,6 +24,8 @@
             AcademyLoginProvider.Logout();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void ChartsExisting()
         {

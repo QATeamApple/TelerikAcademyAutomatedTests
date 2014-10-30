@@ -32,6 +32,8 @@
             AcademyLoginProvider.Logout();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomework()
         {
@@ -40,6 +42,8 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomework();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(3)]
         [TestMethod]
         public void EvaluateHomeworkWithLessSymbolsThanNeeded()
         {
@@ -48,6 +52,8 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomeworkWithLessSymbolsThanNeeded();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void EvaluateHomeworkWithNegativeMark()
         {
@@ -56,6 +62,8 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomeworkWithNegativeMark();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void EvaluateHomeworkWithMarkBiggerThanAllowed()
         {
@@ -64,6 +72,8 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomeworkWithMarkBiggerThanAllowed();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void EvaluateHomeworkWithoutMark()
         {
@@ -72,6 +82,8 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomeworkWithoutMark();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void EvaluateHomeworkWithoutComment()
         {
@@ -80,6 +92,8 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomeworkWithoutComment();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void EvaluateHomeworkWithNotNumberMark()
         {

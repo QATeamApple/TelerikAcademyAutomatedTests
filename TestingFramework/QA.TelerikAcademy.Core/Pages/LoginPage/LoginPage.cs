@@ -40,6 +40,7 @@
 
         public void TypeUsername(string username)
         {
+            this.Map.UserName.MouseClick();
             this.Map.UserName.Text = username;
         }
 
