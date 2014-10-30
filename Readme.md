@@ -43,8 +43,8 @@ Telerik Academy Automated Tests
 
 ### Statistics
 
-<p align="center"><img src="https://raw.githubusercontent.com/QATeamApple/Documents/master/Statistics/Bars.png" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/QATeamApple/Documents/master/Statistics/Bars.png" width="700" /></p>
 
-<br/><br/><br/>
+<br/><br/>
 
-<p align="center"><img src="https://raw.githubusercontent.com/QATeamApple/Documents/master/Statistics/Pie.png" width="600" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/QATeamApple/Documents/master/Statistics/Pie.png" width="700" /></p>
