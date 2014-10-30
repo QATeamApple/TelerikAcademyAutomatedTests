@@ -1,20 +1,11 @@
 ﻿namespace QA.TelerikAcademy.Tests.UITests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-<<<<<<< HEAD
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.HomeworkComment;
     using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.UploadHomework;
     using QA.UI.TestingFramework.Core;
-
-    [TestClass]
-    public class HomeworkCommentsAndGradingTests : BaseTest
-=======
-    using QA.UI.TestingFramework.Core;
-
-    [TestClass]
     class HomeworkCommentsAndGradingTests : BaseTest
->>>>>>> origin/master
     {
         public HomeworkCommentPage HomeworkCommentPage { get; set; }
 
