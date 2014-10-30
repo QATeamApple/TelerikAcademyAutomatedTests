@@ -1,24 +1,24 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamReUploadPage
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamUploadPage
 {
     using ArtOfTest.WebAii.Core;
 
-    public class ExamReUploadPage
+    public class ExamUploadPage
     {
         public readonly string Url = @"http://test.telerikacademy.com/Courses/PracticalExams/UploadForm/22";
 
-        public ExamReUploadPageMap Map
+        public ExamUploadPageMap Map
         {
             get
             {
-                return new ExamReUploadPageMap();
+                return new ExamUploadPageMap();
             }
         }
 
-        public ExamReUploadPageValidator Validator
+        public ExamUploadPageValidator Validator
         {
             get
             {
-                return new ExamReUploadPageValidator();
+                return new ExamUploadPageValidator();
             }
         }
 
@@ -27,24 +27,24 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void ReUploadExam(string filePath)
+        public void UploadExam(string filePath)
         {
             this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
-        public void ReUploadExamWithNoFile()
+        public void UploadExamWithNoFile()
         {
             this.Map.Upload.Click();
         }
 
-        public void ReUploadExamWithUnsupportedFormat(string filePath)
+        public void UploadExamWithUnsupportedFormat(string filePath)
         {
             this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
-        public void ReUploadExamkWithBigSize(string filePath)
+        public void UploadExamkWithBigSize(string filePath)
         {
             this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();

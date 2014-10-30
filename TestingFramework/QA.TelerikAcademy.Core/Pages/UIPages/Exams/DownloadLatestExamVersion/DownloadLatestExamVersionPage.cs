@@ -1,7 +1,6 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.DownloadLatestExamVersion
 {
     using ArtOfTest.WebAii.Core;
-    using QA.TelerikAcademy.Core.Pages.UIPages.Exams.DownloadLatestExamVersion;
     using System.Windows.Forms;
 
     public class DownloadLatestExamVersionPage

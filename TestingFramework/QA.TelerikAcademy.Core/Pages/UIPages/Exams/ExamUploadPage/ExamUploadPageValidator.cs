@@ -1,34 +1,34 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamReUploadPage
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamUploadPage
 {
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
 
-    public class ExamReUploadPageValidator
+    public class ExamUploadPageValidator
     {
-        public ExamReUploadPageMap Map
+        public ExamUploadPageMap Map
         {
             get
             {
-                return new ExamReUploadPageMap();
+                return new ExamUploadPageMap();
             }
         }
 
-        public void ReUploadExam()
+        public void UploadExam()
         {
             this.Map.UploadSuccessConfirmationMessage.AssertTextEquals("Файлът ви е изпратен успешно!");
         }
 
-        public void ReUploadExamWithNoFile()
+        public void UploadExamWithNoFile()
         {
             this.Map.ValidationError.AssertTextContains("Не сте прикачили файл!");
         }
 
-        public void ReUploadExamWithUnsupportedFormat()
+        public void UploadExamWithUnsupportedFormat()
         {
             this.Map.ValidationError.AssertTextContains("Невалиден формат на файла!");
         }
 
-        public void ReUploadExamWithBigSize()
+        public void UploadExamWithBigSize()
         {
             this.Map.ValidationError.AssertTextContains("Размерът на файла ви е по-голям от разрешения лимит от 32 MB");
         }
