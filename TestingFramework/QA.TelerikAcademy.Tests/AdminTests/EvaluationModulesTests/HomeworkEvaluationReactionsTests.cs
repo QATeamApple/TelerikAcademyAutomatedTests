@@ -1,6 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.AdminTests.EvaluationModulesTests
 {
-    public class HomeworkEvaluationReactionsTests
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using QA.UI.TestingFramework.Core;
+
+    [TestClass]
+    public class HomeworkEvaluationReactionsTests : BaseTest
     {
     }
 }

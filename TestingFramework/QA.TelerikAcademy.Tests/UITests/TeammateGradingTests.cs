@@ -1,6 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.UITests
 {
-    public class TeammateGradingTests
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using QA.UI.TestingFramework.Core;
+
+    [TestClass]
+    public class TeammateGradingTests : BaseTest
     {
     }
 }

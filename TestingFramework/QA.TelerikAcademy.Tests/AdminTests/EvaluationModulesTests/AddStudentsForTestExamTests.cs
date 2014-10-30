@@ -4,7 +4,6 @@
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.AdminPages.EvaluationModulesPages.AddStudentsForTestExam;
     using QA.UI.TestingFramework.Core;
-    using QA.UI.TestingFramework.Core.Data;
     using System.IO;
 
     [TestClass]
