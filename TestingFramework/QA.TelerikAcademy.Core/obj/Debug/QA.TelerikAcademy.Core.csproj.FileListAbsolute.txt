@@ -1,7 +1,0 @@
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.UI.TestingFramework.Core.dll
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\bin\Debug\QA.UI.TestingFramework.Core.pdb
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
-D:\TELERIK\GitHub\Repos\QATeamApple\TelerikAcademyAutomatedTests\TestingFramework\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb

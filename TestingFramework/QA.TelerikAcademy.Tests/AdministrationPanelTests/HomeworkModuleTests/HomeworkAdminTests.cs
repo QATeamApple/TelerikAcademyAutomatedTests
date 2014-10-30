@@ -10,8 +10,6 @@
     [TestClass]
     public class HomeworkAdminTests : BaseTest
     {
-        //private User currentUser;
-
         public HomeworkPage HomeworkPage { get; set; }
 
         public HomeworkPageValidator HomeworkPageValidator { get; set; }
@@ -22,17 +20,6 @@
             this.HomeworkPageValidator = new HomeworkPageValidator();
 
             base.TestInit();
-
-            //this.currentUser = new User()
-            //{
-            //    Email = "ninja@ninja.com",
-            //    Username = "Ninja",
-            //    Password = "123456",
-            //    FirstNameEn = "FirstName",
-            //    LastNameEn = "LastName"
-            //};
-
-            //AcademyLoginProvider.Instance.LoginUser(this.currentUser);
         }
 
         public override void TestCleanUp()
