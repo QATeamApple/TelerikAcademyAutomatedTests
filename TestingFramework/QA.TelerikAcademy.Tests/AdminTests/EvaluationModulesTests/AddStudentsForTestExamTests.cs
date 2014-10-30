@@ -1,15 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.AdminTests.EvaluationModulesTests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-<<<<<<< HEAD
-    using QA.UI.TestingFramework.Core;
-=======
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.AdminPages.EvaluationModulesPages.AddStudentsForTestExam;
     using QA.UI.TestingFramework.Core;
-    using QA.UI.TestingFramework.Core.Data;
     using System.IO;
->>>>>>> origin/master
 
     [TestClass]
     public class AddStudentsForTestExamTests : BaseTest
