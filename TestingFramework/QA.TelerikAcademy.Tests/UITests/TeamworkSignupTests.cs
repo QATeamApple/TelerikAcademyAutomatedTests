@@ -26,6 +26,8 @@
             AcademyLoginProvider.Logout();
         }
 
+        [Owner("Stanislav Iliev")]
+        [Priority(1)]
         [TestMethod]
         public void AcceptingAnOfferForTeamwork()
         {
@@ -35,6 +37,8 @@
             this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
         }
 
+        [Owner("Stanislav Iliev")]
+        [Priority(1)]
         [TestMethod]
         public void RejectingAnOfferForTeamwork()
         {
@@ -44,6 +48,8 @@
             this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
         }
 
+        [Owner("Stanislav Iliev")]
+        [Priority(3)]
         [TestMethod]
         public void ChangeTheChoiceForParticipationInTeamwork()
         {
