@@ -66,6 +66,9 @@
     <Compile Include="Pages\AdminPages\HomeworkModulePages\Homework\HomeworkPage.cs" />
     <Compile Include="Pages\AdminPages\HomeworkModulePages\Homework\HomeworkPageMap.cs" />
     <Compile Include="Pages\AdminPages\HomeworkModulePages\Homework\HomeworkPageValidator.cs" />
+    <Compile Include="Pages\UIPages\Exams\UserProfilePage\UserProfileMap.cs" />
+    <Compile Include="Pages\UIPages\Exams\UserProfilePage\UserProfilePage.cs" />
+    <Compile Include="Pages\UIPages\Exams\UserProfilePage\UserProfileValidator.cs" />
     <Compile Include="Pages\UIPages\MainPage\MainPage.cs" />
     <Compile Include="Pages\UIPages\MainPage\MainPageMap.cs" />
     <Compile Include="Pages\UIPages\MainPage\MainPageValidator.cs" />

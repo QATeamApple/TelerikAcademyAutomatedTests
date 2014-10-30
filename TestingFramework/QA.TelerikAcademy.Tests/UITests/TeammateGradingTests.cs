@@ -1,6 +1,6 @@
 ﻿namespace QA.TelerikAcademy.Tests.UITests
 {
-    class TeammateGradingTests
+    public class TeammateGradingTests
     {
     }
 }
