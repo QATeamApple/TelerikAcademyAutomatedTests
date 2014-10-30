@@ -2,7 +2,9 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
-    using QA.TelerikAcademy.Core.Pages.UIPages.Homework;
+    using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.EvaluateHomework;
+    using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.ReUploadHomework;
+    using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.UploadHomework;
     using QA.UI.TestingFramework.Core;
 
     [TestClass]

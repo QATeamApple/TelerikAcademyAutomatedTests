@@ -1,25 +1,25 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homework
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.UploadHomework
 {
     using ArtOfTest.WebAii.Core;
     using QA.UI.TestingFramework.Core.Data;
 
-    public class ReUploadHomeworkPage
+    public class UploadHomeworkPage
     {
-        public readonly string Url = @"http://test.telerikacademy.com/Courses/Homework/Submit/49";
+        public readonly string Url = @"http://test.telerikacademy.com/Courses/Homework/Submit/48";
 
-        public ReUploadHomeworkPageMap Map
+        public UploadHomeworkPageMap Map
         {
             get
             {
-                return new ReUploadHomeworkPageMap();
+                return new UploadHomeworkPageMap();
             }
         }
 
-        public ReUploadHomeworkPageValidator Validator
+        public UploadHomeworkPageValidator Validator
         {
             get
             {
-                return new ReUploadHomeworkPageValidator();
+                return new UploadHomeworkPageValidator();
             }
         }
 
@@ -28,24 +28,24 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void ReUploadHomework(string filePath)
+        public void UploadHomework(string filePath)
         {
             this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
-        public void ReUploadHomeworkWithNoFile()
+        public void UploadHomeworkWithNoFile()
         {
             this.Map.Upload.Click();
         }
 
-        public void ReUploadHomeworkWithUnsupportedFormat(string filePath)
+        public void UploadHomeworkWithUnsupportedFormat(string filePath)
         {
             this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();
         }
 
-        public void ReUploadHomeworkWithBigSize(string filePath)
+        public void UploadHomeworkWithBigSize(string filePath)
         {
             this.Map.SelectFile.Upload(filePath, 1000);
             this.Map.Upload.Click();

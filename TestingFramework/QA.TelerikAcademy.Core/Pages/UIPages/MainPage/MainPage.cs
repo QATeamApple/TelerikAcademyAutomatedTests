@@ -1,6 +1,7 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.MainPage
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.MainPage
 {
     using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.Win32.Dialogs;
     using QA.UI.TestingFramework.Core.Contracts;
 
     public class MainPage
@@ -54,11 +55,6 @@
             {
                 this.Map.RejectTeamwork.Click();
             }
-        }
-
-        public void DeleteTeamworkDecision()
-        {
-            // TODO
         }
 
         public void ValidateAcceptedTeamwork(bool isAccepted)

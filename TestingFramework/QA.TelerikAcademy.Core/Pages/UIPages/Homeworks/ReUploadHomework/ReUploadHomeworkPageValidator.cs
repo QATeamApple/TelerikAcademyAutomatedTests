@@ -1,34 +1,34 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homework
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.ReUploadHomework
 {
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
 
-    public class UploadHomeworkPageValidator
+    public class ReUploadHomeworkPageValidator
     {
-        public UploadHomeworkPageMap Map
+        public ReUploadHomeworkPageMap Map
         {
             get
             {
-                return new UploadHomeworkPageMap();
+                return new ReUploadHomeworkPageMap();
             }
         }
 
-        public void UploadHomework()
+        public void ReUploadHomework()
         {
             this.Map.Success.AssertTextEquals("Домашното ви е изпратено успешно!");
         }
 
-        public void UploadHomeworkWithNoFile()
+        public void ReUploadHomeworkWithNoFile()
         {
             this.Map.ValidationError.AssertTextContains("Не сте прикачили файл!");
         }
 
-        public void UploadHomeworkWithUnsupportedFormat()
+        public void ReUploadHomeworkWithUnsupportedFormat()
         {
             this.Map.ValidationError.AssertTextContains("Невалиден формат на файла!");
         }
 
-        public void UploadHomeworkWithBigSize()
+        public void ReUploadHomeworkWithBigSize()
         {
             this.Map.ValidationError.AssertTextContains("Размерът на файла ви е по-голям от разрешения лимит от 16 MB");
         }

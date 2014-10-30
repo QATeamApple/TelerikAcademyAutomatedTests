@@ -1,5 +1,7 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Teamwork.TeamMemberSuggestions
 {
+    using System.Threading;
+
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.Win32.Dialogs;
     using QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamMemberSuggestions;
@@ -47,6 +49,7 @@
             this.Map.Edit.Click();
 
             this.Map.AcceptedLabel.MouseClick();
+            Thread.Sleep(2000);
 
             switch (answer)
             {

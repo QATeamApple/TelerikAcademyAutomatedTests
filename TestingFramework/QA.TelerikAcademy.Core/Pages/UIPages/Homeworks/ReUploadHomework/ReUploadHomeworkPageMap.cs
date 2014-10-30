@@ -1,9 +1,9 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homework
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.ReUploadHomework
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
     using QA.UI.TestingFramework.Core;
 
-    public class UploadHomeworkPageMap : BaseElementMap
+    public class ReUploadHomeworkPageMap : BaseElementMap
     {
         public HtmlInputFile SelectFile
         {

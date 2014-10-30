@@ -10,12 +10,9 @@
      {
          public TeamNameSuggestionsPage TeamNameSuggestionsPage { get; set; }
 
-         public TeamNameSuggestionsPageValidator TeamNameSuggestionsPageValidator { get; set; }
-
          public override void TestInit()
          {
              this.TeamNameSuggestionsPage = new TeamNameSuggestionsPage();
-             this.TeamNameSuggestionsPageValidator = new TeamNameSuggestionsPageValidator();
              base.TestInit();
          }
 

@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.MainPage
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.MainPage
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
     using QA.UI.TestingFramework.Core;

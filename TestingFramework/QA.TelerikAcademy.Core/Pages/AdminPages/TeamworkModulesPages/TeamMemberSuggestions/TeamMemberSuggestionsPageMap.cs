@@ -56,7 +56,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlListItem>("Не е отговорил");
+                return this.Find.ByExpression<HtmlListItem>("//html/body/div[5]/div/ul/li[1]".Xpath());
             }
         }
 
@@ -64,15 +64,15 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlListItem>("Приел");
+                return this.Find.ByExpression<HtmlListItem>("//html/body/div[5]/div/ul/li[2]".Xpath());
             }
         }
-        
+
         public HtmlListItem SelectRejected
         {
             get
             {
-                return this.Find.ByContent<HtmlListItem>("Отказал");
+                return this.Find.ByExpression<HtmlListItem>("//html/body/div[5]/div/ul/li[3]".Xpath());
             }
         }
 
@@ -88,7 +88,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlControl>("//html/body/div[8]/div[2]/div/div[5]/label".Xpath());
+                return this.Find.ByExpression<HtmlControl>("//html/body/div[7]/div[2]/div/div[6]/span[1]".Xpath());
             }
         }
 
@@ -112,7 +112,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlAnchor>("Ninja");
+                return this.Find.ByAttributes<HtmlAnchor>("data-username=Ninja");
             }
         }
 

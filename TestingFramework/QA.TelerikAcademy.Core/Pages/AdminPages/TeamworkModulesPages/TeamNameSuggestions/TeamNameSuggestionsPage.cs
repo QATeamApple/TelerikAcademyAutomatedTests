@@ -31,7 +31,6 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        // add some properties from the map
         public void AddTeamworkType(string teamworkType)
         {
             this.Map.Add.Click();
