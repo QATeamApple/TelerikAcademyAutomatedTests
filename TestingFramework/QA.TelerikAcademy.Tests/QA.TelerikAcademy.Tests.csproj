@@ -67,7 +67,7 @@
     <Compile Include="AdminTests\TeamworkModulesTests\TeamMemberSuggestionsTests.cs" />
     <Compile Include="AdminTests\TeamworkModulesTests\TeamNameSuggestionsTests.cs" />
     <Compile Include="AdminTests\TeamworkModulesTests\TeamworksTests.cs" />
-    <Compile Include="AdminTests\HomeworkModuleTests\HomeworkAdminTests.cs" />
+    <Compile Include="AdminTests\HomeworkModuleTests\_HomeworkAdminExtraTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UITests\ExamEvaluationTests.cs" />
     <Compile Include="UITests\ExamResultsTests.cs" />
