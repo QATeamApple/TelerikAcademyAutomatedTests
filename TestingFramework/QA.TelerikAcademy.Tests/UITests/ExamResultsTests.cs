@@ -22,6 +22,7 @@
         }
 
         [Owner("Mladen Mladenov")]
+        [Priority(1)]
         [TestMethod]
         public void CheckCourseResult()
         {
@@ -30,6 +31,7 @@
         }
 
        [Owner("Mladen Mladenov")]
+       [Priority(1)]
         [TestMethod]
         public void CheckTestResult()
         {
@@ -38,6 +40,7 @@
         }
 
         [Owner("Mladen Mladenov")]
+        [Priority(1)]
         [TestMethod]
         public void CheckExamResult()
         {

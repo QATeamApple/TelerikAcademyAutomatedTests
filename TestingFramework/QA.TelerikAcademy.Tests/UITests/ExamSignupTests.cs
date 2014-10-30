@@ -33,6 +33,7 @@
         }
 
         [Owner("Vanina Nenova")]
+        [Priority(1)]
         [TestMethod]
         public void SignUpForAnExam()
         {
@@ -42,6 +43,7 @@
         }
 
         [Owner("Vanina Nenova")]
+        [Priority(1)]
         [TestMethod]
         public void SignUpForTest()
         {
