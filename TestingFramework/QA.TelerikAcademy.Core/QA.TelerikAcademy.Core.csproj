@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForPracticalExam\AddStudentsForExamPage.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForPracticalExam\AddStudentsForExamPageMap.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForPracticalExam\AddStudentsForExamPageValidator.cs" />
     <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\Course.cs" />
     <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\ExportResultsPage.cs" />
     <Compile Include="Pages\AdminPages\EvaluationModulesPages\ExportResults\ExportResultsPageMap.cs" />
@@ -115,7 +118,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForPracticalExam\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\AddStudentsForTestExam\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\Bonuses\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\Helpers\" />
