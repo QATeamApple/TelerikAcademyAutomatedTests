@@ -9,14 +9,11 @@
     {
         public ExamSignUpPage ExamSignUpPage { get; set; }
 
-        //public TestSignUpPage TestSignUpPage { get; set; }
-
         public ExamSignUpPageValidator ExamSignUpPageValidator { get; set; }
 
         public override void TestInit()
         {
             this.ExamSignUpPage = new ExamSignUpPage();
-            //this.TestSignUpPage = new TestSignUpPage();
             this.ExamSignUpPageValidator = new ExamSignUpPageValidator();
 
             base.TestInit();
@@ -34,13 +31,5 @@
             this.ExamSignUpPage.SignUpForAnExam();
             this.ExamSignUpPageValidator.SignUpForAnExam();
         }
-
-        //[TestMethod]
-        //public void SignUpForTest()
-        //{
-        //    this.TestSignUpPage.Navigate();
-        //    this.TestSignUpPage.SignUpForTest();
-        //    this.ExamPageValidator.SignUpForTest();
-        //}
     }
 }
