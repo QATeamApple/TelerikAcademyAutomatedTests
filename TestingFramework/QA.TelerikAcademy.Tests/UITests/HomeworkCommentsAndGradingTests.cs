@@ -5,7 +5,9 @@
     using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.HomeworkComment;
     using QA.TelerikAcademy.Core.Pages.UIPages.Homeworks.UploadHomework;
     using QA.UI.TestingFramework.Core;
-    class HomeworkCommentsAndGradingTests : BaseTest
+
+    [TestClass]
+    public class HomeworkCommentsAndGradingTests : BaseTest
     {
         public HomeworkCommentPage HomeworkCommentPage { get; set; }
 
