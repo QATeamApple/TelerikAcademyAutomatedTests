@@ -32,6 +32,8 @@
             AcademyLoginProvider.Logout();
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(1)]
         [TestMethod]
         public void UploadHomework()
         {
@@ -41,6 +43,8 @@
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void UploadHomeworkWithNoFile()
         {
@@ -50,6 +54,8 @@
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void UploadHomeworkWithUnsupportedFormat()
         {
@@ -59,6 +65,8 @@
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(3)]
         [TestMethod]
         public void UploadHomeworkWithBigFile()
         {
@@ -68,6 +76,8 @@
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(1)]
         [TestMethod]
         public void ReUploadHomework()
         {
@@ -77,6 +87,8 @@
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void ReUploadHomeworkWithNoFile()
         {
@@ -86,6 +98,8 @@
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(2)]
         [TestMethod]
         public void ReUploadHomeworkWithUnsupportedFormat()
         {
@@ -95,6 +109,8 @@
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Kiril Todorov")]
+        [Priority(3)]
         [TestMethod]
         public void ReUploadHomeworkWithBigFile()
         {
