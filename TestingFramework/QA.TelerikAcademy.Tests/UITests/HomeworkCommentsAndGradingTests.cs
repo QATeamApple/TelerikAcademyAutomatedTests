@@ -1,6 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.UITests
 {
-    class HomeworkCommentsAndGradingTests
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using QA.UI.TestingFramework.Core;
+
+    [TestClass]
+    class HomeworkCommentsAndGradingTests : BaseTest
     {
     }
 }

@@ -25,6 +25,7 @@
             AcademyLoginProvider.Logout();
         }
 
+        [Owner("Mladen Mladenov")]
         [TestMethod]
         public void UploadStudentHomework()
         {
@@ -34,6 +35,7 @@
             this.HomeworkPage.DeleteHomework(this.CurrentUser);
         }
 
+        [Owner("Mladen Mladenov")]
         [TestMethod]
         public void GradeSudentHomeworkWithValuationAboveTheAllowed()
         {

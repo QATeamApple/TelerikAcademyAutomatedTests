@@ -1,6 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.AdminTests.TeamworkModulesTests
 {
-    public class TeamworksTests
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using QA.UI.TestingFramework.Core;
+
+    [TestClass]
+    public class TeamworksTests : BaseTest
     {
     }
 }
