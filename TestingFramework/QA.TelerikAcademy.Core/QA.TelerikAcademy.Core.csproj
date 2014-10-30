@@ -49,9 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
-    <Compile Include="Pages\AdminPages\Temp %28old pages%29\ExamPage\ExamsPage.cs" />
-    <Compile Include="Pages\AdminPages\Temp %28old pages%29\ExamPage\ExamsPageMap.cs" />
-    <Compile Include="Pages\AdminPages\Temp %28old pages%29\ExamPage\ExamsPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\ExamPage\ExamsPage.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\ExamPage\ExamsPageMap.cs" />
+    <Compile Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\ExamPage\ExamsPageValidator.cs" />
     <Compile Include="Pages\AdminPages\TeamworkModulesPages\TeamMemberSuggestions\TeamworkAnswer.cs" />
     <Compile Include="Pages\AdminPages\TeamworkModulesPages\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
     <Compile Include="Pages\AdminPages\TeamworkModulesPages\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
@@ -63,9 +63,9 @@
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
     <Compile Include="Base\UpperNavigationSectionMap.cs" />
-    <Compile Include="Pages\AdminPages\Temp %28old pages%29\Homework\HomeworkPage.cs" />
-    <Compile Include="Pages\AdminPages\Temp %28old pages%29\Homework\HomeworkPageMap.cs" />
-    <Compile Include="Pages\AdminPages\Temp %28old pages%29\Homework\HomeworkPageValidator.cs" />
+    <Compile Include="Pages\AdminPages\HomeworkModulePages\Homework\HomeworkPage.cs" />
+    <Compile Include="Pages\AdminPages\HomeworkModulePages\Homework\HomeworkPageMap.cs" />
+    <Compile Include="Pages\AdminPages\HomeworkModulePages\Homework\HomeworkPageValidator.cs" />
     <Compile Include="Pages\UIPages\MainPage\MainPage.cs" />
     <Compile Include="Pages\UIPages\MainPage\MainPageMap.cs" />
     <Compile Include="Pages\UIPages\MainPage\MainPageValidator.cs" />
@@ -104,7 +104,6 @@
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\HomeworkEvaluationReactions\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\HomeworkEvaluation\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\HomeworkStatistics\" />
-    <Folder Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamEvaluations\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\PracticalExamFiles\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\PracticalExams\" />
     <Folder Include="Pages\AdminPages\EvaluationModulesPages\StudentsRecords\" />

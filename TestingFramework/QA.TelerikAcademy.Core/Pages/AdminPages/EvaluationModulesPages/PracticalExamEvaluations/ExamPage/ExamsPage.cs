@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Exams
+﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.EvaluationModulesPages.PracticalExamEvaluations.ExamPage
 {
     using ArtOfTest.WebAii.Core;
     using QA.UI.TestingFramework.Core.Data;

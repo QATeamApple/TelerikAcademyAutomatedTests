@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Exams
+﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.EvaluationModulesPages.PracticalExamEvaluations.ExamPage
 {
     using QA.UI.TestingFramework.Core;
 

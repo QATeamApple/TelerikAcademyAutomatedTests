@@ -2,8 +2,7 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
-    using QA.TelerikAcademy.Core.Pages.AdminPage.Teamwork.TeamMemberSuggestions;
-    using QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamMemberSuggestions;
+    using QA.TelerikAcademy.Core.Pages.AdminPages.TeamworkModulesPages.TeamMemberSuggestions;
     using QA.TelerikAcademy.Core.Pages.UIPages.MainPage;
     using QA.UI.TestingFramework.Core;
 

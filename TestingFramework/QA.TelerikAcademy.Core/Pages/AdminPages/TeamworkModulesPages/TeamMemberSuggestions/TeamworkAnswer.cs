@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamMemberSuggestions
+﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.TeamworkModulesPages.TeamMemberSuggestions
 {
     public enum TeamworkAnswer
     {

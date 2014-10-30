@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.Teamworks.TeamNameSuggestions
+﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.TeamworkModulesPages.TeamNameSuggestions
 {
     using QA.UI.TestingFramework.Core;
     using ArtOfTest.WebAii.Controls.HtmlControls;

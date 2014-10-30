@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams.ExamPage
+﻿namespace QA.TelerikAcademy.Core.Pages.UIPages.Exams
 {
     using System.Windows.Forms;
     using ArtOfTest.WebAii.Core;

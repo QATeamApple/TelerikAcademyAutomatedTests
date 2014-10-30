@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage.Homework
+﻿namespace QA.TelerikAcademy.Core.Pages.AdminPages.HomeworkModulePages.Homework
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
     using QA.UI.TestingFramework.Core;
