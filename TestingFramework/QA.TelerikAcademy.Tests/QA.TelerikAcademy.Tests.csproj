@@ -47,37 +47,37 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="AdminUITests\EvaluationModulesTests\AddStudentsForPracticalExamTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\AddStudentsForTestExamTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\BonusesTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\ExportResultsTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\HelpersTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\HomeworkEvaluationReactionsTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\HomeworkEvaluationTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\HomeworkStatisticsTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\PracticalExamEvaluationsTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\PracticalExamFilesTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\PracticalExamsTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\StudentsRecordsTests.cs" />
-    <Compile Include="AdminUITests\EvaluationModulesTests\TestExamsTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\ImportTeamNamesTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\ImportTeamsTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\TeamMemberAllEvaluationsTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\TeamMemberEvaluationsTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\TeamMemberSuggestionsTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\TeamNameSuggestionsTests.cs" />
-    <Compile Include="AdminUITests\TeamworkModulesTests\TeamworksTests.cs" />
-    <Compile Include="AdminUITests\HomeworkModuleTests\_HomeworkAdminExtraTests.cs" />
+    <Compile Include="Admin\EvaluationModules\AddStudentsForPracticalExamTests.cs" />
+    <Compile Include="Admin\EvaluationModules\AddStudentsForTestExamTests.cs" />
+    <Compile Include="Admin\EvaluationModules\BonusesTests.cs" />
+    <Compile Include="Admin\EvaluationModules\ExportResultsTests.cs" />
+    <Compile Include="Admin\EvaluationModules\HelpersTests.cs" />
+    <Compile Include="Admin\EvaluationModules\HomeworkEvaluationReactionsTests.cs" />
+    <Compile Include="Admin\EvaluationModules\HomeworkEvaluationTests.cs" />
+    <Compile Include="Admin\EvaluationModules\HomeworkStatisticsTests.cs" />
+    <Compile Include="Admin\EvaluationModules\PracticalExamEvaluationsTests.cs" />
+    <Compile Include="Admin\EvaluationModules\PracticalExamFilesTests.cs" />
+    <Compile Include="Admin\EvaluationModules\PracticalExamsTests.cs" />
+    <Compile Include="Admin\EvaluationModules\StudentsRecordsTests.cs" />
+    <Compile Include="Admin\EvaluationModules\TestExamsTests.cs" />
+    <Compile Include="Admin\TeamworkModules\ImportTeamNamesTests.cs" />
+    <Compile Include="Admin\TeamworkModules\ImportTeamsTests.cs" />
+    <Compile Include="Admin\TeamworkModules\TeamMemberAllEvaluationsTests.cs" />
+    <Compile Include="Admin\TeamworkModules\TeamMemberEvaluationsTests.cs" />
+    <Compile Include="Admin\TeamworkModules\TeamMemberSuggestionsTests.cs" />
+    <Compile Include="Admin\TeamworkModules\TeamNameSuggestionsTests.cs" />
+    <Compile Include="Admin\TeamworkModules\TeamworksTests.cs" />
+    <Compile Include="Admin\HomeworkModule\_HomeworkAdminExtraTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FrontEndUITests\ExamEvaluationTests.cs" />
-    <Compile Include="FrontEndUITests\ExamResultsTests.cs" />
-    <Compile Include="FrontEndUITests\ExamSignupTests.cs" />
-    <Compile Include="FrontEndUITests\ExamUploadTests.cs" />
-    <Compile Include="FrontEndUITests\HomeworkCommentsAndGradingTests.cs" />
-    <Compile Include="FrontEndUITests\HomeworkEvaluationTests.cs" />
-    <Compile Include="FrontEndUITests\HomeworkAndTeamworkUploadTests.cs" />
-    <Compile Include="FrontEndUITests\TeammateGradingTests.cs" />
-    <Compile Include="FrontEndUITests\TeamworkSignupTests.cs" />
+    <Compile Include="Front\ExamEvaluationTests.cs" />
+    <Compile Include="Front\ExamResultsTests.cs" />
+    <Compile Include="Front\ExamSignupTests.cs" />
+    <Compile Include="Front\ExamUploadTests.cs" />
+    <Compile Include="Front\HomeworkCommentsAndGradingTests.cs" />
+    <Compile Include="Front\HomeworkEvaluationTests.cs" />
+    <Compile Include="Front\HomeworkAndTeamworkUploadTests.cs" />
+    <Compile Include="Front\TeammateGradingTests.cs" />
+    <Compile Include="Front\TeamworkSignupTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QA.TelerikAcademy.Core\QA.TelerikAcademy.Core.csproj">
