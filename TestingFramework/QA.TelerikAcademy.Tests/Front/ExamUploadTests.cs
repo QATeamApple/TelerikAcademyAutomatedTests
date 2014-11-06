@@ -75,7 +75,7 @@
         public void UploadExamWithBigFile()
         {
             this.ExamUploadPage.Navigate();
-            this.ExamUploadPage.UploadExamkWithBigSize(this.TestFileBigPath);
+            this.ExamUploadPage.UploadExamkWithBigSize(this.ExamFileBigPath);
             this.ExamUploadPageValidator.UploadExamWithBigSize();
         }
 
