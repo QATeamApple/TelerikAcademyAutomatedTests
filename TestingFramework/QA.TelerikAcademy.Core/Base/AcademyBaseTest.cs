@@ -30,10 +30,10 @@
 
         public virtual void TestInit()
         {
-            this.TestFilePath = Path.GetFullPath("../../../Resoures/TestFiles/TestFile.zip");
-            this.TestFileUnsupportedPath = Path.GetFullPath("../../../Resoures/TestFiles/TestFileUnsupported.pdf");
-            this.TestFileBigPath = Path.GetFullPath("../../../Resoures/TestFiles/TestFileBig.zip");
-            this.ExamFileBigPath = Path.GetFullPath("../../../Resoures/TestFiles/ExamFileBig.zip");
+            this.TestFilePath = Path.GetFullPath("../../../Resources/TestFiles/TestFile.zip");
+            this.TestFileUnsupportedPath = Path.GetFullPath("../../../Resources/TestFiles/TestFileUnsupported.pdf");
+            this.TestFileBigPath = Path.GetFullPath("../../../Resources/TestFiles/TestFileBig.zip");
+            this.ExamFileBigPath = Path.GetFullPath("../../../Resources/TestFiles/ExamFileBig.zip");
 
             this.CurrentUser = new User()
             {
