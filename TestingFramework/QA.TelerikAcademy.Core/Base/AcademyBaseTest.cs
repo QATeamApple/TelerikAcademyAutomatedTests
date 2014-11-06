@@ -1,14 +1,14 @@
-﻿namespace QA.UI.TestingFramework.Core
+﻿namespace QA.TelerikAcademy.Core.Base
 {
-    using System;
     using System.IO;
     using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.TestTemplates;
+
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using QA.TelerikAcademy.Core.Base;
     using QA.UI.TestingFramework.Core.Data;
 
     [TestClass]
-    public class BaseTest
+    public class AcademyBaseTest : BaseTest
     {
         public User CurrentUser { get; set; }
 

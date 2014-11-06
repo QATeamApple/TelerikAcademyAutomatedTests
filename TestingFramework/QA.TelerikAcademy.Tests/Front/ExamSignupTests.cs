@@ -7,7 +7,7 @@
     using QA.UI.TestingFramework.Core;
 
     [TestClass]
-    public class ExamSignupTests : BaseTest
+    public class ExamSignupTests : AcademyBaseTest
     {
         public ExamSignUpPage ExamSignUpPage { get; set; }
 

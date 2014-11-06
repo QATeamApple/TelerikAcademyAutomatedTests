@@ -9,7 +9,7 @@
     using QA.UI.TestingFramework.Core;
 
     [TestClass]
-    public class TeamworkSignupTests : BaseTest
+    public class TeamworkSignupTests : AcademyBaseTest
     {
         public MainPage MainPage { get; set; }
 

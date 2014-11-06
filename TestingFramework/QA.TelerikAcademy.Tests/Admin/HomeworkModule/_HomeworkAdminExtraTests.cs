@@ -6,7 +6,7 @@
     using QA.UI.TestingFramework.Core;
 
     [TestClass]
-    public class _HomeworkAdminExtraTests : BaseTest
+    public class _HomeworkAdminExtraTests : AcademyBaseTest
     {
         public HomeworkPage HomeworkPage { get; set; }
 

@@ -9,7 +9,7 @@
     using QA.UI.TestingFramework.Core.Data;
 
     [TestClass]
-    public class HomeworkStatisticsTests : BaseTest
+    public class HomeworkStatisticsTests : AcademyBaseTest
     {
         public HomeworkStatisticsPage HomeworkStatisticsPage { get; set; }
 

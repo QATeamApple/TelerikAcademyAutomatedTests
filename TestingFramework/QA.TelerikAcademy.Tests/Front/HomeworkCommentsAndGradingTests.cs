@@ -7,7 +7,7 @@
     using QA.UI.TestingFramework.Core;
 
     [TestClass]
-    public class HomeworkCommentsAndGradingTests : BaseTest
+    public class HomeworkCommentsAndGradingTests : AcademyBaseTest
     {
         public HomeworkCommentPage HomeworkCommentPage { get; set; }
 

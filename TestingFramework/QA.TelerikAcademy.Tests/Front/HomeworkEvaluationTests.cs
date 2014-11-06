@@ -8,7 +8,7 @@
     using QA.UI.TestingFramework.Core;
 
     [TestClass]
-    public class HomeworkEvaluationTests : BaseTest
+    public class HomeworkEvaluationTests : AcademyBaseTest
     {
         public UploadHomeworkPage UploadHomeworkPage { get; set; }
 

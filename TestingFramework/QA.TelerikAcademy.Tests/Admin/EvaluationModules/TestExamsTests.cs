@@ -1,10 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.Admin.EvaluationModules
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using QA.UI.TestingFramework.Core;
+    using QA.TelerikAcademy.Core.Base;
 
     [TestClass]
-    public class TestExamsTests : BaseTest
+    public class TestExamsTests : AcademyBaseTest
     {
     }
 }

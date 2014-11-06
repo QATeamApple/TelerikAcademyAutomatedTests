@@ -32,8 +32,9 @@
   <ItemGroup>
     <Reference Include="ArtOfTest.WebAii, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Resoures\Libs\ArtOfTest.WebAii.dll</HintPath>
+      <HintPath>Resoures\Libs\ArtOfTest.WebAii.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -49,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AcademyLoginProvider.cs" />
+    <Compile Include="Base\AcademyBaseTest.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\AddStudentsForPracticalExam\AddStudentsForExamPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\AddStudentsForPracticalExam\AddStudentsForExamPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\AddStudentsForPracticalExam\AddStudentsForExamPageValidator.cs" />
@@ -138,6 +140,20 @@
     <Folder Include="Pages\Admin\TeamworkModules\TeamMemberEvaluations\" />
     <Folder Include="Pages\Admin\TeamworkModules\Teamworks\" />
     <Folder Include="Pages\Front\Exams\ExamEvaluationPage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resoures\Libs\ArtOfTest.WebAii.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resoures\TestFiles\Data.xlsx" />
+    <None Include="Resoures\TestFiles\TestFile.zip" />
+    <None Include="Resoures\TestFiles\TestFileBig.zip" />
+    <None Include="Resoures\TestFiles\TestFileUnsupported.pdf" />
+    <None Include="Resoures\TestFiles\TestStudents.xls" />
+    <None Include="Resoures\TestFiles\TestStudentsEmail.xls" />
+    <None Include="Resoures\TestFiles\TestStudentsEmpty.xls" />
+    <None Include="Resoures\TestFiles\TestStudentsInvalidUsers.xls" />
+    <None Include="Resoures\TestFiles\TestStudentsNotInCourse.xls" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

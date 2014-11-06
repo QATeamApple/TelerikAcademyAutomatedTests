@@ -1,10 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.Front
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using QA.UI.TestingFramework.Core;
+    using QA.TelerikAcademy.Core.Base;
 
     [TestClass]
-    public class ExamEvaluationTests : BaseTest
+    public class ExamEvaluationTests : AcademyBaseTest
     {
     }
 }

@@ -2,20 +2,26 @@
 {
     using System;
     using System.Collections.Generic;
-    
+
+    using ArtOfTest.WebAii.TestTemplates;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.ExportResults;
     using QA.TelerikAcademy.Core.Pages.Admin.TeamworkModules.TeamMemberSuggestions;
     using QA.TelerikAcademy.Core.Pages.Front.MainPage;
     using QA.UI.TestingFramework.Core;
+    using ArtOfTest.WebAii.Controls.HtmlControls;
+    using ArtOfTest.WebAii.Core;
 
     [TestClass]
-    public class ExportResultsTests : BaseTest
+    public class ExportResultsTests : AcademyBaseTest
     {
+
         public ExportResultsPage ExportResultsPage { get; set; }
 
         public List<Course> Courses { get; set; }
+
+        public TestContext TestContext { get; set; }
 
         public override void TestInit()
         {
@@ -25,11 +31,21 @@
             base.TestInit();
 
             this.ExportResultsPage.Navigate();
+
+            //Initialize(true, this.TestContext.TestLogsDir, new TestContextWriteLine(this.TestContext.WriteLine));
         }
 
         public override void TestCleanUp()
         {
             AcademyLoginProvider.Logout();
+        }
+
+        [TestMethod]
+        [DataSource("ExcelDatasource")]
+        [DeploymentItem("C:\\DOCUMENTS\\GitHub\\TelerikAcademyAutomatedTests\\TestingFramework\\Resoures\\TestFiles\\Data.xlsx")]
+        public void Excel()
+        {
+            string value1 = TestContext.DataRow["Column1"].ToString();
         }
 
         [Owner("Stanislav Iliev")]
