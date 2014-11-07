@@ -141,20 +141,6 @@
     <Folder Include="Pages\Admin\TeamworkModules\Teamworks\" />
     <Folder Include="Pages\Front\Exams\ExamEvaluationPage\" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resoures\Libs\ArtOfTest.WebAii.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resoures\TestFiles\Data.xlsx" />
-    <None Include="Resoures\TestFiles\TestFile.zip" />
-    <None Include="Resoures\TestFiles\TestFileBig.zip" />
-    <None Include="Resoures\TestFiles\TestFileUnsupported.pdf" />
-    <None Include="Resoures\TestFiles\TestStudents.xls" />
-    <None Include="Resoures\TestFiles\TestStudentsEmail.xls" />
-    <None Include="Resoures\TestFiles\TestStudentsEmpty.xls" />
-    <None Include="Resoures\TestFiles\TestStudentsInvalidUsers.xls" />
-    <None Include="Resoures\TestFiles\TestStudentsNotInCourse.xls" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

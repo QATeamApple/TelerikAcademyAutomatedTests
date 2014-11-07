@@ -97,6 +97,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Resources\TestFiles\Data.xlsx" />
+    <None Include="Resources\TestFiles\ExamFileBig.rar" />
+    <None Include="Resources\TestFiles\TestFile.zip" />
+    <None Include="Resources\TestFiles\TestFileBig.zip" />
+    <None Include="Resources\TestFiles\TestFileUnsupported.pdf" />
+    <None Include="Resources\TestFiles\TestStudents.xls" />
+    <None Include="Resources\TestFiles\TestStudentsEmail.xls" />
+    <None Include="Resources\TestFiles\TestStudentsEmpty.xls" />
+    <None Include="Resources\TestFiles\TestStudentsInvalidUsers.xls" />
+    <None Include="Resources\TestFiles\TestStudentsNotInCourse.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Libs\ArtOfTest.WebAii.dll" />
+    <Content Include="Resources\Libs\Telerik.WebAii.Controls.Html.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Reports\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
