@@ -18,11 +18,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [TestMethod]
         public void UploadStudentExam()
         {

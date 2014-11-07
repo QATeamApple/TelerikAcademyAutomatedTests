@@ -35,11 +35,6 @@
             //Initialize(true, this.TestContext.TestLogsDir, new TestContextWriteLine(this.TestContext.WriteLine));
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [TestMethod]
         [DataSource("ExcelDatasource")]
         [DeploymentItem("C:\\DOCUMENTS\\GitHub\\TelerikAcademyAutomatedTests\\TestingFramework\\Resoures\\TestFiles\\Data.xlsx")]

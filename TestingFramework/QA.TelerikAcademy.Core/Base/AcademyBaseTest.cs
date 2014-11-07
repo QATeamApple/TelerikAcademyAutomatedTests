@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.IO;
+    using System.Threading;
 
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.TestTemplates;
@@ -11,9 +12,9 @@
     [TestClass]
     public class AcademyBaseTest : BaseTest
     {
-        public Dictionary<string, string> FilePath { get; set; }
-
         public User CurrentUser { get; set; }
+
+        public Dictionary<string, string> FilePath { get; set; }
 
         public Browser Browser
         {
@@ -47,13 +48,14 @@
 
         public virtual void TestCleanUp()
         {
+            AcademyLoginProvider.Logout();
+            Thread.Sleep(1000);
         }
 
         [TestInitialize]
         public void CoreTestInit()
         {
             this.InitializeBrowser();
-
             this.TestInit();
         }
 

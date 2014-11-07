@@ -1,7 +1,5 @@
 ﻿namespace QA.TelerikAcademy.Tests.Front
 {
-    using System.Threading;
-
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.Admin.TeamworkModules.TeamMemberSuggestions;
@@ -21,12 +19,6 @@
             this.TeamMemberSuggestionsPage = new TeamMemberSuggestionsPage();
 
             base.TestInit();
-        }
-
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-            Thread.Sleep(1000);     // TODO: Move it in the BaseTest class
         }
 
         [Owner("Stanislav Iliev")]

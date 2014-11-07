@@ -16,11 +16,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [Owner("Mladen Mladenov")]
         [Priority(1)]
         [TestMethod]

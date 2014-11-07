@@ -27,11 +27,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [Owner("Kiril Todorov")]
         [Priority(1)]
         [TestMethod]

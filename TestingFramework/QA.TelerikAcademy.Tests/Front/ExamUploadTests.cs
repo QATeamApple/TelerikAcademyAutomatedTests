@@ -34,11 +34,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [Owner("Vanina Nenova")]
         [Priority(1)]
         [TestMethod]

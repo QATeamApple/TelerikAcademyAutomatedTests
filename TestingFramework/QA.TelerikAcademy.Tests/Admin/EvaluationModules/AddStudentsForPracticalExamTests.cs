@@ -19,11 +19,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [Owner("Svetlin Nyagolov")]
         [TestMethod]
         public void SignUpStudentsForTestWithUserNameAsCriteria()

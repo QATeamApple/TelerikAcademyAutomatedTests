@@ -20,11 +20,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [Owner("Mladen Mladenov")]
         [TestMethod]
         public void UploadStudentHomework()

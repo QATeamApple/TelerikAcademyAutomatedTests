@@ -16,11 +16,6 @@
             base.TestInit();
         }
 
-        public override void TestCleanUp()
-        {
-            AcademyLoginProvider.Logout();
-        }
-
         [Priority(2)]
         [TestMethod]
         public void AddTeamworkType()
