@@ -45,7 +45,7 @@
         public void UploadExam()
         {
             this.ExamUploadPage.Navigate();
-            this.ExamUploadPage.UploadExam(this.TestFilePath);
+            this.ExamUploadPage.UploadExam(this.FilePath["TestFile"]);
             this.ExamUploadPageValidator.UploadExam();
         }
 
@@ -65,7 +65,7 @@
         public void UploadExamWithUnsupportedFormat()
         {
             this.ExamUploadPage.Navigate();
-            this.ExamUploadPage.UploadExamWithUnsupportedFormat(this.TestFileUnsupportedPath);
+            this.ExamUploadPage.UploadExamWithUnsupportedFormat(this.FilePath["TestFileUnsupported"]);
             this.ExamUploadPageValidator.UploadExamWithUnsupportedFormat();
         }
 
@@ -75,7 +75,7 @@
         public void UploadExamWithBigFile()
         {
             this.ExamUploadPage.Navigate();
-            this.ExamUploadPage.UploadExamkWithBigSize(this.ExamFileBigPath);
+            this.ExamUploadPage.UploadExamkWithBigSize(this.FilePath["ExamFileBig"]);
             this.ExamUploadPageValidator.UploadExamWithBigSize();
         }
 
@@ -85,7 +85,7 @@
         public void ReUploadExam()
         {
             this.ExamReUploadPage.Navigate();
-            this.ExamReUploadPage.ReUploadExam(this.TestFilePath);
+            this.ExamReUploadPage.ReUploadExam(this.FilePath["TestFile"]);
             this.ExamReUploadPageValidator.ReUploadExam();
         }
 
@@ -105,7 +105,7 @@
         public void ReUploadExamWithUnsupportedFormat()
         {
             this.ExamReUploadPage.Navigate();
-            this.ExamReUploadPage.ReUploadExamWithUnsupportedFormat(this.TestFileUnsupportedPath);
+            this.ExamReUploadPage.ReUploadExamWithUnsupportedFormat(this.FilePath["TestFileUnsupported"]);
             this.ExamReUploadPageValidator.ReUploadExamWithUnsupportedFormat();
         }
 
@@ -115,7 +115,7 @@
         public void ReUploadExamWithBigFile()
         {
             this.ExamReUploadPage.Navigate();
-            this.ExamReUploadPage.ReUploadExamkWithBigSize(this.TestFileBigPath);
+            this.ExamReUploadPage.ReUploadExamkWithBigSize(this.FilePath["TestFileBig"]);
             this.ExamReUploadPageValidator.ReUploadExamWithBigSize();
         }
 
@@ -125,7 +125,7 @@
         public void DownloadLatestExamVersion()
         {
             this.DownloadLatestExamVersionPage.Navigate();
-            this.DownloadLatestExamVersionPage.UploadExam(this.TestFilePath);
+            this.DownloadLatestExamVersionPage.UploadExam(this.FilePath["TestFile"]);
             this.DownloadLatestExamVersionPageValidator.UploadExam();
             this.DownloadLatestExamVersionPage.DownloadLatestExam();
         }

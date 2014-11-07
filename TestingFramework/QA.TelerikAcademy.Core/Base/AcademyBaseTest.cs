@@ -1,24 +1,19 @@
 ﻿namespace QA.TelerikAcademy.Core.Base
 {
+    using System.Collections.Generic;
     using System.IO;
+
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.TestTemplates;
-
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.UI.TestingFramework.Core.Data;
 
     [TestClass]
     public class AcademyBaseTest : BaseTest
     {
+        public Dictionary<string, string> FilePath { get; set; }
+
         public User CurrentUser { get; set; }
-
-        public string TestFilePath { get; set; }
-
-        public string TestFileUnsupportedPath { get; set; }
-
-        public string TestFileBigPath { get; set; }
-
-        public string ExamFileBigPath { get; set; }
 
         public Browser Browser
         {
@@ -30,10 +25,13 @@
 
         public virtual void TestInit()
         {
-            this.TestFilePath = Path.GetFullPath("../../Resources/TestFiles/TestFile.zip");
-            this.TestFileUnsupportedPath = Path.GetFullPath("../../Resources/TestFiles/TestFileUnsupported.pdf");
-            this.TestFileBigPath = Path.GetFullPath("../../Resources/TestFiles/TestFileBig.zip");
-            this.ExamFileBigPath = Path.GetFullPath("../../Resources/TestFiles/ExamFileBig.zip");
+            this.FilePath = new Dictionary<string, string>() {
+	            {"TestFile", Path.GetFullPath("../../Resources/TestFiles/TestFile.zip")},
+	            {"TestFileUnsupported", Path.GetFullPath("../../Resources/TestFiles/TestFileUnsupported.pdf")},
+	            {"TestFileBig", Path.GetFullPath("../../Resources/TestFiles/TestFileBig.zip")},
+	            {"ExamFileBig", Path.GetFullPath("../../Resources/TestFiles/ExamFileBig.zip")},
+	            {"Excel", Path.GetFullPath("../../Resources/TestFiles/Data.xlsx")},
+	        };
 
             this.CurrentUser = new User()
             {

@@ -38,7 +38,7 @@
         public void UploadHomework()
         {
             this.UploadHomeworkPage.Navigate();
-            this.UploadHomeworkPage.UploadHomework(this.TestFilePath);
+            this.UploadHomeworkPage.UploadHomework(this.FilePath["TestFile"]);
             this.UploadHomeworkPage.Validator.UploadHomework();
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -60,7 +60,7 @@
         public void UploadHomeworkWithUnsupportedFormat()
         {
             this.UploadHomeworkPage.Navigate();
-            this.UploadHomeworkPage.UploadHomeworkWithUnsupportedFormat(this.TestFileUnsupportedPath);
+            this.UploadHomeworkPage.UploadHomeworkWithUnsupportedFormat(this.FilePath["TestFileUnsupported"]);
             this.UploadHomeworkPage.Validator.UploadHomeworkWithUnsupportedFormat();
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -71,7 +71,7 @@
         public void UploadHomeworkWithBigFile()
         {
             this.UploadHomeworkPage.Navigate();
-            this.UploadHomeworkPage.UploadHomeworkWithBigSize(this.TestFileBigPath);
+            this.UploadHomeworkPage.UploadHomeworkWithBigSize(this.FilePath["TestFileBig"]);
             this.UploadHomeworkPage.Validator.UploadHomeworkWithBigSize();
             this.UploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -82,7 +82,7 @@
         public void ReUploadHomework()
         {
             this.ReUploadHomeworkPage.Navigate();
-            this.ReUploadHomeworkPage.ReUploadHomework(this.TestFilePath);
+            this.ReUploadHomeworkPage.ReUploadHomework(this.FilePath["TestFile"]);
             this.ReUploadHomeworkPage.Validator.ReUploadHomework();
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -104,7 +104,7 @@
         public void ReUploadHomeworkWithUnsupportedFormat()
         {
             this.ReUploadHomeworkPage.Navigate();
-            this.ReUploadHomeworkPage.ReUploadHomeworkWithUnsupportedFormat(this.TestFileUnsupportedPath);
+            this.ReUploadHomeworkPage.ReUploadHomeworkWithUnsupportedFormat(this.FilePath["TestFileUnsupported"]);
             this.ReUploadHomeworkPage.Validator.ReUploadHomeworkWithUnsupportedFormat();
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
@@ -115,7 +115,7 @@
         public void ReUploadHomeworkWithBigFile()
         {
             this.ReUploadHomeworkPage.Navigate();
-            this.ReUploadHomeworkPage.ReUploadHomeworkWithBigSize(this.TestFileBigPath);
+            this.ReUploadHomeworkPage.ReUploadHomeworkWithBigSize(this.FilePath["TestFileBig"]);
             this.ReUploadHomeworkPage.Validator.ReUploadHomeworkWithBigSize();
             this.ReUploadHomeworkPage.DeleteHomework(this.CurrentUser);
         }
