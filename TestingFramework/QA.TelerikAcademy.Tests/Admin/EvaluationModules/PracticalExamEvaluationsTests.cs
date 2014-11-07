@@ -18,6 +18,9 @@
             base.TestInit();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
+        [Bug(2241)]
         [TestMethod]
         public void UploadStudentExam()
         {
@@ -28,6 +31,8 @@
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamIfStudentIsNotInCourse()
@@ -39,6 +44,8 @@
             this.ExamsPage.ValidateCourseErrorMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithInvalidCourse()
@@ -50,6 +57,8 @@
             this.ExamsPage.ValidateInvalidCourseErrorMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithLowBoundaryGradeValue()
@@ -62,6 +71,8 @@
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithHighBoundaryGradeValue()
@@ -74,6 +85,8 @@
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithBiggerThanHighBoundaryGradeValue()
@@ -86,6 +99,8 @@
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithSmallerThanLowBoundaryGradeValue()
@@ -98,6 +113,8 @@
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithZeroAsGradeValue()
@@ -110,6 +127,8 @@
             this.ExamsPage.ValidateUploadConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
 
         public void UploadStudentExamWithHugePositiveValueAsGrade()
@@ -124,6 +143,9 @@
             // add asserttextequal for input box
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
+        [Bug(2242)]
         [TestMethod]
         public void UploadStudentExamWithTextAsGrade()
         {
@@ -135,6 +157,9 @@
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
+        [Bug(2243)]
         [TestMethod]
         public void UploadStudentExamWithSymbolsAsGrade()
         {
@@ -146,6 +171,8 @@
             this.ExamsPage.ValidateInvalidMarkMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
         public void UploadStudentExamWithInvalidUserName()
         {
@@ -157,6 +184,8 @@
             this.ExamsPage.ValidateUserErrorMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
         public void UploadStudentExamWithOneLessThanHighBoundaryGradeValue()
         {

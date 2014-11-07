@@ -20,6 +20,7 @@
         }
 
         [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithUserNameAsCriteria()
         {
@@ -31,6 +32,8 @@
             this.AddStudentsForExamPage.StudentsAddedToExamsSuccessConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithUserIDAsCriteria()
         {
@@ -42,6 +45,8 @@
             this.AddStudentsForExamPage.StudentsAddedToExamsSuccessConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithUserEmailAsCriteria()
         {
@@ -53,6 +58,8 @@
             this.AddStudentsForExamPage.StudentsAddedToExamsSuccessConfirmationMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithUserEmailAsCriteriaInvalidFormat()
         {
@@ -64,6 +71,8 @@
             this.AddStudentsForExamPage.InvalidDataFormatErrorMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithIncorrectCriteria()
         {
@@ -76,6 +85,8 @@
             /// fix the validation
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWhoHaveNotSignedUpForCourse()
         {
@@ -87,6 +98,8 @@
             this.AddStudentsForExamPage.ValidateCourseErrorMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithInvalidFileFormat()
         {
@@ -98,6 +111,8 @@
             this.AddStudentsForExamPage.InvalidFileNameErrorMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithEmptyExcelSheet()
         {
@@ -109,6 +124,8 @@
             this.AddStudentsForExamPage.InvalidSuccessMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithoutSelectingExam()
         {
@@ -119,6 +136,8 @@
             this.AddStudentsForExamPage.PleaseChooseExamMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithoutSelectingFile()
         {
@@ -130,6 +149,8 @@
             this.AddStudentsForExamPage.PleaseChooseFileMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithoutSelectingCriteria()
         {
@@ -140,6 +161,8 @@
             this.AddStudentsForExamPage.PleaseChooseCriteriaMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithoutSelectingColumn()
         {
@@ -150,6 +173,8 @@
             this.AddStudentsForExamPage.PleaseChooseColumnMessage();
         }
 
+        [Owner("Svetlin Nyagolov")]
+        [Priority(3)]
         [TestMethod]
         public void SignUpStudentsForTestWithIncorrectUsernames()
         {
