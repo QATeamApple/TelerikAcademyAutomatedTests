@@ -63,6 +63,9 @@
     <Compile Include="Pages\Admin\EvaluationModules\PracticalExamEvaluations\ExamPage\ExamsPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\PracticalExamEvaluations\ExamPage\ExamsPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\PracticalExamEvaluations\ExamPage\ExamsPageValidator.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPage.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPageMap.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPageValidator.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\TeamMemberSuggestions\TeamworkAnswer.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
@@ -129,7 +132,6 @@
     <Folder Include="Pages\Admin\EvaluationModules\PracticalExamFiles\" />
     <Folder Include="Pages\Admin\EvaluationModules\PracticalExams\" />
     <Folder Include="Pages\Admin\EvaluationModules\StudentsRecords\" />
-    <Folder Include="Pages\Admin\EvaluationModules\TestExams\" />
     <Folder Include="Pages\Admin\TeamworkModules\ImportTeamNames\" />
     <Folder Include="Pages\Admin\TeamworkModules\ImportTeams\" />
     <Folder Include="Pages\Admin\TeamworkModules\TeamMemberAllEvaluations\" />
