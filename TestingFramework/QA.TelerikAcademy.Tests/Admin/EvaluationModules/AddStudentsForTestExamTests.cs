@@ -32,7 +32,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.StudentsAddedToExamsSuccessConfirmationMessage();
         }
 
@@ -43,7 +43,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско ID");
             this.AddStudentsForTestPage.SelectColumn("B");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.StudentsAddedToExamsSuccessConfirmationMessage();
         }
 
@@ -54,7 +54,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителски имейл");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudentsEmail.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudentsEmail.xls"));
             this.AddStudentsForTestPage.StudentsAddedToExamsSuccessConfirmationMessage();
         }
 
@@ -65,7 +65,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителски имейл");
             this.AddStudentsForTestPage.SelectColumn("A");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.InvalidDataFormatErrorMessage();
         }
 
@@ -76,7 +76,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("D");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.InvalidSuccessMessage();
             /// fix the validation
         }
@@ -88,7 +88,7 @@
             this.AddStudentsForTestPage.SelectExam("Naso test 2015 (16/10/2014 15:40)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudentsNotInCourse.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudentsNotInCourse.xls"));
             this.AddStudentsForTestPage.ValidateCourseErrorMessage();
         }
 
@@ -99,7 +99,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestFile.zip"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestFile.zip"));
             this.AddStudentsForTestPage.InvalidFileNameErrorMessage();
         }
 
@@ -110,7 +110,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudentsEmpty.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudentsEmpty.xls"));
             this.AddStudentsForTestPage.InvalidSuccessMessage();
         }
 
@@ -120,7 +120,7 @@
             this.AddStudentsForTestPage.Navigate();
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.PleaseChooseExamMessage();
         }
 
@@ -141,7 +141,7 @@
             this.AddStudentsForTestPage.Navigate();
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.PleaseChooseCriteriaMessage();
         }
 
@@ -151,7 +151,7 @@
             this.AddStudentsForTestPage.Navigate();
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudents.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
             this.AddStudentsForTestPage.PleaseChooseColumnMessage();
         }
 
@@ -162,7 +162,7 @@
             this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
             this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
             this.AddStudentsForTestPage.SelectColumn("C");
-            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../../Resoures/TestFiles/TestStudentsInvalidUsers.xls"));
+            this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudentsInvalidUsers.xls"));
             this.AddStudentsForTestPage.InvalidSuccessMessage();
         }
     }
