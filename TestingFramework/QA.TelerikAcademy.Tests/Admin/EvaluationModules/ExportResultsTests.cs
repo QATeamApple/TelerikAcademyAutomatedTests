@@ -35,13 +35,13 @@
             //Initialize(true, this.TestContext.TestLogsDir, new TestContextWriteLine(this.TestContext.WriteLine));
         }
 
-        [TestMethod]
-        [DataSource("ExcelDatasource")]
-        [DeploymentItem("C:\\DOCUMENTS\\GitHub\\TelerikAcademyAutomatedTests\\TestingFramework\\Resoures\\TestFiles\\Data.xlsx")]
-        public void Excel()
-        {
-            string value1 = TestContext.DataRow["Column1"].ToString();
-        }
+        //[TestMethod]
+        //[DataSource("ExcelDatasource")]
+        //[DeploymentItem("C:\\DOCUMENTS\\GitHub\\TelerikAcademyAutomatedTests\\TestingFramework\\Resoures\\TestFiles\\Data.xlsx")]
+        //public void Excel()
+        //{
+        //    string value1 = TestContext.DataRow["Column1"].ToString();
+        //}
 
         [Owner("Stanislav Iliev")]
         [Priority(3)]
@@ -229,7 +229,7 @@
         [Owner("Stanislav Iliev")]
         [Priority(3)]
         [TestMethod]
-        public void ExportAllWithoutExtraColumns()
+        public void ExportAllLiveWithoutExtraColumns()
         {
             this.GenerateStudentCourses(100, true, true, true);
             this.ExportResultsPage.ExportExcel(this.Courses, false, false, false, false, false);
@@ -239,9 +239,29 @@
         [Owner("Stanislav Iliev")]
         [Priority(3)]
         [TestMethod]
-        public void ExportAllWithExtraColumns()
+        public void ExportAllLiveWithExtraColumns()
         {
             this.GenerateStudentCourses(100, true, true, true);
+            this.ExportResultsPage.ExportExcel(this.Courses, true, true, true, true, true);
+            this.ExportResultsPage.ValidateExportedExcel(true);
+        }
+
+        [Owner("Stanislav Iliev")]
+        [Priority(3)]
+        [TestMethod]
+        public void ExportAllWithoutExtraColumns()
+        {
+            this.GenerateStudentCourses(100, true, true, false);
+            this.ExportResultsPage.ExportExcel(this.Courses, false, false, false, false, false);
+            this.ExportResultsPage.ValidateExportedExcel(true);
+        }
+
+        [Owner("Stanislav Iliev")]
+        [Priority(3)]
+        [TestMethod]
+        public void ExportAllWithExtraColumns()
+        {
+            this.GenerateStudentCourses(100, true, true, false);
             this.ExportResultsPage.ExportExcel(this.Courses, true, true, true, true, true);
             this.ExportResultsPage.ValidateExportedExcel(true);
         }
