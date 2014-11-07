@@ -47,6 +47,7 @@
     <Compile Include="AssertHtmlControlExtensions.cs" />
     <Compile Include="BaseElementMap.cs" />
     <Compile Include="BrowserExtensions.cs" />
+    <Compile Include="Bug.cs" />
     <Compile Include="Contracts\ILogin.cs" />
     <Compile Include="Data\Sex.cs" />
     <Compile Include="Data\User.cs" />
