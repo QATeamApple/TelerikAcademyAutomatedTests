@@ -57,6 +57,9 @@
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPageValidator.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\HomeworkEvaluationMap.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\HomeworkEvaluationPage.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\HomeworkEvaluationValidator.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\HomeworkStatistics\HomeworkStatisticsPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\HomeworkStatistics\HomeworkStatisticsMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\HomeworkStatistics\HomeworkStatisticsValidator.cs" />
@@ -128,7 +131,6 @@
     <Folder Include="Pages\Admin\EvaluationModules\Bonuses\" />
     <Folder Include="Pages\Admin\EvaluationModules\Helpers\" />
     <Folder Include="Pages\Admin\EvaluationModules\HomeworkEvaluationReactions\" />
-    <Folder Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\" />
     <Folder Include="Pages\Admin\EvaluationModules\PracticalExamFiles\" />
     <Folder Include="Pages\Admin\EvaluationModules\PracticalExams\" />
     <Folder Include="Pages\Admin\EvaluationModules\StudentsRecords\" />
