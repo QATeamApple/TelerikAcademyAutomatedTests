@@ -60,5 +60,25 @@
             this.HomeworkEvaluationPage.EvaluateStudentHomework("15");
             this.HomeworkEvaluationPage.Validator.ErrorMessage();
         }
+
+        [Owner("Kiril Todorov")]
+        [Priority(3)]
+        [TestMethod]
+        public void EvaluateStudentHomeworkWithLowBoundaryMark()
+        {
+            this.HomeworkEvaluationPage.Navigate();
+            this.HomeworkEvaluationPage.EvaluateStudentHomework("0");
+            this.HomeworkEvaluationPage.Validator.ErrorMessage();
+        }
+
+        [Owner("Kiril Todorov")]
+        [Priority(3)]
+        [TestMethod]
+        public void EvaluateStudentHomeworkWithHighBoundarygMark()
+        {
+            this.HomeworkEvaluationPage.Navigate();
+            this.HomeworkEvaluationPage.EvaluateStudentHomework("10");
+            this.HomeworkEvaluationPage.Validator.ErrorMessage();
+        }
     }
 }

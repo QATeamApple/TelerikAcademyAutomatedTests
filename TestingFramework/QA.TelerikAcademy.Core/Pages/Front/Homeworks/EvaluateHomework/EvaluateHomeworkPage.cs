@@ -28,9 +28,9 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void EvaluateHomework()
+        public void EvaluateHomework(string mark)
         {
-            this.Map.Mark.Text = "5";
+            this.Map.Mark.Text = mark;
             this.Map.Comment.Text = "aaaaaaaaaaaaaaaaaaaa"; // at least 20 symbols are needed.
             this.Map.EvaluateButton.Click();
         }
@@ -39,20 +39,6 @@
         {
             this.Map.Mark.Text = "5";
             this.Map.Comment.Text = "aa"; // less than needed 20 symbols.
-            this.Map.EvaluateButton.Click();
-        }
-
-        public void EvaluateHomeworkWithNegativeMark()
-        {
-            this.Map.Mark.Text = "-1"; // must be lower than 0
-            this.Map.Comment.Text = "aaaaaaaaaaaaaaaaaaaa"; // at least 20 symbols are needed.
-            this.Map.EvaluateButton.Click();
-        }
-
-        public void EvaluateHomeworkWithMarkBiggerThanAllowed()
-        {
-            this.Map.Mark.Text = "11"; // must be bigger than 10
-            this.Map.Comment.Text = "aaaaaaaaaaaaaaaaaaaa"; // at least 20 symbols are needed.
             this.Map.EvaluateButton.Click();
         }
 
@@ -65,13 +51,6 @@
         public void EvaluateHomeworkWithoutComment()
         {
             this.Map.Mark.Text = "5"; // must be between 0 and 10
-            this.Map.EvaluateButton.Click();
-        }
-
-        public void EvaluateHomeworkWithNotNumberMark()
-        {
-            this.Map.Mark.Text = "a";
-            this.Map.Comment.Text = "aaaaaaaaaaaaaaaaaaaa"; // at least 20 symbols are needed.
             this.Map.EvaluateButton.Click();
         }
     }
