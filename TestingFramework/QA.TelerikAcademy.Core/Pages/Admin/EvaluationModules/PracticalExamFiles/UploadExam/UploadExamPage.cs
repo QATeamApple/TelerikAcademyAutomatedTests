@@ -1,25 +1,25 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamEvaluations.ExamPage
+﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamFiles.UploadExam
 {
     using ArtOfTest.WebAii.Core;
     using QA.UI.TestingFramework.Core.Data;
 
-    public class ExamsPage
+    public class UploadExamPage
     {
         public readonly string Url = @"http://test.telerikacademy.com/Administration_Courses/CoursePracticalExamFiles/Upload";
 
-        public ExamsPageMap Map
+        public UploadExamPageMap Map
         {
             get
             {
-                return new ExamsPageMap();
+                return new UploadExamPageMap();
             }
         }
 
-        public ExamsPageValidator Validator
+        public UploadExamPageValidator Validator
         {
             get
             {
-                return new ExamsPageValidator();
+                return new UploadExamPageValidator();
             }
         }
 

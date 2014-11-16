@@ -1,10 +1,10 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamEvaluations.ExamPage
+﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamFiles.UploadExam
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
     using ArtOfTest.WebAii.Core;
     using QA.UI.TestingFramework.Core;
 
-    public class ExamsPageMap : BaseElementMap
+    public class UploadExamPageMap : BaseElementMap
     {
         public HtmlInputText Course
         {

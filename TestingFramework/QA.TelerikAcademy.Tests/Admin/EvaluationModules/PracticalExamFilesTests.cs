@@ -2,18 +2,18 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
-    using QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamEvaluations.ExamPage;
+    using QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamFiles.UploadExam;
     using QA.UI.TestingFramework.Core;
     using QA.UI.TestingFramework.Core.Data;
 
     [TestClass]
     public class PracticalExamFilesTests : AcademyBaseTest
     {
-        public ExamsPage ExamsPage { get; set; }
+        public UploadExamPage UploadExamPage { get; set; }
 
         public override void TestInit()
         {
-            this.ExamsPage = new ExamsPage();
+            this.UploadExamPage = new UploadExamPage();
 
             base.TestInit();
         }
@@ -24,11 +24,11 @@
         [TestMethod]
         public void UploadStudentExam()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateUploadConfirmationMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateUploadConfirmationMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -37,11 +37,11 @@
 
         public void UploadStudentExamIfStudentIsNotInCourse()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("Front Test Geri");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateCourseErrorMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("Front Test Geri");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateCourseErrorMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -50,11 +50,11 @@
 
         public void UploadStudentExamWithInvalidCourse()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("asdafasdasgasdadgasdaghasdagas");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateInvalidCourseErrorMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("asdafasdasgasdadgasdaghasdagas");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateInvalidCourseErrorMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -63,12 +63,12 @@
 
         public void UploadStudentExamWithLowBoundaryGradeValue()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("1");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateUploadConfirmationMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("1");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateUploadConfirmationMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -77,12 +77,12 @@
 
         public void UploadStudentExamWithHighBoundaryGradeValue()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("255");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateUploadConfirmationMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("255");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateUploadConfirmationMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -91,12 +91,12 @@
 
         public void UploadStudentExamWithBiggerThanHighBoundaryGradeValue()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("256");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateInvalidMarkMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("256");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateInvalidMarkMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -105,12 +105,12 @@
 
         public void UploadStudentExamWithSmallerThanLowBoundaryGradeValue()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("-1");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateInvalidMarkMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("-1");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateInvalidMarkMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -119,12 +119,12 @@
 
         public void UploadStudentExamWithZeroAsGradeValue()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("0");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateUploadConfirmationMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("0");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateUploadConfirmationMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -133,12 +133,12 @@
 
         public void UploadStudentExamWithHugePositiveValueAsGrade()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("23123125123125123125123123");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateInvalidMarkMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("23123125123125123125123123");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateInvalidMarkMessage();
 
             // add asserttextequal for input box
         }
@@ -149,12 +149,12 @@
         [TestMethod]
         public void UploadStudentExamWithTextAsGrade()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("asdasd");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateInvalidMarkMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("asdasd");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateInvalidMarkMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -163,12 +163,12 @@
         [TestMethod]
         public void UploadStudentExamWithSymbolsAsGrade()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("!@#!@#%*&^#!@^^&$#^!*@#");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateInvalidMarkMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("!@#!@#%*&^#!@^^&$#^!*@#");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateInvalidMarkMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -176,12 +176,12 @@
         [TestMethod]
         public void UploadStudentExamWithInvalidUserName()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName("shalalallalashd2312");
-            this.ExamsPage.SelectGrade("8");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateUserErrorMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName("shalalallalashd2312");
+            this.UploadExamPage.SelectGrade("8");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateUserErrorMessage();
         }
 
         [Owner("Svetlin Nyagolov")]
@@ -189,12 +189,12 @@
         [TestMethod]
         public void UploadStudentExamWithOneLessThanHighBoundaryGradeValue()
         {
-            this.ExamsPage.Navigate();
-            this.ExamsPage.SelectCourse("TeamAppleCourse");
-            this.ExamsPage.SelectUserName(this.CurrentUser);
-            this.ExamsPage.SelectGrade("254");
-            this.ExamsPage.UploadExam(this.FilePath["TestFile"]);
-            this.ExamsPage.ValidateUploadConfirmationMessage();
+            this.UploadExamPage.Navigate();
+            this.UploadExamPage.SelectCourse("TeamAppleCourse");
+            this.UploadExamPage.SelectUserName(this.CurrentUser);
+            this.UploadExamPage.SelectGrade("254");
+            this.UploadExamPage.UploadExam(this.FilePath["TestFile"]);
+            this.UploadExamPage.ValidateUploadConfirmationMessage();
         }
     }
 }

@@ -1,14 +1,14 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamEvaluations.ExamPage
+﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamFiles.UploadExam
 {
     using QA.UI.TestingFramework.Core;
 
-    public class ExamsPageValidator
+    public class UploadExamPageValidator
     {
-        public ExamsPageMap Map
+        public UploadExamPageMap Map
         {
             get
             {
-                return new ExamsPageMap();
+                return new UploadExamPageMap();
             }
         }
 
