@@ -4,7 +4,6 @@
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.Admin.TeamworkModules.TeamMemberSuggestions;
     using QA.TelerikAcademy.Core.Pages.Front.MainPage;
-    using QA.UI.TestingFramework.Core;
 
     [TestClass]
     public class TeamworkSignupTests : AcademyBaseTest
@@ -26,6 +25,9 @@
         [TestMethod]
         public void AcceptingAnOfferForTeamwork()
         {
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
+            this.MainPage.Navigate();
             this.MainPage.SelectTeamwork(true);
             this.MainPage.ValidateAcceptedTeamwork(true);
             this.TeamMemberSuggestionsPage.Navigate();
@@ -37,6 +39,9 @@
         [TestMethod]
         public void RejectingAnOfferForTeamwork()
         {
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
+            this.MainPage.Navigate();
             this.MainPage.SelectTeamwork(false);
             this.MainPage.ValidateAcceptedTeamwork(false);
             this.TeamMemberSuggestionsPage.Navigate();
@@ -48,6 +53,9 @@
         [TestMethod]
         public void ChangeTheChoiceForParticipationInTeamwork()
         {
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.EditTeamworkSuggestion(TeamworkAnswer.NotAnswered);
+            this.MainPage.Navigate();
             this.MainPage.SelectTeamwork(true);
             this.MainPage.SwitchTeamworkDecision();
             this.MainPage.ValidateAcceptedTeamwork(false);
