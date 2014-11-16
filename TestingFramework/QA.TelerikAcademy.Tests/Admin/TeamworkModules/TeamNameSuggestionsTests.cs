@@ -16,6 +16,7 @@
             base.TestInit();
         }
 
+        [Owner("Valeria Dimitrova")]
         [Priority(2)]
         [TestMethod]
         public void AddTeamworkType()
@@ -28,6 +29,7 @@
             this.TeamNameSuggestionsPage.Delete();
         }
 
+        [Owner("Valeria Dimitrova")]
         [Priority(2)]
         [TestMethod]
         public void EditTeamworkType()
