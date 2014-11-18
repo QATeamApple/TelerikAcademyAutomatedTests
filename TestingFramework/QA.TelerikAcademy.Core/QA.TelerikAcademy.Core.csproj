@@ -53,6 +53,9 @@
     <Compile Include="Pages\Admin\EvaluationModules\AddStudentsForTestExam\AddStudentsForTestPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\AddStudentsForTestExam\AddStudentsForTestPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\AddStudentsForTestExam\AddStudentsForTestPageValidator.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\Bonuses\BonusesPage.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\Bonuses\BonusesMap.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\Bonuses\BonusesPageValidator.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\Course.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPageMap.cs" />
@@ -137,7 +140,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Admin\EvaluationModules\Bonuses\" />
     <Folder Include="Pages\Admin\EvaluationModules\Helpers\" />
     <Folder Include="Pages\Admin\EvaluationModules\HomeworkEvaluationReactions\" />
     <Folder Include="Pages\Admin\EvaluationModules\StudentsRecords\" />
