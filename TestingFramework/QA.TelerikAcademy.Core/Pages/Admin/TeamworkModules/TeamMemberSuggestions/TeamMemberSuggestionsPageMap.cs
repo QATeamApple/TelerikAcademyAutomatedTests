@@ -96,7 +96,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlTableCell>("Bunny");
+                return this.Find.ByContent<HtmlTableCell>("TestTeamwork");
             }
         }
 

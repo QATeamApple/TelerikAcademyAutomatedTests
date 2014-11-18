@@ -22,7 +22,28 @@
         public void AddTeamworkSuggestion()
         {
             this.TeamMemberSuggestionsPage.Navigate();
-            this.TeamMemberSuggestionsPage.AddTeamworkSuggestion("Ninja");
+            this.TeamMemberSuggestionsPage.AddTeamworkSuggestion("Ninja", TeamworkAnswer.NotAnswered);
+            this.TeamMemberSuggestionsPage.ValidateAddedTeamwork("TestTeamwork");
+        }
+
+        [Owner("Stanislav Iliev")]
+        [Priority(2)]
+        [TestMethod]
+        public void AddAcceptedTeamworkSuggestion()
+        {
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.AddTeamworkSuggestion("Ninja", TeamworkAnswer.Accepted);
+            this.TeamMemberSuggestionsPage.ValidateAddedTeamwork("TestTeamwork");
+        }
+
+        [Owner("Stanislav Iliev")]
+        [Priority(2)]
+        [TestMethod]
+        public void AddRejectedTeamworkSuggestion()
+        {
+            this.TeamMemberSuggestionsPage.Navigate();
+            this.TeamMemberSuggestionsPage.AddTeamworkSuggestion("Ninja", TeamworkAnswer.Accepted);
+            this.TeamMemberSuggestionsPage.ValidateAddedTeamwork("TestTeamwork");
         }
 
         [Owner("Stanislav Iliev")]

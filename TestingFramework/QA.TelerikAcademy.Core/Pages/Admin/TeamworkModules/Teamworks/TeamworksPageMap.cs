@@ -77,7 +77,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlTableCell>("TeamworkApple");
+                return this.Find.ByContent<HtmlTableCell>("TestTeamwork");
             }
         }
 
@@ -89,11 +89,11 @@
             }
         }
 
-        public HtmlAnchor Update
+        public HtmlControl Update
         {
             get
             {
-                return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-primary k-grid-update");
+                return this.Find.ByExpression<HtmlControl>("//html/body/div[4]/div[2]/div/div[11]/a[1]".Xpath());
             }
         }
 

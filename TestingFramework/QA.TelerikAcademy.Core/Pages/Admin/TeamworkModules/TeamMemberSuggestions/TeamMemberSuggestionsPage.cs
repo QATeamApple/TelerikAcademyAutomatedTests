@@ -31,7 +31,7 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void AddTeamworkSuggestion(string user)
+        public void AddTeamworkSuggestion(string user, TeamworkAnswer answer)
         {
             this.Map.Add.Click();
 
@@ -39,8 +39,10 @@
             Thread.Sleep(1000);
             this.Map.SelectTeamwork.MouseClick();
 
+            this.Map.Username.Text = user;
             this.Map.Username.MouseClick();
-            Manager.Current.Desktop.KeyBoard.TypeText(user);
+
+            Answer(answer);
 
             this.Map.Update.Click();
         }
@@ -49,23 +51,7 @@
         {
             this.Map.Edit.Click();
 
-            this.Map.AcceptedLabel.MouseClick();
-            Thread.Sleep(1000);
-
-            switch (answer)
-            {
-                case TeamworkAnswer.NotAnswered:
-                    this.Map.Answer(0).MouseClick();
-                    break;
-                case TeamworkAnswer.Accepted:
-                    this.Map.Answer(1).MouseClick();
-                    break;
-                case TeamworkAnswer.Rejected:
-                    this.Map.Answer(2).MouseClick();
-                    break;
-                default:
-                    break;
-            }
+            Answer(answer);
 
             this.Map.Update.Click();
         }
@@ -85,6 +71,27 @@
         public void ValidateAddedTeamwork(string teamwork)
         {
             this.Validator.ConfirmTeamwork(teamwork);
+        }
+
+        private void Answer(TeamworkAnswer answer)
+        {
+            this.Map.AcceptedLabel.MouseClick();
+            Thread.Sleep(1000);
+
+            switch (answer)
+            {
+                case TeamworkAnswer.NotAnswered:
+                    this.Map.Answer(0).MouseClick();
+                    break;
+                case TeamworkAnswer.Accepted:
+                    this.Map.Answer(1).MouseClick();
+                    break;
+                case TeamworkAnswer.Rejected:
+                    this.Map.Answer(2).MouseClick();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

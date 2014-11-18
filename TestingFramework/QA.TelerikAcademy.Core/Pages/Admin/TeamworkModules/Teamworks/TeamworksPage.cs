@@ -34,16 +34,18 @@
         public void AddTeamworkType(string teamworkName, bool evaluation, bool offer, string comment)
         {
             this.Map.Add.Click();
-            this.Map.TeamworkName.Text = teamworkName;
+            this.Map.TeamworkName.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(teamworkName);
+
             this.Map.Course.MouseClick();
             Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Down);
             Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Enter);
-            this.Map.Evaluation.Check(true, true);
-            this.Map.Offer.Check(true, true);
+
+            this.Map.Evaluation.Check(evaluation, true);
+            this.Map.Offer.Check(offer, true);
+
             this.Map.Comment.Text = comment;
             this.Map.Update.MouseClick();
-
-            System.Console.WriteLine();
         }
 
         public void Delete()

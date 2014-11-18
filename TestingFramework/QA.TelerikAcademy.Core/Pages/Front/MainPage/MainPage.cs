@@ -45,7 +45,7 @@
 
         public void SwitchTeamworkDecision()
         {
-            Manager.Current.ActiveBrowser.NavigateTo("http://test.telerikacademy.com/Courses/Teamwork/Decide/3");
+            Manager.Current.ActiveBrowser.NavigateTo("http://test.telerikacademy.com/Courses/Teamwork/Decide/460");
 
             if (this.Map.TeamworkAccepted == null)
             {

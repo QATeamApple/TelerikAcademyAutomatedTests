@@ -5,7 +5,7 @@
         void TypeUsername(string username);
 
         void TypePassword(string password);
-        
+
         void Submit();
     }
 }
