@@ -40,7 +40,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlControl>("//html/body/div[8]/div[2]/div/div[1]/label".Xpath());
+                return this.Find.ByExpression<HtmlControl>("//html/body/div[7]/div[2]/div/div[2]/span[1]".Xpath());
             }
         }
 
@@ -48,7 +48,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlListItem>("Bunny");
+                return this.Find.ByContent<HtmlListItem>("TestTeamwork");
             }
         }
 
@@ -114,30 +114,5 @@
 
             return ul.As<HtmlListItem>();
         }
-
-        // public HtmlAnchor UndoEdit
-        // {
-        //     get
-        //     {
-        //         var row = this.NewType.Parent<HtmlTableRow>();
-        //         return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-edit");
-        //     }
-        // }
-
-        // public HtmlTableCell NewType
-        // {
-        //     get
-        //     {
-        //         return this.Find.ByContent<HtmlTableCell>("typeExample");
-        //     }
-        // }
-
-        // public HtmlInputText TypeText
-        // {
-        //     get
-        //     {
-        //         return this.Find.ById<HtmlInputText>("TeamNameSuggestionTypeName");
-        //     }
-        // }
     }
 }

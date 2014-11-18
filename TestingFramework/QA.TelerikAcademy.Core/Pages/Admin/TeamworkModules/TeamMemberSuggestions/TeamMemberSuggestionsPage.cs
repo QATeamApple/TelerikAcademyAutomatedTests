@@ -36,12 +36,13 @@
             this.Map.Add.Click();
 
             this.Map.TeamworkLabel.MouseClick();
+            Thread.Sleep(1000);
             this.Map.SelectTeamwork.MouseClick();
 
             this.Map.Username.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(user);
 
-            this.Map.Update.MouseClick();
+            this.Map.Update.Click();
         }
 
         public void EditTeamworkSuggestion(TeamworkAnswer answer)

@@ -31,17 +31,7 @@
             base.TestInit();
 
             this.ExportResultsPage.Navigate();
-
-            //Initialize(true, this.TestContext.TestLogsDir, new TestContextWriteLine(this.TestContext.WriteLine));
         }
-
-        //[TestMethod]
-        //[DataSource("ExcelDatasource")]
-        //[DeploymentItem("C:\\DOCUMENTS\\GitHub\\TelerikAcademyAutomatedTests\\TestingFramework\\Resoures\\TestFiles\\Data.xlsx")]
-        //public void Excel()
-        //{
-        //    string value1 = TestContext.DataRow["Column1"].ToString();
-        //}
 
         [Owner("Stanislav Iliev")]
         [Priority(3)]
