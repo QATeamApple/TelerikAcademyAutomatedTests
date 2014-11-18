@@ -19,8 +19,21 @@
             base.TestInit();
         }
 
+        //[Owner("Svetlin Nyagolov")]
+        //[Priority(1)]
+        //[TestMethod]
+        //public void SignUpStudentsForTest()
+        //{
+        //    this.AddStudentsForTestPage.Navigate();
+        //    this.AddStudentsForTestPage.SelectExam("TeamAppleCourse (25/10/2014 22:50)");
+        //    this.AddStudentsForTestPage.SelectCriteria("Потребителско име");
+        //    this.AddStudentsForTestPage.SelectColumn("C");
+        //    this.AddStudentsForTestPage.UploadStudentsListFile(Path.GetFullPath("../../Resources/TestFiles/TestStudents.xls"));
+        //    this.AddStudentsForTestPage.StudentsAddedToExamsSuccessConfirmationMessage();
+        //}
+
         [Owner("Svetlin Nyagolov")]
-        [Priority(3)]
+        [Priority(2)]
         [TestMethod]
         public void SignUpStudentsForTestWithUserNameAsCriteria()
         {

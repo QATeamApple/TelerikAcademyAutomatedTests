@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.TestExams
+﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExams
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
     using ArtOfTest.WebAii.Core;
@@ -6,21 +6,21 @@
     using System.Threading;
     using System.Linq;
 
-    public class TestsCreationPageMap : BaseElementMap
+    public class PracticalExamCreationPageMap : BaseElementMap
     {
-        public HtmlAnchor CreateNewTestButton
+        public HtmlAnchor CreateNewPracticalExamButton
         {
             get
             {
-                return this.Find.ByAttributes<HtmlAnchor>("href=/Administration_Courses/CourseTestExams/Read?DataGrid-mode=insert");
+                return this.Find.ByAttributes<HtmlAnchor>("href=/Administration_Courses/CoursePracticalExams/Read?DataGrid-mode=insert");
             }
         }
 
-        public HtmlInputText IP
+        public HtmlInputNumber StudentsCountLimit
         {
             get
             {
-                return this.Find.ById<HtmlInputText>("AllowedIp");
+                return this.Find.ById<HtmlInputNumber>("StudentsCountLimit");
             }
         }
 
@@ -40,11 +40,11 @@
             }
         }
 
-        public HtmlInputNumber StudentLimit
+        public HtmlInputNumber MaxPoints
         {
             get
             {
-                return this.Find.ById<HtmlInputNumber>("StudentsCountLimit");
+                return this.Find.ById<HtmlInputNumber>("MaxPoints");
             }
         }
 
@@ -63,14 +63,6 @@
                 //var temp = this.Find.ByXPath<HtmlControl>("//html/body/div[10]/div[2]/div/div[1]/label");
                 var temp = this.Find.ByContent<HtmlControl>("Курс");
                 return temp;
-            }
-        }
-
-        public HtmlControl TestType
-        {
-            get
-            {
-                return this.Find.ByContent<HtmlControl>("График на теста");
             }
         }
 
@@ -94,7 +86,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlControl>("//html/body/div[10]/div[2]/div/div[5]/label".Xpath());
+                return this.Find.ByExpression<HtmlControl>("//html/body/div[9]/div[2]/div/div[7]/label".Xpath());
             }
         }
 
@@ -102,7 +94,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlControl>("//html/body/div[10]/div[2]/div/div[7]/label".Xpath());
+                return this.Find.ByExpression<HtmlControl>("//html/body/div[9]/div[2]/div/div[9]/label".Xpath());
             }
         }
 
@@ -114,15 +106,6 @@
             var courseList = Find.ById<HtmlUnorderedList>("CourseInstanceId_listbox");
             var choice = courseList.Items.Where(item => item.InnerText == course).FirstOrDefault();
             choice.Click();
-        }
-
-        public void SelectTestType(string testType)
-        {
-            this.TestType.MouseClick();
-            var typeList = Find.ById<HtmlUnorderedList>("TestConfigurationId_listbox");
-            var choice = typeList.Items.Where(item => item.InnerText == testType).FirstOrDefault();
-            choice.Click();
-            //this.Find.ByContent<HtmlListItem>(testType).Click();
         }
 
         public void SelectTestLocation(string testLocation)

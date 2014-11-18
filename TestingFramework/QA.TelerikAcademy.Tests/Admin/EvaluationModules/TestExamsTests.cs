@@ -21,6 +21,7 @@
         }
 
         [Owner("Svetlin Nyagolov")]
+        [Priority(2)]
         [TestMethod]
         public void CreateNewTestExam()
         {

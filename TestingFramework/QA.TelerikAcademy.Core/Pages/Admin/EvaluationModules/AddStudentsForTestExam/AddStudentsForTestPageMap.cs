@@ -66,7 +66,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlListItem>("Невалиден файл! Трябва да въведете Excel файл с разширение '.xls'!");
+                return this.Find.ByContent<HtmlListItem>("Невалиден файл! Трябва да въведете Excel файл с разширение 'xls'!");
             }
         }
 
@@ -82,7 +82,7 @@
         {
             get
             {
-                return this.Find.ByContent<HtmlListItem>("Моля, изберете практически изпит.");
+                return this.Find.ByContent<HtmlListItem>("Моля, изберете тестови изпит.");
             }
         }
 

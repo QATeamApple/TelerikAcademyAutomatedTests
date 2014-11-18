@@ -19,7 +19,7 @@
 
         public void CourseErrorMessage()
         {
-            this.Map.StudentNotInCourseErrorMessage.AssertTextContains("не е записан за курса, в чийто практически изпит искате да го запишете");
+            this.Map.StudentNotInCourseErrorMessage.AssertTextContains("не е записан за курса, в чийто тестови изпит искате да го запишете");
         }
 
         public void InvalidCourseErrorMessage()
