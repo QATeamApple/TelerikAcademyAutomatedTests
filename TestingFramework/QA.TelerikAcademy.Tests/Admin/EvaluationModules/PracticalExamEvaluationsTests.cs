@@ -1,12 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Tests.Admin.EvaluationModules
 {
+    using System.Threading;
+
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamEvaluations;
-    using QA.UI.TestingFramework.Core;
-    using QA.UI.TestingFramework.Core.Data;
-    using System.IO;
-    using System.Threading;
 
     [TestClass]
     public class PracticalExamEvaluationsTests : AcademyBaseTest
@@ -26,6 +24,7 @@
         public void EditPracticalExamEvaluation()
         {
             this.PracticalExamEvaluationsPage.Navigate();
+            this.PracticalExamEvaluationsPage.EditPracticalExam();
             Thread.Sleep(1500);
             this.PracticalExamEvaluationsPage.EvaluatedBy("tinskiwe");
             Thread.Sleep(1000);
@@ -39,7 +38,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.PracticalExamEvaluationsPage.Navigate();
-            this.PracticalExamEvaluationsPage.ExportToExcel(@"C:\Users\Administrator\Desktop\PracticalExamEvaluations.xls");
+            this.PracticalExamEvaluationsPage.ExportToExcel(this.Desktop + @"\" + "PracticalExamEvaluations.xls");
         }
     }
 }

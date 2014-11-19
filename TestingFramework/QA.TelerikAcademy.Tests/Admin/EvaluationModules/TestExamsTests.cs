@@ -9,7 +9,7 @@
     using System.Threading;
 
     [TestClass]
-    public class TestsCreationAdminTests : AcademyBaseTest
+    public class TestExamsTests : AcademyBaseTest
     {
         public TestsCreationPage TestsCreationPage { get; set; }
 

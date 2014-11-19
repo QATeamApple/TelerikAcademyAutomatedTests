@@ -1,5 +1,6 @@
 ﻿namespace QA.TelerikAcademy.Core.Base
 {
+    using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Threading;
@@ -15,6 +16,8 @@
         public User CurrentUser { get; set; }
 
         public Dictionary<string, string> FilePath { get; set; }
+
+        public string Desktop { get; set; }
 
         public Browser Browser
         {
@@ -44,6 +47,8 @@
             };
 
             AcademyLoginProvider.Instance.LoginUser(this.CurrentUser);
+
+            this.Desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         }
 
         public virtual void TestCleanUp()

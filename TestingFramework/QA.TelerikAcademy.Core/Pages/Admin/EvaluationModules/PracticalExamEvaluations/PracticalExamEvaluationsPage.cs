@@ -29,6 +29,10 @@
         public void Navigate()
         {
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
+        }
+
+        public void EditPracticalExam()
+        {
             this.Map.EditPracticalExamEvaluationButton.Click();
         }
 
