@@ -3,6 +3,7 @@
     using System.Collections.Generic;
 
     using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.Win32.Dialogs;
 
     public class ExportResultsPage
     {
@@ -29,7 +30,7 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        public void ExportExcel(List<Course> courses, bool points, bool honors, bool practicalExam, bool testExam, bool isLiveParticipant)
+        public void ExportExcel(List<Course> courses, bool points, bool honors, bool practicalExam, bool testExam, bool isLiveParticipant, string location)
         {
             foreach (var course in courses)
             {
@@ -67,7 +68,10 @@
             this.Map.ExportTestExamCheckBox.Check(testExam, false);
             this.Map.ExportIsLiveParticipantCheckBox.Check(isLiveParticipant, false);
 
+            DownloadDialogsHandler dialog = new DownloadDialogsHandler(Manager.Current.ActiveBrowser, DialogButton.SAVE, location, Manager.Current.Desktop);
+            Manager.Current.DialogMonitor.Start();
             this.Map.Generate.Click();
+            dialog.WaitUntilHandled(30000);
         }
 
         public void ValidateExportedExcel(bool isEmpty = false)

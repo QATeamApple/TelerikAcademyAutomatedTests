@@ -31,11 +31,20 @@
                 return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-primary k-grid-update");
             }
         }
+
         public HtmlControl StudentsAddedToExamsSuccessConfirmationMessage
         {
             get
             {
                 return this.Find.ByXPath<HtmlControl>("/html/body/div/div/section/h2");
+            }
+        }
+
+        public HtmlAnchor ExportToExcel
+        {
+            get
+            {
+                return this.Find.ById<HtmlAnchor>("export");
             }
         }
     }

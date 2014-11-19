@@ -1,8 +1,10 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Admin.EvaluationModules.PracticalExamEvaluations
 {
-    using ArtOfTest.WebAii.Core;
-    using QA.UI.TestingFramework.Core.Data;
     using System.Windows.Forms;
+
+    using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.Win32.Dialogs;
+    using QA.UI.TestingFramework.Core.Data;
 
     public class PracticalExamEvaluationsPage
     {
@@ -45,6 +47,14 @@
         public void StudentsAddedToExamsSuccessConfirmationMessage()
         {
             this.Validator.StudentsAddedToExamsSuccessConfirmationMessage();
+        }
+
+        public void ExportToExcel(string location)
+        {
+            DownloadDialogsHandler dialog = new DownloadDialogsHandler(Manager.Current.ActiveBrowser, DialogButton.SAVE, location, Manager.Current.Desktop);
+            Manager.Current.DialogMonitor.Start();
+            this.Map.ExportToExcel.Click();
+            dialog.WaitUntilHandled(30000);
         }
     }
 }

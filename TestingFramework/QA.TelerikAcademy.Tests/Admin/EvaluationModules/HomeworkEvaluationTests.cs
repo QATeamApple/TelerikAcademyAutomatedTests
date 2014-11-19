@@ -80,5 +80,14 @@
             this.HomeworkEvaluationPage.EvaluateStudentHomework("10");
             this.HomeworkEvaluationPage.Validator.ErrorMessage();
         }
+
+        [Owner("Stanislav Iliev")]
+        [Priority(4)]
+        [TestMethod]
+        public void ExportAllStudentRecordsToExcel()
+        {
+            this.HomeworkEvaluationPage.Navigate();
+            this.HomeworkEvaluationPage.ExportToExcel(@"C:\Users\Administrator\Desktop\HomeworkEvaluations.xls");
+        }
     }
 }

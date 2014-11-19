@@ -60,6 +60,12 @@
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\ExportResults\ExportResultsPageValidator.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\Helpers\HelpersPage.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\Helpers\HelpersPageMap.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\Helpers\HelpersPageValidator.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluationReactions\HomeworkReactionsPage.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluationReactions\HomeworkReactionsPageMap.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluationReactions\HomeworkReactionsPageValidator.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\HomeworkEvaluationMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\HomeworkEvaluationPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\HomeworkEvaluation\HomeworkEvaluationValidator.cs" />
@@ -75,6 +81,9 @@
     <Compile Include="Pages\Admin\EvaluationModules\PracticalExams\PracticalExamCreationPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\PracticalExams\PracticalExamCreationPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\PracticalExams\PracticalExamCreationPageValidator.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\StudentsRecords\StudentsRecordsPage.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\StudentsRecords\StudentsRecordsPageMap.cs" />
+    <Compile Include="Pages\Admin\EvaluationModules\StudentsRecords\StudentsRecordsPageValidator.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPageValidator.cs" />
@@ -140,9 +149,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Admin\EvaluationModules\Helpers\" />
-    <Folder Include="Pages\Admin\EvaluationModules\HomeworkEvaluationReactions\" />
-    <Folder Include="Pages\Admin\EvaluationModules\StudentsRecords\" />
     <Folder Include="Pages\Admin\TeamworkModules\ImportTeamNames\" />
     <Folder Include="Pages\Admin\TeamworkModules\ImportTeams\" />
     <Folder Include="Pages\Admin\TeamworkModules\TeamMemberAllEvaluations\" />

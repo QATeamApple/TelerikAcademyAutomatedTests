@@ -44,5 +44,13 @@
 
             // ConfirmDialog dialog = new ConfirmDialog(Manager.Current.Browsers[0], DialogButton.OK);
         }
+
+        public void ExportToExcel(string location)
+        {
+            DownloadDialogsHandler dialog = new DownloadDialogsHandler(Manager.Current.ActiveBrowser, DialogButton.SAVE, location, Manager.Current.Desktop);
+            Manager.Current.DialogMonitor.Start();
+            this.Map.ExportToExcel.Click();
+            dialog.WaitUntilHandled(30000);
+        }
     }
 }

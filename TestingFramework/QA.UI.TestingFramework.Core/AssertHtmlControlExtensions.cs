@@ -2,7 +2,7 @@
 {
     using ArtOfTest.Common.UnitTesting;
     using ArtOfTest.WebAii.Controls.HtmlControls;
-    
+
     public static class AssertHtmlControlExtensions
     {
         public const string TextNotAsExpectedExceptionMessage = "The control inner text was not as\n expected: {0} \n Real one: {1}";
@@ -14,6 +14,15 @@
 
             return control;
         }
+
+        public static T AssertIsNotNull<T>(this T control) where T : HtmlControl
+        {
+            string exceptionMessage = string.Format("Control with found with the following Expression is not null: {0}", control.BaseElement.FindExpressionUsed);
+            Assert.IsNotNull(control, exceptionMessage);
+
+            return control;
+        }
+
 
         public static T AssertTextContains<T>(this T control, string expectedText) where T : HtmlControl
         {

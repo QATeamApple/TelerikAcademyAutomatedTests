@@ -28,5 +28,14 @@
             this.BonusesPage.AddBonus(100, "test.001", "some comment");
             this.BonusesPage.ValidateAddedBonus(100);
         }
+
+        [Owner("Stanislav Iliev")]
+        [Priority(4)]
+        [TestMethod]
+        public void ExportAllStudentRecordsToExcel()
+        {
+            this.BonusesPage.Navigate();
+            this.BonusesPage.ExportToExcel(@"C:\Users\Administrator\Desktop\Bonuses.xls");
+        }
     }
 }

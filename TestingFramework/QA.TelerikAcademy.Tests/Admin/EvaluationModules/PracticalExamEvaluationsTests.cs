@@ -33,7 +33,13 @@
             this.PracticalExamEvaluationsPage.UpdateSettings();
         }
 
-
-
+        [Owner("Stanislav Iliev")]
+        [Priority(4)]
+        [TestMethod]
+        public void ExportAllStudentRecordsToExcel()
+        {
+            this.PracticalExamEvaluationsPage.Navigate();
+            this.PracticalExamEvaluationsPage.ExportToExcel(@"C:\Users\Administrator\Desktop\PracticalExamEvaluations.xls");
+        }
     }
 }

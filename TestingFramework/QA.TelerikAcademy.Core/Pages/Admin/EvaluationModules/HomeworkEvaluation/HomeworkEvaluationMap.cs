@@ -46,5 +46,13 @@
                 return this.Find.ByExpression<HtmlAnchor>("//*[@id='DataGrid']/table/tbody/tr[1]/td[13]/a".Xpath());
             }
         }
+
+        public HtmlAnchor ExportToExcel
+        {
+            get
+            {
+                return this.Find.ById<HtmlAnchor>("export");
+            }
+        }
     }
 }
