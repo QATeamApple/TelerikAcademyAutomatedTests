@@ -79,7 +79,7 @@
         {
             get
             {
-                return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-update");
+                return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-primary k-grid-update");
             }
         }
     }

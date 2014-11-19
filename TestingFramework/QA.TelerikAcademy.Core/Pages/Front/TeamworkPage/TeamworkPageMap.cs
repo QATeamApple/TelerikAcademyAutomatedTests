@@ -5,79 +5,76 @@
 
     public class TeamworkPageMap : BaseElementMap
     {
-        // public HtmlAnchor Add
-        // {
-        //     get
-        //     {
-        //         return this.Find.ByContent<HtmlAnchor>("Добавяне на тип");
-        //     }
-        // }
+        public HtmlControl Points
+        {
+            get
+            {
+                return this.Find.ByExpression<HtmlControl>("//html/body/div/div/section/article[1]/div/div[1]/span[2]/mark".Xpath());
+            }
+        }
 
-        // public HtmlAnchor Edit
-        // {
-        //     get
-        //     {
-        //         var row = this.Type.Parent<HtmlTableRow>();
-        //         return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-edit");
-        //     }
-        // }
+        public HtmlDiv EvaluateTeammate
+        {
+            get
+            {
+                return this.Find.ByContent<HtmlDiv>("Оцени съотборник");
+            }
+        }
 
-        // public HtmlAnchor Delete
-        // {
-        //     get
-        //     {
-        //         var row = this.NewType.Parent<HtmlTableRow>();
-        //         return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-delete");
-        //     }
-        // }
+        public HtmlInputRadioButton RadioBad
+        {
+            get
+            {
+                return this.Find.ById<HtmlInputRadioButton>("badRate-4");
+            }
+        }
 
-        // public HtmlAnchor UndoEdit
-        // {
-        //     get
-        //     {
-        //         var row = this.NewType.Parent<HtmlTableRow>();
-        //         return row.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-edit");
-        //     }
-        // }
+        public HtmlInputRadioButton RadioGood
+        {
+            get
+            {
+                return this.Find.ById<HtmlInputRadioButton>("goodRate-4");
+            }
+        }
 
-        // public HtmlTableCell Type
-        // {
-        //     get
-        //     {
-        //         return this.Find.ByContent<HtmlTableCell>("Apples");
-        //     }
-        // }
+        public HtmlInputRadioButton RadioExcellent
+        {
+            get
+            {
+                return this.Find.ById<HtmlInputRadioButton>("excellRate-4");
+            }
+        }
 
-        // public HtmlTableCell NewType
-        // {
-        //     get
-        //     {
-        //         return this.Find.ByContent<HtmlTableCell>("typeExample");
-        //     }
-        // }
+        public HtmlTextArea Comment
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlTextArea>("name=Comment");
+            }
+        }
 
-        // public HtmlInputText TypeText
-        // {
-        //     get
-        //     {
-        //         return this.Find.ById<HtmlInputText>("TeamNameSuggestionTypeName");
-        //     }
-        // }
+        public HtmlInputSubmit Submit
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlInputSubmit>("value=Оцени");
+            }
+        }
 
-        // public HtmlAnchor Cancel
-        // {
-        //     get
-        //     {
-        //         return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-cancel");
-        //     }
-        // }
+        public HtmlDiv Result
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlDiv>("class=errorsList successBox");
+            }
+        }
 
-        // public HtmlAnchor Update
-        // {
-        //     get
-        //     {
-        //         return this.Find.ByAttributes<HtmlAnchor>("class=k-button k-button-icontext k-grid-update");
-        //     }
-        // }
+        public HtmlDiv Error
+        {
+            get
+            {
+                return this.Find.ByAttributes<HtmlDiv>("class=errorsList");
+            }
+        }
     }
 }

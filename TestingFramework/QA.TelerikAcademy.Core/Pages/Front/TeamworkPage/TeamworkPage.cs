@@ -1,5 +1,6 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Front.TeamworkPage
 {
+    using System.Threading;
     using System.Windows.Forms;
 
     using ArtOfTest.WebAii.Core;
@@ -31,46 +32,46 @@
             Manager.Current.ActiveBrowser.NavigateTo(this.Url);
         }
 
-        // public void AddTeamworkType(string teamworkType)
-        // {
-        //     this.Map.Add.Click();
-        //     InsertText(teamworkType);
-        // }
+        public void Evaluate(Estimate estimate, string comment)
+        {
+            Manager.Current.Desktop.KeyBoard.KeyPress(Keys.PageDown);
+            this.Map.EvaluateTeammate.MouseClick();
+            switch (estimate)
+            {
+                case Estimate.Bad:
+                    this.Map.RadioBad.Check(true, true);
+                    break;
+                case Estimate.Good:
+                    this.Map.RadioGood.Check(true, true);
+                    break;
+                case Estimate.Excellent:
+                    this.Map.RadioExcellent.Check(true, true);
+                    break;
+                default:
+                    break;
+            }
 
-        // public void EditTeamworkType(string newteamworkType)
-        // {
-        //     this.Map.Edit.Click();
-        //     this.Map.TypeText.Text = "";
-        //     InsertText(newteamworkType);
-        // }
+            this.Map.Comment.Text = comment;
+            this.Map.Submit.MouseClick();
+        }
 
-        // public void UndoEdit()
-        // {
-        //     this.Map.UndoEdit.Click();
-        //     this.Map.TypeText.Text = "";
-        //     InsertText("Apples");
-        // }
+        public void ValidateEvaluation(bool success, string errorMessage = null)
+        {
+            Thread.Sleep(2000);
+            Manager.Current.ActiveBrowser.RefreshDomTree();
+            if (success)
+            {
+                this.Validator.ConfirmEvaluation();
+            }
+            else
+            {
+                this.Validator.ErrorEvaluation(errorMessage);
+            }
+        }
 
-        // public void Delete()
-        // {
-        //     AlertDialog dialog = AlertDialog.CreateAlertDialog(Manager.Current.ActiveBrowser, DialogButton.OK);
-        //     Manager.Current.DialogMonitor.AddDialog(dialog);
-        //     Manager.Current.DialogMonitor.Start();
-        //     this.Map.Delete.Click();
-        //     Manager.Current.DialogMonitor.RemoveDialog(dialog);
-        //     Manager.Current.DialogMonitor.Stop();
-        // }
-
-        // private void InsertText(string teamworkType)
-        // {
-        //     this.Map.TypeText.MouseClick();
-        //     Manager.Current.Desktop.KeyBoard.TypeText(teamworkType);
-        //     this.Map.Update.MouseClick();
-        // }
-
-        // public void ValidateAddedType(string type)
-        // {
-        //     this.Validator.ConfirmType(type);
-        // }
+        public void ValidateTeamworkPoints(decimal points)
+        {
+            this.Validator.ConfirmPoints(points);
+        }
     }
 }

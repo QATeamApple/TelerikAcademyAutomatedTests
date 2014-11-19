@@ -12,9 +12,20 @@
             }
         }
 
-        // public void ConfirmType(string type)
-        // {
-        //     this.Map.NewType.AssertTextEquals(type);
-        // }
+        public void ConfirmPoints(decimal points)
+        {
+            this.Map.Points.AssertTextEquals(points.ToString());
+        }
+
+
+        internal void ConfirmEvaluation()
+        {
+            this.Map.Result.AssertTextEquals("Вие оценихте успешно този потребител");
+        }
+
+        internal void ErrorEvaluation(string errorMessage)
+        {
+            this.Map.Error.AssertTextEquals(errorMessage);
+        }
     }
 }

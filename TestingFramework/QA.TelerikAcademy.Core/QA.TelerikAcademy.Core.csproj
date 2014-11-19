@@ -87,6 +87,12 @@
     <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPage.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPageMap.cs" />
     <Compile Include="Pages\Admin\EvaluationModules\TestExams\TestsCreationPageValidator.cs" />
+    <Compile Include="Pages\Admin\TeamworkModules\TeamMemberAllEvaluations\TeamMemberAllEvaluationsPage.cs" />
+    <Compile Include="Pages\Admin\TeamworkModules\TeamMemberAllEvaluations\TeamMemberAllEvaluationsMap.cs" />
+    <Compile Include="Pages\Admin\TeamworkModules\TeamMemberAllEvaluations\TeamMemberAllEvaluationsValidator.cs" />
+    <Compile Include="Pages\Admin\TeamworkModules\TeamMemberEvaluations\TeamMemberEvaluationsPage.cs" />
+    <Compile Include="Pages\Admin\TeamworkModules\TeamMemberEvaluations\TeamMemberEvaluationsPageMap.cs" />
+    <Compile Include="Pages\Admin\TeamworkModules\TeamMemberEvaluations\TeamMemberEvaluationsPageValidator.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\TeamMemberSuggestions\TeamworkAnswer.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\TeamMemberSuggestions\TeamMemberSuggestionsPage.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\TeamMemberSuggestions\TeamMemberSuggestionsPageMap.cs" />
@@ -97,6 +103,7 @@
     <Compile Include="Pages\Admin\TeamworkModules\Teamworks\TeamworksPage.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\Teamworks\TeamworksPageMap.cs" />
     <Compile Include="Pages\Admin\TeamworkModules\Teamworks\TeamworksPageValidator.cs" />
+    <Compile Include="Pages\Front\TeamworkPage\Estimate.cs" />
     <Compile Include="Pages\Login\LoginPage.cs" />
     <Compile Include="Pages\Login\LoginPageMap.cs" />
     <Compile Include="Pages\Login\LoginPageValidator.cs" />
@@ -151,8 +158,6 @@
   <ItemGroup>
     <Folder Include="Pages\Admin\TeamworkModules\ImportTeamNames\" />
     <Folder Include="Pages\Admin\TeamworkModules\ImportTeams\" />
-    <Folder Include="Pages\Admin\TeamworkModules\TeamMemberAllEvaluations\" />
-    <Folder Include="Pages\Admin\TeamworkModules\TeamMemberEvaluations\" />
     <Folder Include="Pages\Front\Exams\ExamEvaluationPage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
