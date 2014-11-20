@@ -25,8 +25,8 @@
             this.UserProfilePage.Validator.AssertCourseResult();
         }
 
-       [Owner("Mladen Mladenov")]
-       [Priority(1)]
+        [Owner("Mladen Mladenov")]
+        [Priority(1)]
         [TestMethod]
         public void CheckTestResult()
         {

@@ -39,7 +39,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void UploadHomeworkWithNoFile()
         {
@@ -50,7 +50,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void UploadHomeworkWithUnsupportedFormat()
         {
@@ -61,7 +61,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(3)]
+        [Priority(1)]
         [TestMethod]
         public void UploadHomeworkWithBigFile()
         {
@@ -83,7 +83,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void ReUploadHomeworkWithNoFile()
         {
@@ -94,7 +94,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void ReUploadHomeworkWithUnsupportedFormat()
         {
@@ -105,7 +105,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(3)]
+        [Priority(1)]
         [TestMethod]
         public void ReUploadHomeworkWithBigFile()
         {

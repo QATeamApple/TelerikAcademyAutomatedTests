@@ -1,25 +1,16 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Front.Exams.UserProfilePage
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
+    using ArtOfTest.WebAii.ObjectModel;
     using QA.UI.TestingFramework.Core;
 
     public class UserProfileMap : BaseElementMap
     {
-        public HtmlTableCell CourseResult
-        {
-            get
-            {
-                var wrapper = this.Find.ById<HtmlDiv>("ProfileSections-2");
-                return wrapper.Find.ByContent<HtmlTableCell>("Точки: 70.00");
-            }
-        }
-
         public HtmlTableCell TestResult
         {
             get
             {
-                var wrapper = this.Find.ById<HtmlDiv>("ProfileSections-2");
-                return wrapper.Find.ByContent<HtmlTableCell>("0 от 100");
+                return GetCell(8).As<HtmlTableCell>();
             }
         }
 
@@ -27,9 +18,25 @@
         {
             get
             {
-                var wrapper = this.Find.ById<HtmlDiv>("ProfileSections-2");
-                return wrapper.Find.ByContent<HtmlTableCell>("50 от 100");
+                return GetCell(9).As<HtmlTableCell>();
             }
+        }
+
+        public HtmlTableCell CourseResult
+        {
+            get
+            {
+                return GetCell(10).As<HtmlTableCell>();
+            }
+        }
+
+        private Element GetCell(int child)
+        {
+            var anchor = this.Find.ByContent<HtmlAnchor>("Тест курс Оценяване и Отборна работа");
+            var row = anchor.Parent<HtmlTableCell>().Parent<HtmlTableRow>();
+            var cell = row.ChildNodes[child];
+
+            return cell;
         }
     }
 }

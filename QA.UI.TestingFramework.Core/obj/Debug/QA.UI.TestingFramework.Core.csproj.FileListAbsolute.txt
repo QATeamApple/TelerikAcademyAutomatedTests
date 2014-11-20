@@ -1,5 +1,0 @@
-C:\DOCUMENTS\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.UI.TestingFramework.Core.dll
-C:\DOCUMENTS\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\bin\Debug\QA.UI.TestingFramework.Core.pdb
-C:\DOCUMENTS\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.csprojResolveAssemblyReference.cache
-C:\DOCUMENTS\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.dll
-C:\DOCUMENTS\GitHub\TelerikAcademyAutomatedTests\TestingFramework\QA.UI.TestingFramework.Core\obj\Debug\QA.UI.TestingFramework.Core.pdb

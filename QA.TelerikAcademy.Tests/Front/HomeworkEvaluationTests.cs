@@ -38,7 +38,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(3)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithLessSymbolsThanNeeded()
         {
@@ -48,7 +48,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithNegativeMark()
         {
@@ -58,7 +58,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithMarkBiggerThanAllowed()
         {
@@ -68,7 +68,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithLowBoundaryMark()
         {
@@ -78,7 +78,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithHighBoundaryMark()
         {
@@ -88,7 +88,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithNotNumberMark()
         {
@@ -97,7 +97,7 @@
             this.EvaluateHomeworkPage.Validator.EvaluateHomeworkWithNotNumberMark();
         }
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithoutMark()
         {
@@ -107,7 +107,7 @@
         }
 
         [Owner("Kiril Todorov")]
-        [Priority(2)]
+        [Priority(1)]
         [TestMethod]
         public void EvaluateHomeworkWithoutComment()
         {
