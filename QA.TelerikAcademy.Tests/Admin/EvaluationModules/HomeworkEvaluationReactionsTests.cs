@@ -43,7 +43,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.HomeworkReactionsPage.Navigate();
-            this.HomeworkReactionsPage.ExportToExcel(this.Desktop + @"\" + "HomeworkReactions.xls");
+            this.HomeworkReactionsPage.ExportToExcel(this.DesktopFolder + @"\" + "HomeworkReactions.xls");
         }
     }
 }

@@ -35,7 +35,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.BonusesPage.Navigate();
-            this.BonusesPage.ExportToExcel(this.Desktop + @"\" + "Bonuses.xls");
+            this.BonusesPage.ExportToExcel(this.DesktopFolder + @"\" + "Bonuses.xls");
         }
     }
 }

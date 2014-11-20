@@ -17,7 +17,7 @@
 
         public Dictionary<string, string> FilePath { get; set; }
 
-        public string Desktop { get; set; }
+        public string DesktopFolder { get; set; }
 
         public Browser Browser
         {
@@ -48,7 +48,7 @@
 
             AcademyLoginProvider.Instance.LoginUser(this.CurrentUser);
 
-            this.Desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            this.DesktopFolder = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         }
 
         public virtual void TestCleanUp()

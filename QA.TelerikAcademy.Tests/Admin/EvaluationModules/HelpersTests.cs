@@ -32,7 +32,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.HelpersPage.Navigate();
-            this.HelpersPage.ExportToExcel(this.Desktop + @"\" + "Helpers.xls");
+            this.HelpersPage.ExportToExcel(this.DesktopFolder + @"\" + "Helpers.xls");
         }
     }
 }

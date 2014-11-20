@@ -22,7 +22,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.StudentsRecordsPage.Navigate();
-            this.StudentsRecordsPage.ExportToExcel(this.Desktop + @"\" + "StudentsRecords.xls");
+            this.StudentsRecordsPage.ExportToExcel(this.DesktopFolder + @"\" + "StudentsRecords.xls");
         }
     }
 }

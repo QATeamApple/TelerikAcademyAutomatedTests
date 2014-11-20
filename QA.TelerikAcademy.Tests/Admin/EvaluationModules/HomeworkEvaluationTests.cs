@@ -87,7 +87,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.HomeworkEvaluationPage.Navigate();
-            this.HomeworkEvaluationPage.ExportToExcel(this.Desktop + @"\" + "HomeworkEvaluations.xls");
+            this.HomeworkEvaluationPage.ExportToExcel(this.DesktopFolder + @"\" + "HomeworkEvaluations.xls");
         }
     }
 }

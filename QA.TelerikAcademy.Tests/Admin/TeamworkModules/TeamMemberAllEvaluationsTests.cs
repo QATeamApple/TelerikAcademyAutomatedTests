@@ -31,7 +31,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.TeamMemberAllEvaluationsPage.Navigate();
-            this.TeamMemberAllEvaluationsPage.ExportToExcel(this.Desktop + @"\" + "TeamMemberAllEvaluations.xls");
+            this.TeamMemberAllEvaluationsPage.ExportToExcel(this.DesktopFolder + @"\" + "TeamMemberAllEvaluations.xls");
         }
     }
 }

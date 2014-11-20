@@ -38,7 +38,7 @@
         public void ExportAllStudentRecordsToExcel()
         {
             this.PracticalExamEvaluationsPage.Navigate();
-            this.PracticalExamEvaluationsPage.ExportToExcel(this.Desktop + @"\" + "PracticalExamEvaluations.xls");
+            this.PracticalExamEvaluationsPage.ExportToExcel(this.DesktopFolder + @"\" + "PracticalExamEvaluations.xls");
         }
     }
 }
