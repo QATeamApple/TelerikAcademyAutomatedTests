@@ -3,6 +3,7 @@
     using System.Windows.Forms;
     using ArtOfTest.WebAii.Core;
     using QA.TelerikAcademy.Core.Pages.Front.Exams.ExamSignUpPage;
+    using ArtOfTest.WebAii.Win32.Dialogs;
 
     public class ExamSignUpPage
     {
@@ -31,8 +32,14 @@
 
         public void SignUpForAnExam()
         {
+            AlertDialog dialog = AlertDialog.CreateAlertDialog(Manager.Current.ActiveBrowser, DialogButton.OK);
+            Manager.Current.DialogMonitor.AddDialog(dialog);
+            Manager.Current.DialogMonitor.Start();
+
             this.Map.SignUp.Click();
-            Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Enter);
+
+            Manager.Current.DialogMonitor.RemoveDialog(dialog);
+            Manager.Current.DialogMonitor.Stop();
         }
     }
 }

@@ -3,6 +3,7 @@
     using System.Windows.Forms;
 
     using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.Win32.Dialogs;
 
     public class TestSignUpPage
     {
@@ -32,8 +33,14 @@
 
         public void SignUpForTest()
         {
+            AlertDialog dialog = AlertDialog.CreateAlertDialog(Manager.Current.ActiveBrowser, DialogButton.OK);
+            Manager.Current.DialogMonitor.AddDialog(dialog);
+            Manager.Current.DialogMonitor.Start();
+
             this.Map.SignUpForTest.Click();
-            Manager.Current.Desktop.KeyBoard.KeyPress(Keys.Enter);
+
+            Manager.Current.DialogMonitor.RemoveDialog(dialog);
+            Manager.Current.DialogMonitor.Stop();
         }
     }
 }
